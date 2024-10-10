@@ -145,6 +145,7 @@ Table. 2 Experimental results of varient (i.e., first trains the graph represent
 |                |   2    |   81.53   |   68.69   |   11.61  |
 |                | **4**  | **83.35** | **69.13** | **6.65** |
 |                |   8    |   81.46   |   67.31   |   10.02  |
+
 Table. 3 Experimental results of different hyperparameters.
 
 #### Reviewer(C) Q2: Training and inference time.
