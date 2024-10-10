@@ -50,13 +50,7 @@ https://huggingface.co/datasets/sunlab/patch_db
 
 We will release the repository-level datasets：SPIDB* and PatchDB* later.
 
-### 📅 Repository-level  Dataset / Results available
-The Dataset and Results for RepoSPD is now available.  
 
-You can find the entire dataset for train, evaluation and test at [url].
-
-The experimental results of RepoSPD is in the directory `Results`. 
-For RQ2, we provide the 192 patches we used in our experiments at `Results/RQ2/test_data.jsonl`.
 
 ### 🛠️RepoSPD
 #### 🔍 1. Generating MergeCPG
@@ -179,3 +173,10 @@ python3 run.py
 
 
 
+#### Repository-level  Dataset / Results available
+The Dataset and Results for RepoSPD is now available.  
+
+You can find the entire dataset for train, evaluation and test at [url].
+
+The experimental results of RepoSPD is in the directory `Results`. 
+For RQ2, we provide the 192 patches we used in our experiments at `Results/RQ2/test_data.jsonl`.
