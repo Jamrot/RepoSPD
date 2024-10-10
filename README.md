@@ -102,12 +102,22 @@ python3 run.py
 
 ### Response-Phase
 
-#### Algorithim 1
+#### Reviewer(A) Q1: Algorithim 1
 
 ![Algorithm1](./Figures/Algorithm1.png)
 
 Algorithim 1. RepoCPG Construction.
 
+#### Reviewer(A) Q7: Repository-level  Dataset / Results available
+The Dataset and Results for RepoSPD is now available.  
+
+You can find the entire datasets at:
+```bash
+https://drive.google.com/file/d/1esVwN0BB-DcKPzVd7gG_ZAhABvrbWjo3/view?usp=drive_link
+```
+
+The experimental results of RepoSPD is in the directory `Results`. 
+For RQ2, we also provide the 192 patches we used in our experiment at `Results/RQ2/test_data.jsonl`.
 
 
 #### Reviewer(B) Q1: What is the impact of additional context on false negatives
@@ -174,13 +184,3 @@ Table. 5 Experimental results of AUC and statistical analysis.
 
 
 
-#### Repository-level  Dataset / Results available
-The Dataset and Results for RepoSPD is now available.  
-
-You can find the entire datasets at:
-```bash
-https://drive.google.com/file/d/1esVwN0BB-DcKPzVd7gG_ZAhABvrbWjo3/view?usp=drive_link
-```
-
-The experimental results of RepoSPD is in the directory `Results`. 
-For RQ2, we provide the 192 patches we used in our experiments at `Results/RQ2/test_data.jsonl`.
