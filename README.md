@@ -130,7 +130,7 @@ Table. 1 Experimental results of false negatives.
 |          | RepoSPD  | **83.35**    | **69.13**    | **6.65**  |
 Table. 2 Experimental results of varient (i.e., first trains the graph representation and then refines it into a sequence representation) and RepoSPD.
 
-#### Reviewer(C) Q2: Hyper-parameters.
+#### Reviewer(C) Q1: Hyper-parameters.
 | Hyperparameter | Value  | Accuracy  | F1 Score  |   FPR    |
 |:--------------:|:------:|:---------:|:---------:|:--------:|
 | Head           |   1    |   83.11   |   67.72   |   5.66   |
