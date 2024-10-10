@@ -106,7 +106,7 @@ python3 run.py
 
 ![Algorithm1](./Figures/Algorithm1.png)
 
-<center>Algorithim 1. RepoCPG Construction</center>
+Algorithim 1. RepoCPG Construction.
 
 
 
@@ -117,7 +117,7 @@ python3 run.py
 |          |**RepoSPD**|**83.35**| **80.18** | **60.76**  | **69.13**    | **6.65**  |
 | SPI-DB*  | CodeT5    | 66.62    | 61.17     | 62.59  | 61.87    | 30.31 |
 |          |**RepoSPD**|**74.55**| **78.07** | **61.79**  | **68.98**    | **14.67** |
-<center>Table. 1 Experimental results of false negatives.</center>
+Table. 1 Experimental results of false negatives.
 
 #### Reviewer(B) Q4: Why the authors chose to train the model using sequence representation and then refine it for graph representation？
 
@@ -128,7 +128,7 @@ python3 run.py
 |          | RepoSPD  | **74.55**    | **68.98**    | **14.67** |
 | PatchDB* | Varient  | 81.66    | 68.25    | 10.62 |
 |          | RepoSPD  | **83.35**    | **69.13**    | **6.65**  |
-<center>Table. 2 Experimental results of varient (i.e., first trains the graph representation and then refines it into a sequence representation) and RepoSPD.</center>
+Table. 2 Experimental results of varient (i.e., first trains the graph representation and then refines it into a sequence representation) and RepoSPD.
 
 #### Reviewer(C) Q2: Hyper-parameters.
 | Hyperparameter | Value  | Accuracy  | F1 Score  |   FPR    |
@@ -145,7 +145,7 @@ python3 run.py
 |                |   2    |   81.53   |   68.69   |   11.61  |
 |                | **4**  | **83.35** | **69.13** | **6.65** |
 |                |   8    |   81.46   |   67.31   |   10.02  |
-<center>Table. 3 Experimental results of different hyperparameters</center>
+Table. 3 Experimental results of different hyperparameters.
 
 #### Reviewer(C) Q2: Training and inference time.
 
@@ -156,7 +156,7 @@ python3 run.py
 | RepoSPD  | Train time (s)    | 420.45   | 436.70  |
 |          | Inference time (s)| 37.20    | 27.38   |
 
-<center>Table. 4 Time cost between RepoSPD and CodeT5 per epoch training and inference time. </center>
+Table. 4 Time cost between RepoSPD and CodeT5 per epoch training and inference time. 
 
 
 
@@ -169,7 +169,7 @@ python3 run.py
 | SPI-DB*  |   CodeT5   |  66.62  |  66.13  | 5.46e-07 |
 |          | **RepoSPD**|**74.55**|**73.56**|  -       |
 
-<center>Table. 5 Experimental results of AUC and statistical analysis</center>
+Table. 5 Experimental results of AUC and statistical analysis.
 
 
 
