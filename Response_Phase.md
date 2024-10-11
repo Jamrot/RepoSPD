@@ -75,7 +75,7 @@ Table. 4 Time cost between RepoSPD and CodeT5 per epoch training and inference t
 
 | Dataset  |   Model    | Accuracy|   AUC   |  P-value |
 |----------|------------|---------|---------|----------|
-| PatchDB* |   CodeT5   |  80.84  |  74.62  |  1.5e-2  |
+| PatchDB* |   CodeT5   |  80.84  |  74.62  | 1.5e-02  |
 |          | **RepoSPD**|**83.35**|**77.06**|  -       |
 | SPI-DB*  |   CodeT5   |  66.62  |  66.13  | 5.46e-07 |
 |          | **RepoSPD**|**74.55**|**73.56**|  -       |
