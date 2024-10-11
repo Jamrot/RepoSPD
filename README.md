@@ -127,6 +127,7 @@ For RQ2, we also provide the 192 patches we used in our experiment at `Results/R
 |          |**RepoSPD**|**83.35**| **80.18** | **60.76**  | **69.13**    | **6.65**  |
 | SPI-DB*  | CodeT5    | 66.62    | 61.17     | 62.59  | 61.87    | 30.31 |
 |          |**RepoSPD**|**74.55**| **78.07** | **61.79**  | **68.98**    | **14.67** |
+
 Table. 1 Experimental results of false negatives.
 
 #### Reviewer(B) Q4: Why the authors chose to train the model using sequence representation and then refine it for graph representation？
@@ -138,6 +139,7 @@ Table. 1 Experimental results of false negatives.
 |          | RepoSPD  | **74.55**    | **68.98**    | **14.67** |
 | PatchDB* | Varient  | 81.66    | 68.25    | 10.62 |
 |          | RepoSPD  | **83.35**    | **69.13**    | **6.65**  |
+
 Table. 2 Experimental results of varient (i.e., first trains the graph representation and then refines it into a sequence representation) and RepoSPD.
 
 #### Reviewer(C) Q1: Hyper-parameters.
