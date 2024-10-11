@@ -165,7 +165,7 @@ Table. 3 Experimental results of different hyperparameters.
 | Baseline | Time \ Dataset    | PatchDB* | SPI-DB* |
 |----------|-------------------|----------|---------|
 | CodeT5   | Train time (s)    | 1573.56  | 1171.95 |
-|          | Inference time (s)| 99.015   | 90.27   |
+|          | Inference time (s)| 99.02   | 90.27   |
 | RepoSPD  | Train time (s)    | 420.45   | 436.70  |
 |          | Inference time (s)| 37.20    | 27.38   |
 
