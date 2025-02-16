@@ -1,0 +1,28 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/260ea7a7b3/a/configure /app/RepoSPD/data_preproc/ab_file/260ea7a7b3/b/configure
+--- /app/RepoSPD/data_preproc/ab_file/260ea7a7b3/a/configure	2025-02-11 12:48:15.955396626 +0000
++++ /app/RepoSPD/data_preproc/ab_file/260ea7a7b3/b/configure	2025-02-11 12:48:15.869893298 +0000
+@@ -1611 +1610,0 @@ EXTERNAL_LIBRARY_LIST="
+-    videotoolbox
+@@ -1625 +1624 @@ HWACCEL_AUTODETECT_LIBRARY_LIST="
+-    videotoolbox_hwaccel
++    videotoolbox
+@@ -2183 +2181,0 @@ CONFIG_EXTRA="
+-    vt_bt2020
+@@ -2941 +2938,0 @@ libzvbi_teletext_decoder_deps="libzvbi"
+-videotoolbox_deps="VideoToolbox_VideoToolbox_h"
+@@ -2944,2 +2941 @@ videotoolbox_encoder_deps="videotoolbox
+-videotoolbox_encoder_suggest="vda_framework vt_bt2020"
+-vt_bt2020_deps="kCVImageBufferColorPrimaries_ITU_R_2020"
++videotoolbox_encoder_suggest="vda_framework"
+@@ -5743 +5738,0 @@ check_header VideoDecodeAcceleration/VDA
+-check_header VideoToolbox/VideoToolbox.h
+@@ -5745 +5739,0 @@ check_func_headers VideoToolbox/VTCompre
+-enabled videotoolbox && check_func_headers CoreVideo/CVImageBuffer.h kCVImageBufferColorPrimaries_ITU_R_2020 -framework CoreVideo
+@@ -5760,2 +5753,0 @@ check_lib psapi    "windows.h psapi.h"
+-check_lib coreservices "CoreServices/CoreServices.h" UTGetOSTypeFromString "-framework CoreServices"
+-
+@@ -5764,0 +5757 @@ enabled coreimage    && check_apple_fram
++enabled videotoolbox && check_apple_framework VideoToolbox
+@@ -5769,0 +5763,2 @@ enabled avfoundation && {
++enabled videotoolbox &&
++    check_lib coreservices CoreServices/CoreServices.h UTGetOSTypeFromString "-framework CoreServices"

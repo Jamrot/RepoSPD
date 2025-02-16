@@ -1,0 +1,12 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/1fe40e73a6/a/hlsenc.c /app/RepoSPD/data_preproc/ab_file/1fe40e73a6/b/hlsenc.c
+--- /app/RepoSPD/data_preproc/ab_file/1fe40e73a6/a/hlsenc.c	2025-02-11 12:48:17.527080782 +0000
++++ /app/RepoSPD/data_preproc/ab_file/1fe40e73a6/b/hlsenc.c	2025-02-11 12:48:17.409437028 +0000
+@@ -568,0 +569,8 @@ static int hls_mux_init(AVFormatContext
++        if (!oc->oformat->codec_tag ||
++            av_codec_get_id (oc->oformat->codec_tag, s->streams[i]->codecpar->codec_tag) == st->codecpar->codec_id ||
++            av_codec_get_tag(oc->oformat->codec_tag, s->streams[i]->codecpar->codec_id) <= 0) {
++            st->codecpar->codec_tag = s->streams[i]->codecpar->codec_tag;
++        } else {
++            st->codecpar->codec_tag = 0;
++        }
++

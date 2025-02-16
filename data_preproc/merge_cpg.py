@@ -213,6 +213,7 @@ def ifSameLine(n1, n2):
     return False
 
 def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
+    # 筛选符合要求的边：AST, CDG, DDG
     tmpEdges = []
     for e in Aedges:
         edgeType = edgeAttr(e)[2]
@@ -231,6 +232,8 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
             tmpEdges.append(e)
     Bedges = tmpEdges 
 
+    # CtxNodes(ABnode)：两个图中相同的节点，PreNodes：只在A图中的节点，PstNodes：只在B图中的节点
+    # dictA：A图中的节点对应的新节点ID，dictB：B图中的节点对应的新节点ID
     nodeId = nodeIDstart-1
     dictA = {}
     dictB = {}
@@ -263,6 +266,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
             PreNodes.append((nodeId, AnodeInfo.replace('/a/','/v/').replace('/b/','/v/'), -1))
             nodeId -= 1
 
+    # newAedges：只在A图中的边，newBedges：只在B图中的边，CtxEdges：两个图中相同的边
     newAedges = []
     newBedges = []
 
@@ -280,6 +284,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
     newAedges = list(set(newAedges)-set(CtxEdges))
     newBedges = list(set(newBedges)-set(CtxEdges))
 
+    # PstEdges：1，只在B图中的边，PreEdges：-1，只在A图中的边
     for Be in newBedges:
         PstEdges.append((Be[0], Be[1], Be[2], 1))
     for Ae in newAedges:
@@ -288,6 +293,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
     invDictA = {v: k for k, v in dictA.items()}
     invDictB = {v: k for k, v in dictB.items()}
     
+    # 从A图/B图中的节点开始，分别根据CDG和DDG进行后向切片
     CtxEdges1 = CtxEdges[:]
     CtxNodes1 = CtxNodes[:]
     backNodes1 = PreNodes[:] + PstNodes[:] 
@@ -338,7 +344,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
     backNodes = list(set(backNodes1+backNodes2))
     backEdges = list(set(backEdges1+backEdges2))
 
-    # step 5: forward slice
+    # 从只在A图/B图中的节点开始，分别根据CDG和DDG进行前向切片
     CtxEdges2 = CtxEdges[:]
     CtxNodes2 = CtxNodes[:]
     frwdNodes2 = PreNodes[:] + PstNodes[:] 
@@ -446,6 +452,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
     sliceEdges = list(set(sliceEdges))
     
     # make up nodes since there are some lonely edges
+    # 对于属性为AST的sliceEdges，如果其节点仍在CtxNodes中，则将其节点加入sliceNodes
     for e in sliceEdges[:]:
         for n in CtxNodes[:]:
             if n[0] in [e[0], e[1]] and e[2][:3] in ['AST']:
@@ -453,6 +460,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
                 sliceNodes.append(n)
 
     # first remove (merge) the redundant nodes
+    # 检查是否仍在lonely edges
     for e in sliceEdges[:]:
         flag_found = 0
         for n in sliceNodes:
@@ -473,6 +481,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
     lineNum_label = {}
     for n in sliceNodes:
         #print(n)
+        # 跳过没有CODE和LINE_NUMBER的节点
         i = n[1].find('(CODE,')
         if i == -1:
             continue
@@ -488,7 +497,8 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
         i = n[1].find('(LINE_NUMBER,')
         if i == -1:
             continue
-
+        
+        # 根据节点的归属属性（Pre / Pst / Ctx），设置pre
         if n[-1] == 0:		
             pre = ''
         elif n[-1] == 1:	
@@ -514,6 +524,7 @@ def slice(Anodes, Aedges, Bnodes, Bedges, path, nodeIDstart):
         1000179,1000181,AST
         1000179,1000182,AST
         '''
+        # 保留最长的code
         if line_num not in lineNum_code.keys():
             lineNum_code[line_num] = code
             lineNum_nodeID[line_num] = n[0]
@@ -678,6 +689,7 @@ def generateLog(path):
     AnodesByFunc, AedgesByFunc = importCPG(path+'/outA/')
     BnodesByFunc, BedgesByFunc = importCPG(path+'/outB/')
 
+    # ABFunc: 同时存在于A和B中的函数
     ABFunc = [f for f in AnodesByFunc.keys() if f in BnodesByFunc.keys()]
     AFunc = [f for f in AnodesByFunc.keys() if f not in BnodesByFunc.keys()]
     BFunc = [f for f in BnodesByFunc.keys() if f not in AnodesByFunc.keys()]

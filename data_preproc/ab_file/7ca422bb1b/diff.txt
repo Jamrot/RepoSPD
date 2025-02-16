@@ -1,0 +1,200 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/b/vp9dsp_init.c
+--- /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c	2025-02-11 12:48:16.874692699 +0000
++++ /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/b/vp9dsp_init.c	2025-02-11 12:48:16.682184740 +0000
+@@ -128,0 +129 @@ void ff_vp9_loop_filter_h_##size1##_##si
++lpf_funcs(4, 8, mmxext);
+@@ -283,0 +285,2 @@ av_cold void ff_vp9dsp_init_x86(VP9DSPCo
++        dsp->loop_filter_8[0][0] = ff_vp9_loop_filter_h_4_8_mmxext;
++        dsp->loop_filter_8[0][1] = ff_vp9_loop_filter_v_4_8_mmxext;
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9lpf.asm /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/b/vp9lpf.asm
+--- /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9lpf.asm	2025-02-11 12:48:16.874692699 +0000
++++ /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/b/vp9lpf.asm	2025-02-11 12:48:16.682184740 +0000
+@@ -55 +55 @@ SECTION .text
+-%if ARCH_X86_64
++%ifdef m8
+@@ -63 +63 @@ SECTION .text
+-%if ARCH_X86_64
++%ifdef m8
+@@ -72 +72 @@ SECTION .text
+-%if ARCH_X86_64
++%ifdef m8
+@@ -105 +105 @@ SECTION .text
+-%if ARCH_X86_64
++%ifdef m8
+@@ -337,16 +337,18 @@ SECTION .text
+-%define P3 rsp +   0 + %1
+-%define P2 rsp +  16 + %1
+-%define P1 rsp +  32 + %1
+-%define P0 rsp +  48 + %1
+-%define Q0 rsp +  64 + %1
+-%define Q1 rsp +  80 + %1
+-%define Q2 rsp +  96 + %1
+-%define Q3 rsp + 112 + %1
+-%define P7 rsp + 128 + %1
+-%define P6 rsp + 144 + %1
+-%define P5 rsp + 160 + %1
+-%define P4 rsp + 176 + %1
+-%define Q4 rsp + 192 + %1
+-%define Q5 rsp + 208 + %1
+-%define Q6 rsp + 224 + %1
+-%define Q7 rsp + 240 + %1
++%define P3 rsp +  0*mmsize + %1
++%define P2 rsp +  1*mmsize + %1
++%define P1 rsp +  2*mmsize + %1
++%define P0 rsp +  3*mmsize + %1
++%define Q0 rsp +  4*mmsize + %1
++%define Q1 rsp +  5*mmsize + %1
++%define Q2 rsp +  6*mmsize + %1
++%define Q3 rsp +  7*mmsize + %1
++%if mmsize == 16
++%define P7 rsp +  8*mmsize + %1
++%define P6 rsp +  9*mmsize + %1
++%define P5 rsp + 10*mmsize + %1
++%define P4 rsp + 11*mmsize + %1
++%define Q4 rsp + 12*mmsize + %1
++%define Q5 rsp + 13*mmsize + %1
++%define Q6 rsp + 14*mmsize + %1
++%define Q7 rsp + 15*mmsize + %1
++%endif
+@@ -368 +370 @@ SECTION .text
+-cglobal vp9_loop_filter_%1_%2_16, 5, 9, 16, %3 + %4, dst, stride, E, I, H, mstride, dst2, stride3, mstride3
++cglobal vp9_loop_filter_%1_%2_ %+ mmsize, 5, 9, 16, %3 + %4, dst, stride, E, I, H, mstride, dst2, stride3, mstride3
+@@ -371 +373 @@ cglobal vp9_loop_filter_%1_%2_16, 5, 9,
+-cglobal vp9_loop_filter_%1_%2_16, 4, 8, 16, %3 + %4, dst, stride, E, I, mstride, dst2, stride3, mstride3
++cglobal vp9_loop_filter_%1_%2_ %+ mmsize, 4, 8, 16, %3 + %4, dst, stride, E, I, mstride, dst2, stride3, mstride3
+@@ -373 +375 @@ cglobal vp9_loop_filter_%1_%2_16, 4, 8,
+-cglobal vp9_loop_filter_%1_%2_16, 2, 6, 16, %3 + %4 + %5, dst, stride, mstride, dst2, stride3, mstride3
++cglobal vp9_loop_filter_%1_%2_ %+ mmsize, 2, 6, 16, %3 + %4 + %5, dst, stride, mstride, dst2, stride3, mstride3
+@@ -387 +389,2 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 > 16
++%if %2 != 16
++%if mmsize == 16
+@@ -388,0 +392,3 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
++%else
++%define movx mova
++%endif
+@@ -394 +399,0 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-    lea                  dst2q, [dstq + 8*strideq]
+@@ -397 +401,0 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-    lea                  dst2q, [dstq + 8*strideq]
+@@ -398,0 +403,2 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
++    ; FIXME we shouldn't need two dts registers if mmsize == 8
++    lea                  dst2q, [dstq + 8*strideq]
+@@ -409 +415 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64 || %2 != 16
++%if (ARCH_X86_64 && mmsize == 16) || %2 > 16
+@@ -413 +419 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -505 +511 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%else ; %2 == 44/48/84/88
++%elif %2 > 16 ; %2 == 44/48/84/88
+@@ -531,0 +538,19 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
++%else ; %2 == 4 || %2 == 8
++    SBUTTERFLY       bw, 0, 1, 6
++    SBUTTERFLY       bw, 2, 3, 6
++    SBUTTERFLY       bw, 4, 5, 6
++    mova [rsp+4*mmsize], m5
++    mova             m6, [P1]
++    SBUTTERFLY       bw, 6, 7, 5
++    DEFINE_TRANSPOSED_P7_TO_Q7
++    TRANSPOSE4x4W     0, 2, 4, 6, 5
++    mova           [P3], m0
++    mova           [P2], m2
++    mova           [P1], m4
++    mova           [P0], m6
++    mova             m5, [rsp+4*mmsize]
++    TRANSPOSE4x4W     1, 3, 5, 7, 0
++    mova           [Q0], m1
++    mova           [Q1], m3
++    mova           [Q2], m5
++    mova           [Q3], m7
+@@ -537 +562 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 == 16
++%if %2 == 16 || mmsize == 8
+@@ -555 +580 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -616 +641 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 != 44
++%if %2 != 44 && %2 != 4
+@@ -619 +644 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -657,0 +683 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
++%if %2 == 44
+@@ -659,0 +686,6 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
++%else
++%if cpuflag(ssse3)
++    pxor                m0, m0
++%endif
++    SPLATB_REG          m7, H, m0                       ; H H H H ...
++%endif
+@@ -673 +705 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -685 +717 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -698 +730 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -711 +743 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -741 +773 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 != 44
++%if %2 != 44 && %2 != 4
+@@ -759 +791 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -768,2 +800,2 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 != 44
+-%if ARCH_X86_64
++%if %2 != 44 && %2 != 4
++%ifdef m8
+@@ -790,2 +822,2 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 != 44
+-%if ARCH_X86_64
++%if %2 != 44 && %2 != 4
++%ifdef m8
+@@ -818 +850 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 != 44
++%if %2 != 44 && %2 != 4
+@@ -824 +856 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if %2 != 44
++%if %2 != 44 && %2 != 4
+@@ -830 +862 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -837 +869 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -885 +917 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%if ARCH_X86_64
++%ifdef m8
+@@ -1011 +1043 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
+-%elif %2 == 44
++%elif %2 == 44 || %2 == 4
+@@ -1020,0 +1053 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
++%if mmsize == 16
+@@ -1049,0 +1083,14 @@ cglobal vp9_loop_filter_%1_%2_16, 2, 6,
++    movd  [P7], m0
++    movd  [P5], m2
++    movd  [P3], m1
++    movd  [P1], m3
++    psrlq   m0, 32
++    psrlq   m2, 32
++    psrlq   m1, 32
++    psrlq   m3, 32
++    movd  [P6], m0
++    movd  [P4], m2
++    movd  [P2], m1
++    movd  [P0], m3
++%endif
++%else
+@@ -1139,0 +1187,4 @@ LPF_16_VH_ALL_OPTS 88, 256, 128, 16
++
++INIT_MMX mmxext
++LOOPFILTER v, 4, 0,  0, 0
++LOOPFILTER h, 4, 0, 64, 0

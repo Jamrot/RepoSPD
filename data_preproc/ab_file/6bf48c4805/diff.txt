@@ -1,0 +1,8 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/6bf48c4805/a/tls_gnutls.c /app/RepoSPD/data_preproc/ab_file/6bf48c4805/b/tls_gnutls.c
+--- /app/RepoSPD/data_preproc/ab_file/6bf48c4805/a/tls_gnutls.c	2025-02-11 12:48:15.570631660 +0000
++++ /app/RepoSPD/data_preproc/ab_file/6bf48c4805/b/tls_gnutls.c	2025-02-11 12:48:15.485128337 +0000
+@@ -37,0 +38,4 @@
++#ifndef GNUTLS_VERSION_NUMBER
++#define GNUTLS_VERSION_NUMBER LIBGNUTLS_VERSION_NUMBER
++#endif
++

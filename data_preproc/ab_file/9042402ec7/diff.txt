@@ -1,0 +1,31 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/configure /app/RepoSPD/data_preproc/ab_file/9042402ec7/b/configure
+--- /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/configure	2025-02-11 12:48:16.254658263 +0000
++++ /app/RepoSPD/data_preproc/ab_file/9042402ec7/b/configure	2025-02-11 12:48:16.190530768 +0000
+@@ -2074,0 +2075 @@ HAVE_LIST="
++    uwp
+@@ -6137 +6138,12 @@ check_func_headers "windows.h" CreateDIB
+-enabled LoadLibrary || d3d11va_extralibs="-ldxgi -ld3d11"
++check_cpp <<EOF && enable uwp && d3d11va_extralibs="-ldxgi -ld3d11"
++#ifdef WINAPI_FAMILY
++#include <winapifamily.h>
++#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
++#error desktop, not uwp
++#else
++// WINAPI_FAMILY_APP, WINAPI_FAMILY_PHONE_APP => UWP
++#endif
++#else
++#error no family set
++#endif
++EOF
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c /app/RepoSPD/data_preproc/ab_file/9042402ec7/b/hwcontext_d3d11va.c
+--- /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c	2025-02-11 12:48:16.254658263 +0000
++++ /app/RepoSPD/data_preproc/ab_file/9042402ec7/b/hwcontext_d3d11va.c	2025-02-11 12:48:16.190530768 +0000
+@@ -59 +59 @@ static av_cold void load_functions(void)
+-#if HAVE_LOADLIBRARY
++#if !HAVE_UWP
+@@ -489 +489 @@ static int d3d11va_device_create(AVHWDev
+-#if HAVE_LOADLIBRARY
++#if !HAVE_UWP
+@@ -530 +530 @@ static int d3d11va_device_create(AVHWDev
+-#if HAVE_LOADLIBRARY && HAVE_DXGIDEBUG_H
++#if !HAVE_UWP && HAVE_DXGIDEBUG_H

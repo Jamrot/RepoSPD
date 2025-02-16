@@ -1,0 +1,7 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/50e30d9bb7/a/intmath.h /app/RepoSPD/data_preproc/ab_file/50e30d9bb7/b/intmath.h
+--- /app/RepoSPD/data_preproc/ab_file/50e30d9bb7/a/intmath.h	2025-02-11 12:48:15.185866696 +0000
++++ /app/RepoSPD/data_preproc/ab_file/50e30d9bb7/b/intmath.h	2025-02-11 12:48:15.121739202 +0000
+@@ -50 +50,2 @@ static av_always_inline av_const int ff_
+-#if defined(__INTEL_COMPILER) || (defined(_MSC_VER) && (_MSC_VER >= 1700))
++#if defined(__INTEL_COMPILER) || (defined(_MSC_VER) && (_MSC_VER >= 1700) && \
++                                  (defined(__BMI__) || !defined(__clang__)))

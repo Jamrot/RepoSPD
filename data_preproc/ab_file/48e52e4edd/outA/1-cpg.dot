@@ -1,0 +1,1613 @@
+digraph process_output_surface
+--------
+1000213,(COLUMN_NUMBER,0),(LINE_NUMBER,1741),(COLUMN_NUMBER_END,0),(IS_EXTERNAL,false),(SIGNATURE,static int process_output_surface (AVCodecContext *,AVPacket *,NvencSurface *)),(NAME,process_output_surface),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,process_output_surface (AVCodecContext *avctx,AVPacket *pkt,NvencSurface *tmpoutsurf)),(FULL_NAME,process_output_surface),(LINE_NUMBER_END,1870),(FILENAME,/app/RepoSPD/data_preproc/ab_file/48e52e4edd/a/nvenc.c),(METHOD,process_output_surface)
+1000214,(ORDER,1),(CODE,AVCodecContext *avctx),(COLUMN_NUMBER,34),(LINE_NUMBER,1741),(TYPE_FULL_NAME,AVCodecContext *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(PARAM,AVCodecContext *avctx)
+1000215,(ORDER,2),(CODE,AVPacket *pkt),(COLUMN_NUMBER,57),(LINE_NUMBER,1741),(TYPE_FULL_NAME,AVPacket *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pkt),(PARAM,AVPacket *pkt)
+1000216,(ORDER,3),(CODE,NvencSurface *tmpoutsurf),(COLUMN_NUMBER,72),(LINE_NUMBER,1741),(TYPE_FULL_NAME,NvencSurface *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(PARAM,NvencSurface *tmpoutsurf)
+1000217,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(COLUMN_NUMBER,0),(TYPE_FULL_NAME,void),(LINE_NUMBER,1742),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000218,(TYPE_FULL_NAME,NvencContext *),(ORDER,1),(CODE,ctx),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(LOCAL,ctx: NvencContext *)
+1000219,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,*ctx = avctx->priv_data),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1743),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*ctx = avctx->priv_data)
+1000220,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1743),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,*ctx = avctx->priv_data)
+1000221,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,avctx->priv_data),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1743),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,avctx->priv_data)
+1000222,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1743),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,*ctx = avctx->priv_data)
+1000223,(ORDER,2),(LINE_NUMBER,1743),(ARGUMENT_INDEX,2),(CODE,priv_data),(COLUMN_NUMBER,31),(CANONICAL_NAME,priv_data),(FIELD_IDENTIFIER,priv_data,priv_data)
+1000224,(TYPE_FULL_NAME,NvencDynLoadFunctions *),(ORDER,3),(CODE,dl_fn),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,dl_fn),(LOCAL,dl_fn: NvencDynLoadFunctions *)
+1000225,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,*dl_fn = &ctx->nvenc_dload_funcs),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1744),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*dl_fn = &ctx->nvenc_dload_funcs)
+1000226,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,dl_fn),(COLUMN_NUMBER,27),(TYPE_FULL_NAME,NvencDynLoadFunctions *),(LINE_NUMBER,1744),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,dl_fn),(IDENTIFIER,dl_fn,*dl_fn = &ctx->nvenc_dload_funcs)
+1000227,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&ctx->nvenc_dload_funcs),(COLUMN_NUMBER,35),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1744),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&ctx->nvenc_dload_funcs)
+1000228,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->nvenc_dload_funcs),(COLUMN_NUMBER,36),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1744),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->nvenc_dload_funcs)
+1000229,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1744),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,*dl_fn = &ctx->nvenc_dload_funcs)
+1000230,(ORDER,2),(LINE_NUMBER,1744),(ARGUMENT_INDEX,2),(CODE,nvenc_dload_funcs),(COLUMN_NUMBER,41),(CANONICAL_NAME,nvenc_dload_funcs),(FIELD_IDENTIFIER,nvenc_dload_funcs,nvenc_dload_funcs)
+1000231,(TYPE_FULL_NAME,NV_ENCODE_API_FUNCTION_LIST *),(ORDER,5),(CODE,p_nvenc),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p_nvenc),(LOCAL,p_nvenc: NV_ENCODE_API_FUNCTION_LIST *)
+1000232,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,*p_nvenc = &dl_fn->nvenc_funcs),(COLUMN_NUMBER,32),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1745),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*p_nvenc = &dl_fn->nvenc_funcs)
+1000233,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p_nvenc),(COLUMN_NUMBER,33),(TYPE_FULL_NAME,NV_ENCODE_API_FUNCTION_LIST *),(LINE_NUMBER,1745),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p_nvenc),(IDENTIFIER,p_nvenc,*p_nvenc = &dl_fn->nvenc_funcs)
+1000234,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&dl_fn->nvenc_funcs),(COLUMN_NUMBER,43),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1745),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&dl_fn->nvenc_funcs)
+1000235,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,dl_fn->nvenc_funcs),(COLUMN_NUMBER,44),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1745),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,dl_fn->nvenc_funcs)
+1000236,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,dl_fn),(COLUMN_NUMBER,44),(TYPE_FULL_NAME,NvencDynLoadFunctions *),(LINE_NUMBER,1745),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,dl_fn),(IDENTIFIER,dl_fn,*p_nvenc = &dl_fn->nvenc_funcs)
+1000237,(ORDER,2),(LINE_NUMBER,1745),(ARGUMENT_INDEX,2),(CODE,nvenc_funcs),(COLUMN_NUMBER,51),(CANONICAL_NAME,nvenc_funcs),(FIELD_IDENTIFIER,nvenc_funcs,nvenc_funcs)
+1000238,(TYPE_FULL_NAME,uint32_t),(ORDER,7),(CODE,slice_mode_data),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_mode_data),(LOCAL,slice_mode_data: uint32_t)
+1000239,(TYPE_FULL_NAME,uint32_t *),(ORDER,8),(CODE,slice_offsets),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(LOCAL,slice_offsets: uint32_t *)
+1000240,(ORDER,9),(ARGUMENT_INDEX,9),(CODE,*slice_offsets = NULL),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1748),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*slice_offsets = NULL)
+1000241,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_offsets),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,uint32_t *),(LINE_NUMBER,1748),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(IDENTIFIER,slice_offsets,*slice_offsets = NULL)
+1000242,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NULL),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1748),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,*slice_offsets = NULL)
+1000243,(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(ORDER,10),(CODE,lock_params),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(LOCAL,lock_params: NV_ENC_LOCK_BITSTREAM)
+1000244,(ORDER,11),(ARGUMENT_INDEX,11),(CODE,lock_params = { 0 }),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1749),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,lock_params = { 0 })
+1000245,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1749),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,lock_params = { 0 })
+1000246,(TYPE_FULL_NAME,NVENCSTATUS),(ORDER,12),(CODE,nv_status),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nv_status),(LOCAL,nv_status: NVENCSTATUS)
+1000247,(TYPE_FULL_NAME,int),(ORDER,13),(CODE,res),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(LOCAL,res: int)
+1000248,(ORDER,14),(ARGUMENT_INDEX,14),(CODE,res = 0),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1751),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = 0)
+1000249,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1751),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = 0)
+1000250,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,int),(LINE_NUMBER,1751),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,res = 0)
+1000251,(TYPE_FULL_NAME,enum AVPictureType),(ORDER,15),(CODE,pict_type),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pict_type),(LOCAL,pict_type: enum AVPictureType)
+1000252,(PARSER_TYPE_NAME,SwitchStatement),(ORDER,16),(LINE_NUMBER,1755),(ARGUMENT_INDEX,16),(CODE,switch (avctx->codec->id)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,switch (avctx->codec->id),switch (avctx->codec->id))
+1000253,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->codec->id),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1755),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,avctx->codec->id)
+1000254,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->codec),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1755),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,avctx->codec)
+1000255,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1755),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,switch (avctx->codec->id))
+1000256,(ORDER,2),(LINE_NUMBER,1755),(ARGUMENT_INDEX,2),(CODE,codec),(COLUMN_NUMBER,19),(CANONICAL_NAME,codec),(FIELD_IDENTIFIER,codec,codec)
+1000257,(ORDER,2),(LINE_NUMBER,1755),(ARGUMENT_INDEX,2),(CODE,id),(COLUMN_NUMBER,26),(CANONICAL_NAME,id),(FIELD_IDENTIFIER,id,id)
+1000258,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,void),(LINE_NUMBER,1755),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000259,(PARSER_TYPE_NAME,Label),(ORDER,1),(ARGUMENT_INDEX,1),(CODE,case AV_CODEC_ID_H264:),(COLUMN_NUMBER,4),(LINE_NUMBER,1756),(NAME,case AV_CODEC_ID_H264),(JUMP_TARGET,case AV_CODEC_ID_H264)
+1000260,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,slice_mode_data = ctx->encode_config.encodeCodecConfig.h264Config.sliceModeData),(COLUMN_NUMBER,6),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1757),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,slice_mode_data = ctx->encode_config.encodeCodecConfig.h264Config.sliceModeData)
+1000261,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_mode_data),(COLUMN_NUMBER,6),(TYPE_FULL_NAME,uint32_t),(LINE_NUMBER,1757),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_mode_data),(IDENTIFIER,slice_mode_data,slice_mode_data = ctx->encode_config.encodeCodecConfig.h264Config.sliceModeData)
+1000262,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ctx->encode_config.encodeCodecConfig.h264Config.sliceModeData),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1757),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->encode_config.encodeCodecConfig.h264Config.sliceModeData)
+1000263,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->encode_config.encodeCodecConfig.h264Config),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1757),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->encode_config.encodeCodecConfig.h264Config)
+1000264,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->encode_config.encodeCodecConfig),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1757),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->encode_config.encodeCodecConfig)
+1000265,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->encode_config),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1757),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->encode_config)
+1000266,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1757),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,slice_mode_data = ctx->encode_config.encodeCodecConfig.h264Config.sliceModeData)
+1000267,(ORDER,2),(LINE_NUMBER,1757),(ARGUMENT_INDEX,2),(CODE,encode_config),(COLUMN_NUMBER,29),(CANONICAL_NAME,encode_config),(FIELD_IDENTIFIER,encode_config,encode_config)
+1000268,(ORDER,2),(LINE_NUMBER,1757),(ARGUMENT_INDEX,2),(CODE,encodeCodecConfig),(COLUMN_NUMBER,43),(CANONICAL_NAME,encodeCodecConfig),(FIELD_IDENTIFIER,encodeCodecConfig,encodeCodecConfig)
+1000269,(ORDER,2),(LINE_NUMBER,1757),(ARGUMENT_INDEX,2),(CODE,h264Config),(COLUMN_NUMBER,61),(CANONICAL_NAME,h264Config),(FIELD_IDENTIFIER,h264Config,h264Config)
+1000270,(ORDER,2),(LINE_NUMBER,1757),(ARGUMENT_INDEX,2),(CODE,sliceModeData),(COLUMN_NUMBER,72),(CANONICAL_NAME,sliceModeData),(FIELD_IDENTIFIER,sliceModeData,sliceModeData)
+1000271,(PARSER_TYPE_NAME,BreakStatement),(ORDER,3),(LINE_NUMBER,1758),(ARGUMENT_INDEX,3),(CODE,break;),(COLUMN_NUMBER,6),(CONTROL_STRUCTURE,break;,break;)
+1000272,(PARSER_TYPE_NAME,Label),(ORDER,4),(ARGUMENT_INDEX,4),(CODE,case AV_CODEC_ID_H265:),(COLUMN_NUMBER,4),(LINE_NUMBER,1759),(NAME,case AV_CODEC_ID_H265),(JUMP_TARGET,case AV_CODEC_ID_H265)
+1000273,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,slice_mode_data = ctx->encode_config.encodeCodecConfig.hevcConfig.sliceModeData),(COLUMN_NUMBER,6),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1760),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,slice_mode_data = ctx->encode_config.encodeCodecConfig.hevcConfig.sliceModeData)
+1000274,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_mode_data),(COLUMN_NUMBER,6),(TYPE_FULL_NAME,uint32_t),(LINE_NUMBER,1760),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_mode_data),(IDENTIFIER,slice_mode_data,slice_mode_data = ctx->encode_config.encodeCodecConfig.hevcConfig.sliceModeData)
+1000275,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ctx->encode_config.encodeCodecConfig.hevcConfig.sliceModeData),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1760),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->encode_config.encodeCodecConfig.hevcConfig.sliceModeData)
+1000276,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->encode_config.encodeCodecConfig.hevcConfig),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1760),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->encode_config.encodeCodecConfig.hevcConfig)
+1000277,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->encode_config.encodeCodecConfig),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1760),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->encode_config.encodeCodecConfig)
+1000278,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->encode_config),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1760),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->encode_config)
+1000279,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1760),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,slice_mode_data = ctx->encode_config.encodeCodecConfig.hevcConfig.sliceModeData)
+1000280,(ORDER,2),(LINE_NUMBER,1760),(ARGUMENT_INDEX,2),(CODE,encode_config),(COLUMN_NUMBER,29),(CANONICAL_NAME,encode_config),(FIELD_IDENTIFIER,encode_config,encode_config)
+1000281,(ORDER,2),(LINE_NUMBER,1760),(ARGUMENT_INDEX,2),(CODE,encodeCodecConfig),(COLUMN_NUMBER,43),(CANONICAL_NAME,encodeCodecConfig),(FIELD_IDENTIFIER,encodeCodecConfig,encodeCodecConfig)
+1000282,(ORDER,2),(LINE_NUMBER,1760),(ARGUMENT_INDEX,2),(CODE,hevcConfig),(COLUMN_NUMBER,61),(CANONICAL_NAME,hevcConfig),(FIELD_IDENTIFIER,hevcConfig,hevcConfig)
+1000283,(ORDER,2),(LINE_NUMBER,1760),(ARGUMENT_INDEX,2),(CODE,sliceModeData),(COLUMN_NUMBER,72),(CANONICAL_NAME,sliceModeData),(FIELD_IDENTIFIER,sliceModeData,sliceModeData)
+1000284,(PARSER_TYPE_NAME,BreakStatement),(ORDER,6),(LINE_NUMBER,1761),(ARGUMENT_INDEX,6),(CODE,break;),(COLUMN_NUMBER,6),(CONTROL_STRUCTURE,break;,break;)
+1000285,(PARSER_TYPE_NAME,Label),(ORDER,7),(ARGUMENT_INDEX,7),(CODE,default:),(COLUMN_NUMBER,4),(LINE_NUMBER,1762),(NAME,default),(JUMP_TARGET,default)
+1000286,(ORDER,8),(ARGUMENT_INDEX,8),(CODE,av_log(avctx, AV_LOG_ERROR, "Unknown codec name\n")),(COLUMN_NUMBER,6),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1763),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(avctx, AV_LOG_ERROR, \"Unknown codec name\n\"))
+1000287,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1763),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,av_log(avctx, AV_LOG_ERROR, \"Unknown codec name\n\"))
+1000288,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_ERROR),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1763),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_ERROR),(IDENTIFIER,AV_LOG_ERROR,av_log(avctx, AV_LOG_ERROR, \"Unknown codec name\n\"))
+1000289,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Unknown codec name\n"),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1763),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Unknown codec name\n\",av_log(avctx, AV_LOG_ERROR, \"Unknown codec name\n\"))
+1000290,(ORDER,9),(ARGUMENT_INDEX,9),(CODE,res = AVERROR(EINVAL)),(COLUMN_NUMBER,6),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1764),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = AVERROR(EINVAL))
+1000291,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,6),(TYPE_FULL_NAME,int),(LINE_NUMBER,1764),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = AVERROR(EINVAL))
+1000292,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVERROR(EINVAL)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,AVERROR),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1764),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR),(AVERROR,AVERROR(EINVAL))
+1000293,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,EINVAL),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1764),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,EINVAL),(IDENTIFIER,EINVAL,AVERROR(EINVAL))
+1000294,(PARSER_TYPE_NAME,GotoStatement),(ORDER,10),(LINE_NUMBER,1765),(ARGUMENT_INDEX,10),(CODE,goto error;),(COLUMN_NUMBER,6),(CONTROL_STRUCTURE,goto error;,goto error;)
+1000295,(ORDER,17),(ARGUMENT_INDEX,17),(CODE,slice_offsets = av_mallocz(slice_mode_data * sizeof(*slice_offsets))),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1767),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,slice_offsets = av_mallocz(slice_mode_data * sizeof(*slice_offsets)))
+1000296,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_offsets),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,uint32_t *),(LINE_NUMBER,1767),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(IDENTIFIER,slice_offsets,slice_offsets = av_mallocz(slice_mode_data * sizeof(*slice_offsets)))
+1000297,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,av_mallocz(slice_mode_data * sizeof(*slice_offsets))),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,av_mallocz),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1767),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_mallocz),(av_mallocz,av_mallocz(slice_mode_data * sizeof(*slice_offsets)))
+1000298,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_mode_data * sizeof(*slice_offsets)),(COLUMN_NUMBER,31),(METHOD_FULL_NAME,<operator>.multiplication),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1767),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.multiplication),(<operator>.multiplication,slice_mode_data * sizeof(*slice_offsets))
+1000299,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_mode_data),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,uint32_t),(LINE_NUMBER,1767),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_mode_data),(IDENTIFIER,slice_mode_data,slice_mode_data * sizeof(*slice_offsets))
+1000300,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,sizeof(*slice_offsets)),(COLUMN_NUMBER,49),(METHOD_FULL_NAME,<operator>.sizeOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1767),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.sizeOf),(<operator>.sizeOf,sizeof(*slice_offsets))
+1000301,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,*slice_offsets),(COLUMN_NUMBER,56),(METHOD_FULL_NAME,<operator>.indirection),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1767),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirection),(<operator>.indirection,*slice_offsets)
+1000302,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_offsets),(COLUMN_NUMBER,57),(TYPE_FULL_NAME,uint32_t *),(LINE_NUMBER,1767),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(IDENTIFIER,slice_offsets,sizeof(*slice_offsets))
+1000303,(PARSER_TYPE_NAME,IfStatement),(ORDER,18),(LINE_NUMBER,1769),(ARGUMENT_INDEX,18),(CODE,if (!slice_offsets)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (!slice_offsets),if (!slice_offsets))
+1000304,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!slice_offsets),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1769),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!slice_offsets)
+1000305,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_offsets),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,uint32_t *),(LINE_NUMBER,1769),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(IDENTIFIER,slice_offsets,!slice_offsets)
+1000306,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,void),(LINE_NUMBER,1769),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000307,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res = AVERROR(ENOMEM)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1770),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = AVERROR(ENOMEM))
+1000308,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1770),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = AVERROR(ENOMEM))
+1000309,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVERROR(ENOMEM)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,AVERROR),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1770),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR),(AVERROR,AVERROR(ENOMEM))
+1000310,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ENOMEM),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1770),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ENOMEM),(IDENTIFIER,ENOMEM,AVERROR(ENOMEM))
+1000311,(PARSER_TYPE_NAME,GotoStatement),(ORDER,2),(LINE_NUMBER,1771),(ARGUMENT_INDEX,2),(CODE,goto error;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,goto error;,goto error;)
+1000312,(ORDER,19),(ARGUMENT_INDEX,19),(CODE,lock_params.version = NV_ENC_LOCK_BITSTREAM_VER),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1774),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,lock_params.version = NV_ENC_LOCK_BITSTREAM_VER)
+1000313,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params.version),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1774),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.version)
+1000314,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1774),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,lock_params.version = NV_ENC_LOCK_BITSTREAM_VER)
+1000315,(ORDER,2),(LINE_NUMBER,1774),(ARGUMENT_INDEX,2),(CODE,version),(COLUMN_NUMBER,16),(CANONICAL_NAME,version),(FIELD_IDENTIFIER,version,version)
+1000316,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NV_ENC_LOCK_BITSTREAM_VER),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1774),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NV_ENC_LOCK_BITSTREAM_VER),(IDENTIFIER,NV_ENC_LOCK_BITSTREAM_VER,lock_params.version = NV_ENC_LOCK_BITSTREAM_VER)
+1000317,(ORDER,20),(ARGUMENT_INDEX,20),(CODE,lock_params.doNotWait = 0),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1776),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,lock_params.doNotWait = 0)
+1000318,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params.doNotWait),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1776),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.doNotWait)
+1000319,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1776),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,lock_params.doNotWait = 0)
+1000320,(ORDER,2),(LINE_NUMBER,1776),(ARGUMENT_INDEX,2),(CODE,doNotWait),(COLUMN_NUMBER,16),(CANONICAL_NAME,doNotWait),(FIELD_IDENTIFIER,doNotWait,doNotWait)
+1000321,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,int),(LINE_NUMBER,1776),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,lock_params.doNotWait = 0)
+1000322,(ORDER,21),(ARGUMENT_INDEX,21),(CODE,lock_params.outputBitstream = tmpoutsurf->output_surface),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1777),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,lock_params.outputBitstream = tmpoutsurf->output_surface)
+1000323,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params.outputBitstream),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1777),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.outputBitstream)
+1000324,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1777),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,lock_params.outputBitstream = tmpoutsurf->output_surface)
+1000325,(ORDER,2),(LINE_NUMBER,1777),(ARGUMENT_INDEX,2),(CODE,outputBitstream),(COLUMN_NUMBER,16),(CANONICAL_NAME,outputBitstream),(FIELD_IDENTIFIER,outputBitstream,outputBitstream)
+1000326,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->output_surface),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1777),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->output_surface)
+1000327,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1777),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,lock_params.outputBitstream = tmpoutsurf->output_surface)
+1000328,(ORDER,2),(LINE_NUMBER,1777),(ARGUMENT_INDEX,2),(CODE,output_surface),(COLUMN_NUMBER,46),(CANONICAL_NAME,output_surface),(FIELD_IDENTIFIER,output_surface,output_surface)
+1000329,(ORDER,22),(ARGUMENT_INDEX,22),(CODE,lock_params.sliceOffsets = slice_offsets),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1778),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,lock_params.sliceOffsets = slice_offsets)
+1000330,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params.sliceOffsets),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1778),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.sliceOffsets)
+1000331,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1778),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,lock_params.sliceOffsets = slice_offsets)
+1000332,(ORDER,2),(LINE_NUMBER,1778),(ARGUMENT_INDEX,2),(CODE,sliceOffsets),(COLUMN_NUMBER,16),(CANONICAL_NAME,sliceOffsets),(FIELD_IDENTIFIER,sliceOffsets,sliceOffsets)
+1000333,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,slice_offsets),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,uint32_t *),(LINE_NUMBER,1778),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(IDENTIFIER,slice_offsets,lock_params.sliceOffsets = slice_offsets)
+1000334,(ORDER,23),(ARGUMENT_INDEX,23),(CODE,nv_status = p_nvenc->nvEncLockBitstream(ctx->nvencoder, &lock_params)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1780),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,nv_status = p_nvenc->nvEncLockBitstream(ctx->nvencoder, &lock_params))
+1000335,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,nv_status),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,NVENCSTATUS),(LINE_NUMBER,1780),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nv_status),(IDENTIFIER,nv_status,nv_status = p_nvenc->nvEncLockBitstream(ctx->nvencoder, &lock_params))
+1000336,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,p_nvenc->nvEncLockBitstream(ctx->nvencoder, &lock_params)),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,p_nvenc->nvEncLockBitstream),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1780),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p_nvenc->nvEncLockBitstream),(p_nvenc->nvEncLockBitstream,p_nvenc->nvEncLockBitstream(ctx->nvencoder, &lock_params))
+1000337,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->nvencoder),(COLUMN_NUMBER,44),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1780),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->nvencoder)
+1000338,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,44),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1780),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,p_nvenc->nvEncLockBitstream(ctx->nvencoder, &lock_params))
+1000339,(ORDER,2),(LINE_NUMBER,1780),(ARGUMENT_INDEX,2),(CODE,nvencoder),(COLUMN_NUMBER,49),(CANONICAL_NAME,nvencoder),(FIELD_IDENTIFIER,nvencoder,nvencoder)
+1000340,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&lock_params),(COLUMN_NUMBER,60),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1780),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&lock_params)
+1000341,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,61),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1780),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,p_nvenc->nvEncLockBitstream(ctx->nvencoder, &lock_params))
+1000342,(PARSER_TYPE_NAME,IfStatement),(ORDER,24),(LINE_NUMBER,1781),(ARGUMENT_INDEX,24),(CODE,if (nv_status != NV_ENC_SUCCESS)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (nv_status != NV_ENC_SUCCESS),if (nv_status != NV_ENC_SUCCESS))
+1000343,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,nv_status != NV_ENC_SUCCESS),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1781),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,nv_status != NV_ENC_SUCCESS)
+1000344,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,nv_status),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,NVENCSTATUS),(LINE_NUMBER,1781),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nv_status),(IDENTIFIER,nv_status,nv_status != NV_ENC_SUCCESS)
+1000345,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NV_ENC_SUCCESS),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1781),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NV_ENC_SUCCESS),(IDENTIFIER,NV_ENC_SUCCESS,nv_status != NV_ENC_SUCCESS)
+1000346,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,37),(TYPE_FULL_NAME,void),(LINE_NUMBER,1781),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000347,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res = nvenc_print_error(avctx, nv_status, "Failed locking bitstream buffer")),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1782),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = nvenc_print_error(avctx, nv_status, \"Failed locking bitstream buffer\"))
+1000348,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1782),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = nvenc_print_error(avctx, nv_status, \"Failed locking bitstream buffer\"))
+1000349,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,nvenc_print_error(avctx, nv_status, "Failed locking bitstream buffer")),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,nvenc_print_error),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1782),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nvenc_print_error),(nvenc_print_error,nvenc_print_error(avctx, nv_status, \"Failed locking bitstream buffer\"))
+1000350,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1782),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,nvenc_print_error(avctx, nv_status, \"Failed locking bitstream buffer\"))
+1000351,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,nv_status),(COLUMN_NUMBER,39),(TYPE_FULL_NAME,NVENCSTATUS),(LINE_NUMBER,1782),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nv_status),(IDENTIFIER,nv_status,nvenc_print_error(avctx, nv_status, \"Failed locking bitstream buffer\"))
+1000352,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Failed locking bitstream buffer"),(COLUMN_NUMBER,50),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1782),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Failed locking bitstream buffer\",nvenc_print_error(avctx, nv_status, \"Failed locking bitstream buffer\"))
+1000353,(PARSER_TYPE_NAME,GotoStatement),(ORDER,2),(LINE_NUMBER,1783),(ARGUMENT_INDEX,2),(CODE,goto error;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,goto error;,goto error;)
+1000354,(PARSER_TYPE_NAME,IfStatement),(ORDER,25),(LINE_NUMBER,1786),(ARGUMENT_INDEX,25),(CODE,if (res = ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (res = ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0)),if (res = ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0)))
+1000355,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res = ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1786),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))
+1000356,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1786),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))
+1000357,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,ff_alloc_packet2),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1786),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ff_alloc_packet2),(ff_alloc_packet2,ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))
+1000358,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1786),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))
+1000359,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,pkt),(COLUMN_NUMBER,38),(TYPE_FULL_NAME,AVPacket *),(LINE_NUMBER,1786),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pkt),(IDENTIFIER,pkt,ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))
+1000360,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,lock_params.bitstreamSizeInBytes),(COLUMN_NUMBER,43),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1786),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.bitstreamSizeInBytes)
+1000361,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1786),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))
+1000362,(ORDER,2),(LINE_NUMBER,1786),(ARGUMENT_INDEX,2),(CODE,bitstreamSizeInBytes),(COLUMN_NUMBER,55),(CANONICAL_NAME,bitstreamSizeInBytes),(FIELD_IDENTIFIER,bitstreamSizeInBytes,bitstreamSizeInBytes)
+1000363,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,0),(COLUMN_NUMBER,76),(TYPE_FULL_NAME,int),(LINE_NUMBER,1786),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ff_alloc_packet2(avctx, pkt, lock_params.bitstreamSizeInBytes,0))
+1000364,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,80),(TYPE_FULL_NAME,void),(LINE_NUMBER,1786),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000365,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,p_nvenc->nvEncUnlockBitstream),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1787),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p_nvenc->nvEncUnlockBitstream),(p_nvenc->nvEncUnlockBitstream,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000366,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->nvencoder),(COLUMN_NUMBER,38),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1787),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->nvencoder)
+1000367,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,38),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1787),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000368,(ORDER,2),(LINE_NUMBER,1787),(ARGUMENT_INDEX,2),(CODE,nvencoder),(COLUMN_NUMBER,43),(CANONICAL_NAME,nvencoder),(FIELD_IDENTIFIER,nvencoder,nvencoder)
+1000369,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->output_surface),(COLUMN_NUMBER,54),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1787),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->output_surface)
+1000370,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,54),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1787),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000371,(ORDER,2),(LINE_NUMBER,1787),(ARGUMENT_INDEX,2),(CODE,output_surface),(COLUMN_NUMBER,66),(CANONICAL_NAME,output_surface),(FIELD_IDENTIFIER,output_surface,output_surface)
+1000372,(PARSER_TYPE_NAME,GotoStatement),(ORDER,2),(LINE_NUMBER,1788),(ARGUMENT_INDEX,2),(CODE,goto error;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,goto error;,goto error;)
+1000373,(ORDER,26),(ARGUMENT_INDEX,26),(CODE,memcpy(pkt->data, lock_params.bitstreamBufferPtr, lock_params.bitstreamSizeInBytes)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,memcpy),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1791),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,memcpy),(memcpy,memcpy(pkt->data, lock_params.bitstreamBufferPtr, lock_params.bitstreamSizeInBytes))
+1000374,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pkt->data),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1791),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,pkt->data)
+1000375,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pkt),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,AVPacket *),(LINE_NUMBER,1791),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pkt),(IDENTIFIER,pkt,memcpy(pkt->data, lock_params.bitstreamBufferPtr, lock_params.bitstreamSizeInBytes))
+1000376,(ORDER,2),(LINE_NUMBER,1791),(ARGUMENT_INDEX,2),(CODE,data),(COLUMN_NUMBER,16),(CANONICAL_NAME,data),(FIELD_IDENTIFIER,data,data)
+1000377,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,lock_params.bitstreamBufferPtr),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1791),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.bitstreamBufferPtr)
+1000378,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1791),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,memcpy(pkt->data, lock_params.bitstreamBufferPtr, lock_params.bitstreamSizeInBytes))
+1000379,(ORDER,2),(LINE_NUMBER,1791),(ARGUMENT_INDEX,2),(CODE,bitstreamBufferPtr),(COLUMN_NUMBER,34),(CANONICAL_NAME,bitstreamBufferPtr),(FIELD_IDENTIFIER,bitstreamBufferPtr,bitstreamBufferPtr)
+1000380,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,lock_params.bitstreamSizeInBytes),(COLUMN_NUMBER,54),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1791),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.bitstreamSizeInBytes)
+1000381,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,54),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1791),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,memcpy(pkt->data, lock_params.bitstreamBufferPtr, lock_params.bitstreamSizeInBytes))
+1000382,(ORDER,2),(LINE_NUMBER,1791),(ARGUMENT_INDEX,2),(CODE,bitstreamSizeInBytes),(COLUMN_NUMBER,66),(CANONICAL_NAME,bitstreamSizeInBytes),(FIELD_IDENTIFIER,bitstreamSizeInBytes,bitstreamSizeInBytes)
+1000383,(ORDER,27),(ARGUMENT_INDEX,27),(CODE,nv_status = p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1793),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,nv_status = p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000384,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,nv_status),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,NVENCSTATUS),(LINE_NUMBER,1793),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nv_status),(IDENTIFIER,nv_status,nv_status = p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000385,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface)),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,p_nvenc->nvEncUnlockBitstream),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1793),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p_nvenc->nvEncUnlockBitstream),(p_nvenc->nvEncUnlockBitstream,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000386,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->nvencoder),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1793),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->nvencoder)
+1000387,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,46),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1793),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000388,(ORDER,2),(LINE_NUMBER,1793),(ARGUMENT_INDEX,2),(CODE,nvencoder),(COLUMN_NUMBER,51),(CANONICAL_NAME,nvencoder),(FIELD_IDENTIFIER,nvencoder,nvencoder)
+1000389,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->output_surface),(COLUMN_NUMBER,62),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1793),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->output_surface)
+1000390,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,62),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1793),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,p_nvenc->nvEncUnlockBitstream(ctx->nvencoder, tmpoutsurf->output_surface))
+1000391,(ORDER,2),(LINE_NUMBER,1793),(ARGUMENT_INDEX,2),(CODE,output_surface),(COLUMN_NUMBER,74),(CANONICAL_NAME,output_surface),(FIELD_IDENTIFIER,output_surface,output_surface)
+1000392,(PARSER_TYPE_NAME,IfStatement),(ORDER,28),(LINE_NUMBER,1794),(ARGUMENT_INDEX,28),(CODE,if (nv_status != NV_ENC_SUCCESS)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (nv_status != NV_ENC_SUCCESS),if (nv_status != NV_ENC_SUCCESS))
+1000393,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,nv_status != NV_ENC_SUCCESS),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1794),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,nv_status != NV_ENC_SUCCESS)
+1000394,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,nv_status),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,NVENCSTATUS),(LINE_NUMBER,1794),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nv_status),(IDENTIFIER,nv_status,nv_status != NV_ENC_SUCCESS)
+1000395,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NV_ENC_SUCCESS),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1794),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NV_ENC_SUCCESS),(IDENTIFIER,NV_ENC_SUCCESS,nv_status != NV_ENC_SUCCESS)
+1000396,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,nvenc_print_error(avctx, nv_status, "Failed unlocking bitstream buffer, expect the gates of mordor to open")),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,nvenc_print_error),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1795),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nvenc_print_error),(nvenc_print_error,nvenc_print_error(avctx, nv_status, \"Failed unlocking bitstream buffer, expect the gates of mordor to open\"))
+1000397,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1795),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,nvenc_print_error(avctx, nv_status, \"Failed unlocking bitstream buffer, expect the gates of mordor to open\"))
+1000398,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,nv_status),(COLUMN_NUMBER,33),(TYPE_FULL_NAME,NVENCSTATUS),(LINE_NUMBER,1795),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nv_status),(IDENTIFIER,nv_status,nvenc_print_error(avctx, nv_status, \"Failed unlocking bitstream buffer, expect the gates of mordor to open\"))
+1000399,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Failed unlocking bitstream buffer, expect the gates of mordor to open"),(COLUMN_NUMBER,44),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1795),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Failed unlocking bitstream buffer, expect the gates of mordor to open\",nvenc_print_error(avctx, nv_status, \"Failed unlocking bitstream buffer, expect the gates of mordor to open\"))
+1000400,(PARSER_TYPE_NAME,IfStatement),(ORDER,29),(LINE_NUMBER,1800),(ARGUMENT_INDEX,29),(CODE,if (avctx->pix_fmt == AV_PIX_FMT_CUDA || avctx->pix_fmt == AV_PIX_FMT_D3D11)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (avctx->pix_fmt == AV_PIX_FMT_CUDA || avctx->pix_fmt == AV_PIX_FMT_D3D11),if (avctx->pix_fmt == AV_PIX_FMT_CUDA || avctx->pix_fmt == AV_PIX_FMT_D3D11))
+1000401,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->pix_fmt == AV_PIX_FMT_CUDA || avctx->pix_fmt == AV_PIX_FMT_D3D11),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1800),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,avctx->pix_fmt == AV_PIX_FMT_CUDA || avctx->pix_fmt == AV_PIX_FMT_D3D11)
+1000402,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->pix_fmt == AV_PIX_FMT_CUDA),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1800),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,avctx->pix_fmt == AV_PIX_FMT_CUDA)
+1000403,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->pix_fmt),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1800),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,avctx->pix_fmt)
+1000404,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1800),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,avctx->pix_fmt == AV_PIX_FMT_CUDA)
+1000405,(ORDER,2),(LINE_NUMBER,1800),(ARGUMENT_INDEX,2),(CODE,pix_fmt),(COLUMN_NUMBER,15),(CANONICAL_NAME,pix_fmt),(FIELD_IDENTIFIER,pix_fmt,pix_fmt)
+1000406,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PIX_FMT_CUDA),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1800),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PIX_FMT_CUDA),(IDENTIFIER,AV_PIX_FMT_CUDA,avctx->pix_fmt == AV_PIX_FMT_CUDA)
+1000407,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,avctx->pix_fmt == AV_PIX_FMT_D3D11),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1800),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,avctx->pix_fmt == AV_PIX_FMT_D3D11)
+1000408,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->pix_fmt),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1800),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,avctx->pix_fmt)
+1000409,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1800),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,avctx->pix_fmt == AV_PIX_FMT_D3D11)
+1000410,(ORDER,2),(LINE_NUMBER,1800),(ARGUMENT_INDEX,2),(CODE,pix_fmt),(COLUMN_NUMBER,52),(CANONICAL_NAME,pix_fmt),(FIELD_IDENTIFIER,pix_fmt,pix_fmt)
+1000411,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PIX_FMT_D3D11),(COLUMN_NUMBER,63),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1800),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PIX_FMT_D3D11),(IDENTIFIER,AV_PIX_FMT_D3D11,avctx->pix_fmt == AV_PIX_FMT_D3D11)
+1000412,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,81),(TYPE_FULL_NAME,void),(LINE_NUMBER,1800),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000413,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].mapped -= 1),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignmentMinus),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignmentMinus),(<operator>.assignmentMinus,ctx->registered_frames[tmpoutsurf->reg_idx].mapped -= 1)
+1000414,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].mapped),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->registered_frames[tmpoutsurf->reg_idx].mapped)
+1000415,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx]),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ctx->registered_frames[tmpoutsurf->reg_idx])
+1000416,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->registered_frames)
+1000417,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,ctx->registered_frames[tmpoutsurf->reg_idx].mapped -= 1)
+1000418,(ORDER,2),(LINE_NUMBER,1801),(ARGUMENT_INDEX,2),(CODE,registered_frames),(COLUMN_NUMBER,13),(CANONICAL_NAME,registered_frames),(FIELD_IDENTIFIER,registered_frames,registered_frames)
+1000419,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->reg_idx),(COLUMN_NUMBER,31),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->reg_idx)
+1000420,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,ctx->registered_frames[tmpoutsurf->reg_idx].mapped -= 1)
+1000421,(ORDER,2),(LINE_NUMBER,1801),(ARGUMENT_INDEX,2),(CODE,reg_idx),(COLUMN_NUMBER,43),(CANONICAL_NAME,reg_idx),(FIELD_IDENTIFIER,reg_idx,reg_idx)
+1000422,(ORDER,2),(LINE_NUMBER,1801),(ARGUMENT_INDEX,2),(CODE,mapped),(COLUMN_NUMBER,52),(CANONICAL_NAME,mapped),(FIELD_IDENTIFIER,mapped,mapped)
+1000423,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1),(COLUMN_NUMBER,62),(TYPE_FULL_NAME,int),(LINE_NUMBER,1801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,ctx->registered_frames[tmpoutsurf->reg_idx].mapped -= 1)
+1000424,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,1802),(ARGUMENT_INDEX,2),(CODE,if (ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0),if (ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0))
+1000425,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0)
+1000426,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].mapped),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->registered_frames[tmpoutsurf->reg_idx].mapped)
+1000427,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx]),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ctx->registered_frames[tmpoutsurf->reg_idx])
+1000428,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->registered_frames)
+1000429,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1802),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0)
+1000430,(ORDER,2),(LINE_NUMBER,1802),(ARGUMENT_INDEX,2),(CODE,registered_frames),(COLUMN_NUMBER,17),(CANONICAL_NAME,registered_frames),(FIELD_IDENTIFIER,registered_frames,registered_frames)
+1000431,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->reg_idx),(COLUMN_NUMBER,35),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->reg_idx)
+1000432,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1802),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0)
+1000433,(ORDER,2),(LINE_NUMBER,1802),(ARGUMENT_INDEX,2),(CODE,reg_idx),(COLUMN_NUMBER,47),(CANONICAL_NAME,reg_idx),(FIELD_IDENTIFIER,reg_idx,reg_idx)
+1000434,(ORDER,2),(LINE_NUMBER,1802),(ARGUMENT_INDEX,2),(CODE,mapped),(COLUMN_NUMBER,56),(CANONICAL_NAME,mapped),(FIELD_IDENTIFIER,mapped,mapped)
+1000435,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,66),(TYPE_FULL_NAME,int),(LINE_NUMBER,1802),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ctx->registered_frames[tmpoutsurf->reg_idx].mapped == 0)
+1000436,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,69),(TYPE_FULL_NAME,void),(LINE_NUMBER,1802),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000437,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p_nvenc->nvEncUnmapInputResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,p_nvenc->nvEncUnmapInputResource),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1803),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p_nvenc->nvEncUnmapInputResource),(p_nvenc->nvEncUnmapInputResource,p_nvenc->nvEncUnmapInputResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource))
+1000438,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->nvencoder),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1803),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->nvencoder)
+1000439,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1803),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,p_nvenc->nvEncUnmapInputResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource))
+1000440,(ORDER,2),(LINE_NUMBER,1803),(ARGUMENT_INDEX,2),(CODE,nvencoder),(COLUMN_NUMBER,50),(CANONICAL_NAME,nvencoder),(FIELD_IDENTIFIER,nvencoder,nvencoder)
+1000441,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1803),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource)
+1000442,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].in_map),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1803),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->registered_frames[tmpoutsurf->reg_idx].in_map)
+1000443,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx]),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1803),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ctx->registered_frames[tmpoutsurf->reg_idx])
+1000444,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1803),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->registered_frames)
+1000445,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,61),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1803),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,p_nvenc->nvEncUnmapInputResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource))
+1000446,(ORDER,2),(LINE_NUMBER,1803),(ARGUMENT_INDEX,2),(CODE,registered_frames),(COLUMN_NUMBER,66),(CANONICAL_NAME,registered_frames),(FIELD_IDENTIFIER,registered_frames,registered_frames)
+1000447,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->reg_idx),(COLUMN_NUMBER,84),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1803),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->reg_idx)
+1000448,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,84),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1803),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,p_nvenc->nvEncUnmapInputResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource))
+1000449,(ORDER,2),(LINE_NUMBER,1803),(ARGUMENT_INDEX,2),(CODE,reg_idx),(COLUMN_NUMBER,96),(CANONICAL_NAME,reg_idx),(FIELD_IDENTIFIER,reg_idx,reg_idx)
+1000450,(ORDER,2),(LINE_NUMBER,1803),(ARGUMENT_INDEX,2),(CODE,in_map),(COLUMN_NUMBER,105),(CANONICAL_NAME,in_map),(FIELD_IDENTIFIER,in_map,in_map)
+1000451,(ORDER,2),(LINE_NUMBER,1803),(ARGUMENT_INDEX,2),(CODE,mappedResource),(COLUMN_NUMBER,112),(CANONICAL_NAME,mappedResource),(FIELD_IDENTIFIER,mappedResource,mappedResource)
+1000452,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].regptr)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,p_nvenc->nvEncUnregisterResource),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1804),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p_nvenc->nvEncUnregisterResource),(p_nvenc->nvEncUnregisterResource,p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].regptr))
+1000453,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->nvencoder),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1804),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->nvencoder)
+1000454,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1804),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].regptr))
+1000455,(ORDER,2),(LINE_NUMBER,1804),(ARGUMENT_INDEX,2),(CODE,nvencoder),(COLUMN_NUMBER,50),(CANONICAL_NAME,nvencoder),(FIELD_IDENTIFIER,nvencoder,nvencoder)
+1000456,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].regptr),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1804),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->registered_frames[tmpoutsurf->reg_idx].regptr)
+1000457,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx]),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1804),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ctx->registered_frames[tmpoutsurf->reg_idx])
+1000458,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1804),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->registered_frames)
+1000459,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,61),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1804),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].regptr))
+1000460,(ORDER,2),(LINE_NUMBER,1804),(ARGUMENT_INDEX,2),(CODE,registered_frames),(COLUMN_NUMBER,66),(CANONICAL_NAME,registered_frames),(FIELD_IDENTIFIER,registered_frames,registered_frames)
+1000461,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->reg_idx),(COLUMN_NUMBER,84),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1804),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->reg_idx)
+1000462,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,84),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1804),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].regptr))
+1000463,(ORDER,2),(LINE_NUMBER,1804),(ARGUMENT_INDEX,2),(CODE,reg_idx),(COLUMN_NUMBER,96),(CANONICAL_NAME,reg_idx),(FIELD_IDENTIFIER,reg_idx,reg_idx)
+1000464,(ORDER,2),(LINE_NUMBER,1804),(ARGUMENT_INDEX,2),(CODE,regptr),(COLUMN_NUMBER,105),(CANONICAL_NAME,regptr),(FIELD_IDENTIFIER,regptr,regptr)
+1000465,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].regptr = NULL),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1813),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ctx->registered_frames[tmpoutsurf->reg_idx].regptr = NULL)
+1000466,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].regptr),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1813),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->registered_frames[tmpoutsurf->reg_idx].regptr)
+1000467,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx]),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1813),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ctx->registered_frames[tmpoutsurf->reg_idx])
+1000468,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1813),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->registered_frames)
+1000469,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1813),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,ctx->registered_frames[tmpoutsurf->reg_idx].regptr = NULL)
+1000470,(ORDER,2),(LINE_NUMBER,1813),(ARGUMENT_INDEX,2),(CODE,registered_frames),(COLUMN_NUMBER,17),(CANONICAL_NAME,registered_frames),(FIELD_IDENTIFIER,registered_frames,registered_frames)
+1000471,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->reg_idx),(COLUMN_NUMBER,35),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1813),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->reg_idx)
+1000472,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1813),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,ctx->registered_frames[tmpoutsurf->reg_idx].regptr = NULL)
+1000473,(ORDER,2),(LINE_NUMBER,1813),(ARGUMENT_INDEX,2),(CODE,reg_idx),(COLUMN_NUMBER,47),(CANONICAL_NAME,reg_idx),(FIELD_IDENTIFIER,reg_idx,reg_idx)
+1000474,(ORDER,2),(LINE_NUMBER,1813),(ARGUMENT_INDEX,2),(CODE,regptr),(COLUMN_NUMBER,56),(CANONICAL_NAME,regptr),(FIELD_IDENTIFIER,regptr,regptr)
+1000475,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NULL),(COLUMN_NUMBER,65),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1813),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,ctx->registered_frames[tmpoutsurf->reg_idx].regptr = NULL)
+1000476,(PARSER_TYPE_NAME,ElseStatement),(ORDER,3),(LINE_NUMBER,1814),(ARGUMENT_INDEX,3),(CODE,else),(COLUMN_NUMBER,10),(CONTROL_STRUCTURE,else,else)
+1000477,(PARSER_TYPE_NAME,IfStatement),(ORDER,1),(LINE_NUMBER,1814),(ARGUMENT_INDEX,1),(CODE,if (ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0)),(COLUMN_NUMBER,15),(CONTROL_STRUCTURE,if (ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0),if (ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0))
+1000478,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1814),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0)
+1000479,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx].mapped),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1814),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ctx->registered_frames[tmpoutsurf->reg_idx].mapped)
+1000480,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames[tmpoutsurf->reg_idx]),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1814),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ctx->registered_frames[tmpoutsurf->reg_idx])
+1000481,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->registered_frames),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1814),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->registered_frames)
+1000482,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1814),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0)
+1000483,(ORDER,2),(LINE_NUMBER,1814),(ARGUMENT_INDEX,2),(CODE,registered_frames),(COLUMN_NUMBER,24),(CANONICAL_NAME,registered_frames),(FIELD_IDENTIFIER,registered_frames,registered_frames)
+1000484,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,tmpoutsurf->reg_idx),(COLUMN_NUMBER,42),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1814),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->reg_idx)
+1000485,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,42),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1814),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0)
+1000486,(ORDER,2),(LINE_NUMBER,1814),(ARGUMENT_INDEX,2),(CODE,reg_idx),(COLUMN_NUMBER,54),(CANONICAL_NAME,reg_idx),(FIELD_IDENTIFIER,reg_idx,reg_idx)
+1000487,(ORDER,2),(LINE_NUMBER,1814),(ARGUMENT_INDEX,2),(CODE,mapped),(COLUMN_NUMBER,63),(CANONICAL_NAME,mapped),(FIELD_IDENTIFIER,mapped,mapped)
+1000488,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,72),(TYPE_FULL_NAME,int),(LINE_NUMBER,1814),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ctx->registered_frames[tmpoutsurf->reg_idx].mapped < 0)
+1000489,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,75),(TYPE_FULL_NAME,void),(LINE_NUMBER,1814),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000490,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res = AVERROR_BUG),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1815),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = AVERROR_BUG)
+1000491,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,1815),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = AVERROR_BUG)
+1000492,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVERROR_BUG),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1815),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR_BUG),(IDENTIFIER,AVERROR_BUG,res = AVERROR_BUG)
+1000493,(PARSER_TYPE_NAME,GotoStatement),(ORDER,2),(LINE_NUMBER,1816),(ARGUMENT_INDEX,2),(CODE,goto error;),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,goto error;,goto error;)
+1000494,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,av_frame_unref(tmpoutsurf->in_ref)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_frame_unref),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1819),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_frame_unref),(av_frame_unref,av_frame_unref(tmpoutsurf->in_ref))
+1000495,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf->in_ref),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1819),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->in_ref)
+1000496,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1819),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,av_frame_unref(tmpoutsurf->in_ref))
+1000497,(ORDER,2),(LINE_NUMBER,1819),(ARGUMENT_INDEX,2),(CODE,in_ref),(COLUMN_NUMBER,35),(CANONICAL_NAME,in_ref),(FIELD_IDENTIFIER,in_ref,in_ref)
+1000498,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,tmpoutsurf->input_surface = NULL),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1821),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,tmpoutsurf->input_surface = NULL)
+1000499,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf->input_surface),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1821),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,tmpoutsurf->input_surface)
+1000500,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,tmpoutsurf),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,NvencSurface *),(LINE_NUMBER,1821),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,tmpoutsurf),(IDENTIFIER,tmpoutsurf,tmpoutsurf->input_surface = NULL)
+1000501,(ORDER,2),(LINE_NUMBER,1821),(ARGUMENT_INDEX,2),(CODE,input_surface),(COLUMN_NUMBER,20),(CANONICAL_NAME,input_surface),(FIELD_IDENTIFIER,input_surface,input_surface)
+1000502,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NULL),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1821),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,tmpoutsurf->input_surface = NULL)
+1000503,(PARSER_TYPE_NAME,SwitchStatement),(ORDER,30),(LINE_NUMBER,1824),(ARGUMENT_INDEX,30),(CODE,switch (lock_params.pictureType)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,switch (lock_params.pictureType),switch (lock_params.pictureType))
+1000504,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params.pictureType),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1824),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.pictureType)
+1000505,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1824),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,switch (lock_params.pictureType))
+1000506,(ORDER,2),(LINE_NUMBER,1824),(ARGUMENT_INDEX,2),(CODE,pictureType),(COLUMN_NUMBER,24),(CANONICAL_NAME,pictureType),(FIELD_IDENTIFIER,pictureType,pictureType)
+1000507,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,37),(TYPE_FULL_NAME,void),(LINE_NUMBER,1824),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000508,(PARSER_TYPE_NAME,Label),(ORDER,1),(ARGUMENT_INDEX,1),(CODE,case NV_ENC_PIC_TYPE_IDR:),(COLUMN_NUMBER,4),(LINE_NUMBER,1825),(NAME,case NV_ENC_PIC_TYPE_IDR),(JUMP_TARGET,case NV_ENC_PIC_TYPE_IDR)
+1000509,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,pkt->flags |= AV_PKT_FLAG_KEY),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operators>.assignmentOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1826),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operators>.assignmentOr),(<operators>.assignmentOr,pkt->flags |= AV_PKT_FLAG_KEY)
+1000510,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pkt->flags),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1826),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,pkt->flags)
+1000511,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pkt),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,AVPacket *),(LINE_NUMBER,1826),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pkt),(IDENTIFIER,pkt,pkt->flags |= AV_PKT_FLAG_KEY)
+1000512,(ORDER,2),(LINE_NUMBER,1826),(ARGUMENT_INDEX,2),(CODE,flags),(COLUMN_NUMBER,13),(CANONICAL_NAME,flags),(FIELD_IDENTIFIER,flags,flags)
+1000513,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PKT_FLAG_KEY),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1826),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PKT_FLAG_KEY),(IDENTIFIER,AV_PKT_FLAG_KEY,pkt->flags |= AV_PKT_FLAG_KEY)
+1000514,(PARSER_TYPE_NAME,Label),(ORDER,3),(ARGUMENT_INDEX,3),(CODE,case NV_ENC_PIC_TYPE_I:),(COLUMN_NUMBER,4),(LINE_NUMBER,1827),(NAME,case NV_ENC_PIC_TYPE_I),(JUMP_TARGET,case NV_ENC_PIC_TYPE_I)
+1000515,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,pict_type = AV_PICTURE_TYPE_I),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1828),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,pict_type = AV_PICTURE_TYPE_I)
+1000516,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pict_type),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,enum AVPictureType),(LINE_NUMBER,1828),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pict_type),(IDENTIFIER,pict_type,pict_type = AV_PICTURE_TYPE_I)
+1000517,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PICTURE_TYPE_I),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1828),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PICTURE_TYPE_I),(IDENTIFIER,AV_PICTURE_TYPE_I,pict_type = AV_PICTURE_TYPE_I)
+1000518,(PARSER_TYPE_NAME,BreakStatement),(ORDER,5),(LINE_NUMBER,1829),(ARGUMENT_INDEX,5),(CODE,break;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,break;,break;)
+1000519,(PARSER_TYPE_NAME,Label),(ORDER,6),(ARGUMENT_INDEX,6),(CODE,case NV_ENC_PIC_TYPE_P:),(COLUMN_NUMBER,4),(LINE_NUMBER,1830),(NAME,case NV_ENC_PIC_TYPE_P),(JUMP_TARGET,case NV_ENC_PIC_TYPE_P)
+1000520,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,pict_type = AV_PICTURE_TYPE_P),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1831),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,pict_type = AV_PICTURE_TYPE_P)
+1000521,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pict_type),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,enum AVPictureType),(LINE_NUMBER,1831),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pict_type),(IDENTIFIER,pict_type,pict_type = AV_PICTURE_TYPE_P)
+1000522,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PICTURE_TYPE_P),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1831),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PICTURE_TYPE_P),(IDENTIFIER,AV_PICTURE_TYPE_P,pict_type = AV_PICTURE_TYPE_P)
+1000523,(PARSER_TYPE_NAME,BreakStatement),(ORDER,8),(LINE_NUMBER,1832),(ARGUMENT_INDEX,8),(CODE,break;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,break;,break;)
+1000524,(PARSER_TYPE_NAME,Label),(ORDER,9),(ARGUMENT_INDEX,9),(CODE,case NV_ENC_PIC_TYPE_B:),(COLUMN_NUMBER,4),(LINE_NUMBER,1833),(NAME,case NV_ENC_PIC_TYPE_B),(JUMP_TARGET,case NV_ENC_PIC_TYPE_B)
+1000525,(ORDER,10),(ARGUMENT_INDEX,10),(CODE,pict_type = AV_PICTURE_TYPE_B),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1834),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,pict_type = AV_PICTURE_TYPE_B)
+1000526,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pict_type),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,enum AVPictureType),(LINE_NUMBER,1834),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pict_type),(IDENTIFIER,pict_type,pict_type = AV_PICTURE_TYPE_B)
+1000527,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PICTURE_TYPE_B),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1834),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PICTURE_TYPE_B),(IDENTIFIER,AV_PICTURE_TYPE_B,pict_type = AV_PICTURE_TYPE_B)
+1000528,(PARSER_TYPE_NAME,BreakStatement),(ORDER,11),(LINE_NUMBER,1835),(ARGUMENT_INDEX,11),(CODE,break;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,break;,break;)
+1000529,(PARSER_TYPE_NAME,Label),(ORDER,12),(ARGUMENT_INDEX,12),(CODE,case NV_ENC_PIC_TYPE_BI:),(COLUMN_NUMBER,4),(LINE_NUMBER,1836),(NAME,case NV_ENC_PIC_TYPE_BI),(JUMP_TARGET,case NV_ENC_PIC_TYPE_BI)
+1000530,(ORDER,13),(ARGUMENT_INDEX,13),(CODE,pict_type = AV_PICTURE_TYPE_BI),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1837),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,pict_type = AV_PICTURE_TYPE_BI)
+1000531,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pict_type),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,enum AVPictureType),(LINE_NUMBER,1837),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pict_type),(IDENTIFIER,pict_type,pict_type = AV_PICTURE_TYPE_BI)
+1000532,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PICTURE_TYPE_BI),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1837),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PICTURE_TYPE_BI),(IDENTIFIER,AV_PICTURE_TYPE_BI,pict_type = AV_PICTURE_TYPE_BI)
+1000533,(PARSER_TYPE_NAME,BreakStatement),(ORDER,14),(LINE_NUMBER,1838),(ARGUMENT_INDEX,14),(CODE,break;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,break;,break;)
+1000534,(PARSER_TYPE_NAME,Label),(ORDER,15),(ARGUMENT_INDEX,15),(CODE,default:),(COLUMN_NUMBER,4),(LINE_NUMBER,1839),(NAME,default),(JUMP_TARGET,default)
+1000535,(ORDER,16),(ARGUMENT_INDEX,16),(CODE,av_log(avctx, AV_LOG_ERROR, "Unknown picture type encountered, expect the output to be broken.\n")),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1840),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(avctx, AV_LOG_ERROR, \"Unknown picture type encountered, expect the output to be broken.\n\"))
+1000536,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1840),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,av_log(avctx, AV_LOG_ERROR, \"Unknown picture type encountered, expect the output to be broken.\n\"))
+1000537,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_ERROR),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1840),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_ERROR),(IDENTIFIER,AV_LOG_ERROR,av_log(avctx, AV_LOG_ERROR, \"Unknown picture type encountered, expect the output to be broken.\n\"))
+1000538,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Unknown picture type encountered, expect the output to be broken.\n"),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1840),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Unknown picture type encountered, expect the output to be broken.\n\",av_log(avctx, AV_LOG_ERROR, \"Unknown picture type encountered, expect the output to be broken.\n\"))
+1000539,(ORDER,17),(ARGUMENT_INDEX,17),(CODE,av_log(avctx, AV_LOG_ERROR, "Please report this error and include as much information on how to reproduce it as possible.\n")),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1841),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(avctx, AV_LOG_ERROR, \"Please report this error and include as much information on how to reproduce it as possible.\n\"))
+1000540,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1841),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,av_log(avctx, AV_LOG_ERROR, \"Please report this error and include as much information on how to reproduce it as possible.\n\"))
+1000541,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_ERROR),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1841),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_ERROR),(IDENTIFIER,AV_LOG_ERROR,av_log(avctx, AV_LOG_ERROR, \"Please report this error and include as much information on how to reproduce it as possible.\n\"))
+1000542,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Please report this error and include as much information on how to reproduce it as possible.\n"),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1841),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Please report this error and include as much information on how to reproduce it as possible.\n\",av_log(avctx, AV_LOG_ERROR, \"Please report this error and include as much information on how to reproduce it as possible.\n\"))
+1000543,(ORDER,18),(ARGUMENT_INDEX,18),(CODE,res = AVERROR_EXTERNAL),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1842),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = AVERROR_EXTERNAL)
+1000544,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1842),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = AVERROR_EXTERNAL)
+1000545,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVERROR_EXTERNAL),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1842),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR_EXTERNAL),(IDENTIFIER,AVERROR_EXTERNAL,res = AVERROR_EXTERNAL)
+1000546,(PARSER_TYPE_NAME,GotoStatement),(ORDER,19),(LINE_NUMBER,1843),(ARGUMENT_INDEX,19),(CODE,goto error;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,goto error;,goto error;)
+1000547,(ORDER,31),(ARGUMENT_INDEX,31),(CODE,avctx->coded_frame->pict_type = pict_type),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1848),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,avctx->coded_frame->pict_type = pict_type)
+1000548,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->coded_frame->pict_type),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1848),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,avctx->coded_frame->pict_type)
+1000549,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx->coded_frame),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1848),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,avctx->coded_frame)
+1000550,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1848),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,avctx->coded_frame->pict_type = pict_type)
+1000551,(ORDER,2),(LINE_NUMBER,1848),(ARGUMENT_INDEX,2),(CODE,coded_frame),(COLUMN_NUMBER,11),(CANONICAL_NAME,coded_frame),(FIELD_IDENTIFIER,coded_frame,coded_frame)
+1000552,(ORDER,2),(LINE_NUMBER,1848),(ARGUMENT_INDEX,2),(CODE,pict_type),(COLUMN_NUMBER,24),(CANONICAL_NAME,pict_type),(FIELD_IDENTIFIER,pict_type,pict_type)
+1000553,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,pict_type),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,enum AVPictureType),(LINE_NUMBER,1848),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pict_type),(IDENTIFIER,pict_type,avctx->coded_frame->pict_type = pict_type)
+1000554,(ORDER,32),(ARGUMENT_INDEX,32),(CODE,ff_side_data_set_encoder_stats(pkt,\n        (lock_params.frameAvgQP - 1) * FF_QP2LAMBDA, NULL, 0, pict_type)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,ff_side_data_set_encoder_stats),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1852),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ff_side_data_set_encoder_stats),(ff_side_data_set_encoder_stats,ff_side_data_set_encoder_stats(pkt,\n        (lock_params.frameAvgQP - 1) * FF_QP2LAMBDA, NULL, 0, pict_type))
+1000555,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,pkt),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,AVPacket *),(LINE_NUMBER,1852),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pkt),(IDENTIFIER,pkt,ff_side_data_set_encoder_stats(pkt,\n        (lock_params.frameAvgQP - 1) * FF_QP2LAMBDA, NULL, 0, pict_type))
+1000556,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,(lock_params.frameAvgQP - 1) * FF_QP2LAMBDA),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.multiplication),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1853),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.multiplication),(<operator>.multiplication,(lock_params.frameAvgQP - 1) * FF_QP2LAMBDA)
+1000557,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params.frameAvgQP - 1),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.subtraction),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1853),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.subtraction),(<operator>.subtraction,lock_params.frameAvgQP - 1)
+1000558,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params.frameAvgQP),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1853),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,lock_params.frameAvgQP)
+1000559,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1853),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,lock_params.frameAvgQP - 1)
+1000560,(ORDER,2),(LINE_NUMBER,1853),(ARGUMENT_INDEX,2),(CODE,frameAvgQP),(COLUMN_NUMBER,21),(CANONICAL_NAME,frameAvgQP),(FIELD_IDENTIFIER,frameAvgQP,frameAvgQP)
+1000561,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,int),(LINE_NUMBER,1853),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,lock_params.frameAvgQP - 1)
+1000562,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,FF_QP2LAMBDA),(COLUMN_NUMBER,39),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1853),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,FF_QP2LAMBDA),(IDENTIFIER,FF_QP2LAMBDA,(lock_params.frameAvgQP - 1) * FF_QP2LAMBDA)
+1000563,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,NULL),(COLUMN_NUMBER,53),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1853),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,ff_side_data_set_encoder_stats(pkt,\n        (lock_params.frameAvgQP - 1) * FF_QP2LAMBDA, NULL, 0, pict_type))
+1000564,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,0),(COLUMN_NUMBER,59),(TYPE_FULL_NAME,int),(LINE_NUMBER,1853),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ff_side_data_set_encoder_stats(pkt,\n        (lock_params.frameAvgQP - 1) * FF_QP2LAMBDA, NULL, 0, pict_type))
+1000565,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,pict_type),(COLUMN_NUMBER,62),(TYPE_FULL_NAME,enum AVPictureType),(LINE_NUMBER,1853),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pict_type),(IDENTIFIER,pict_type,ff_side_data_set_encoder_stats(pkt,\n        (lock_params.frameAvgQP - 1) * FF_QP2LAMBDA, NULL, 0, pict_type))
+1000566,(ORDER,33),(ARGUMENT_INDEX,33),(CODE,res = nvenc_set_timestamp(avctx, &lock_params, pkt)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1855),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,res = nvenc_set_timestamp(avctx, &lock_params, pkt))
+1000567,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,int),(LINE_NUMBER,1855),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res = nvenc_set_timestamp(avctx, &lock_params, pkt))
+1000568,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,nvenc_set_timestamp(avctx, &lock_params, pkt)),(COLUMN_NUMBER,10),(METHOD_FULL_NAME,nvenc_set_timestamp),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1855),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,nvenc_set_timestamp),(nvenc_set_timestamp,nvenc_set_timestamp(avctx, &lock_params, pkt))
+1000569,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,avctx),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,1855),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avctx),(IDENTIFIER,avctx,nvenc_set_timestamp(avctx, &lock_params, pkt))
+1000570,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&lock_params),(COLUMN_NUMBER,37),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1855),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&lock_params)
+1000571,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,lock_params),(COLUMN_NUMBER,38),(TYPE_FULL_NAME,NV_ENC_LOCK_BITSTREAM),(LINE_NUMBER,1855),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,lock_params),(IDENTIFIER,lock_params,nvenc_set_timestamp(avctx, &lock_params, pkt))
+1000572,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,pkt),(COLUMN_NUMBER,51),(TYPE_FULL_NAME,AVPacket *),(LINE_NUMBER,1855),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pkt),(IDENTIFIER,pkt,nvenc_set_timestamp(avctx, &lock_params, pkt))
+1000573,(PARSER_TYPE_NAME,IfStatement),(ORDER,34),(LINE_NUMBER,1856),(ARGUMENT_INDEX,34),(CODE,if (res < 0)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (res < 0),if (res < 0))
+1000574,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res < 0),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1856),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,res < 0)
+1000575,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1856),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,res < 0)
+1000576,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,int),(LINE_NUMBER,1856),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,res < 0)
+1000577,(PARSER_TYPE_NAME,GotoStatement),(ORDER,2),(LINE_NUMBER,1857),(ARGUMENT_INDEX,2),(CODE,goto error2;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,goto error2;,goto error2;)
+1000578,(ORDER,35),(ARGUMENT_INDEX,35),(CODE,av_free(slice_offsets)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,av_free),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1859),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_free),(av_free,av_free(slice_offsets))
+1000579,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_offsets),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,uint32_t *),(LINE_NUMBER,1859),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(IDENTIFIER,slice_offsets,av_free(slice_offsets))
+1000580,(ORDER,36),(LINE_NUMBER,1861),(ARGUMENT_INDEX,36),(CODE,return 0;),(COLUMN_NUMBER,4),(RETURN,return 0;,return 0;)
+1000581,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,0),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,int),(LINE_NUMBER,1861),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,return 0;)
+1000582,(PARSER_TYPE_NAME,Label),(ORDER,37),(ARGUMENT_INDEX,37),(CODE,error:),(COLUMN_NUMBER,0),(LINE_NUMBER,1863),(NAME,error),(JUMP_TARGET,error)
+1000583,(ORDER,38),(ARGUMENT_INDEX,38),(CODE,timestamp_queue_dequeue(ctx->timestamp_list)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,timestamp_queue_dequeue),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1864),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,timestamp_queue_dequeue),(timestamp_queue_dequeue,timestamp_queue_dequeue(ctx->timestamp_list))
+1000584,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx->timestamp_list),(COLUMN_NUMBER,28),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1864),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ctx->timestamp_list)
+1000585,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ctx),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,NvencContext *),(LINE_NUMBER,1864),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ctx),(IDENTIFIER,ctx,timestamp_queue_dequeue(ctx->timestamp_list))
+1000586,(ORDER,2),(LINE_NUMBER,1864),(ARGUMENT_INDEX,2),(CODE,timestamp_list),(COLUMN_NUMBER,33),(CANONICAL_NAME,timestamp_list),(FIELD_IDENTIFIER,timestamp_list,timestamp_list)
+1000587,(PARSER_TYPE_NAME,Label),(ORDER,39),(ARGUMENT_INDEX,39),(CODE,error2:),(COLUMN_NUMBER,0),(LINE_NUMBER,1866),(NAME,error2),(JUMP_TARGET,error2)
+1000588,(ORDER,40),(ARGUMENT_INDEX,40),(CODE,av_free(slice_offsets)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,av_free),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1867),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_free),(av_free,av_free(slice_offsets))
+1000589,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,slice_offsets),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,uint32_t *),(LINE_NUMBER,1867),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,slice_offsets),(IDENTIFIER,slice_offsets,av_free(slice_offsets))
+1000590,(ORDER,41),(LINE_NUMBER,1869),(ARGUMENT_INDEX,41),(CODE,return res;),(COLUMN_NUMBER,4),(RETURN,return res;,return res;)
+1000591,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,res),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,int),(LINE_NUMBER,1869),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,res),(IDENTIFIER,res,return res;)
+1000592,(ORDER,5),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,1741),(TYPE_FULL_NAME,static int),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static int)
+--------
+1000213,1000214,AST
+1000213,1000215,AST
+1000213,1000216,AST
+1000213,1000217,AST
+1000213,1000592,AST
+1000217,1000218,AST
+1000217,1000219,AST
+1000217,1000224,AST
+1000217,1000225,AST
+1000217,1000231,AST
+1000217,1000232,AST
+1000217,1000238,AST
+1000217,1000239,AST
+1000217,1000240,AST
+1000217,1000243,AST
+1000217,1000244,AST
+1000217,1000246,AST
+1000217,1000247,AST
+1000217,1000248,AST
+1000217,1000251,AST
+1000217,1000252,AST
+1000217,1000295,AST
+1000217,1000303,AST
+1000217,1000312,AST
+1000217,1000317,AST
+1000217,1000322,AST
+1000217,1000329,AST
+1000217,1000334,AST
+1000217,1000342,AST
+1000217,1000354,AST
+1000217,1000373,AST
+1000217,1000383,AST
+1000217,1000392,AST
+1000217,1000400,AST
+1000217,1000503,AST
+1000217,1000547,AST
+1000217,1000554,AST
+1000217,1000566,AST
+1000217,1000573,AST
+1000217,1000578,AST
+1000217,1000580,AST
+1000217,1000582,AST
+1000217,1000583,AST
+1000217,1000587,AST
+1000217,1000588,AST
+1000217,1000590,AST
+1000219,1000220,AST
+1000219,1000221,AST
+1000221,1000222,AST
+1000221,1000223,AST
+1000225,1000226,AST
+1000225,1000227,AST
+1000227,1000228,AST
+1000228,1000229,AST
+1000228,1000230,AST
+1000232,1000233,AST
+1000232,1000234,AST
+1000234,1000235,AST
+1000235,1000236,AST
+1000235,1000237,AST
+1000240,1000241,AST
+1000240,1000242,AST
+1000244,1000245,AST
+1000248,1000249,AST
+1000248,1000250,AST
+1000252,1000253,AST
+1000252,1000258,AST
+1000253,1000254,AST
+1000253,1000257,AST
+1000254,1000255,AST
+1000254,1000256,AST
+1000258,1000259,AST
+1000258,1000260,AST
+1000258,1000271,AST
+1000258,1000272,AST
+1000258,1000273,AST
+1000258,1000284,AST
+1000258,1000285,AST
+1000258,1000286,AST
+1000258,1000290,AST
+1000258,1000294,AST
+1000260,1000261,AST
+1000260,1000262,AST
+1000262,1000263,AST
+1000262,1000270,AST
+1000263,1000264,AST
+1000263,1000269,AST
+1000264,1000265,AST
+1000264,1000268,AST
+1000265,1000266,AST
+1000265,1000267,AST
+1000273,1000274,AST
+1000273,1000275,AST
+1000275,1000276,AST
+1000275,1000283,AST
+1000276,1000277,AST
+1000276,1000282,AST
+1000277,1000278,AST
+1000277,1000281,AST
+1000278,1000279,AST
+1000278,1000280,AST
+1000286,1000287,AST
+1000286,1000288,AST
+1000286,1000289,AST
+1000290,1000291,AST
+1000290,1000292,AST
+1000292,1000293,AST
+1000295,1000296,AST
+1000295,1000297,AST
+1000297,1000298,AST
+1000298,1000299,AST
+1000298,1000300,AST
+1000300,1000301,AST
+1000301,1000302,AST
+1000303,1000304,AST
+1000303,1000306,AST
+1000304,1000305,AST
+1000306,1000307,AST
+1000306,1000311,AST
+1000307,1000308,AST
+1000307,1000309,AST
+1000309,1000310,AST
+1000312,1000313,AST
+1000312,1000316,AST
+1000313,1000314,AST
+1000313,1000315,AST
+1000317,1000318,AST
+1000317,1000321,AST
+1000318,1000319,AST
+1000318,1000320,AST
+1000322,1000323,AST
+1000322,1000326,AST
+1000323,1000324,AST
+1000323,1000325,AST
+1000326,1000327,AST
+1000326,1000328,AST
+1000329,1000330,AST
+1000329,1000333,AST
+1000330,1000331,AST
+1000330,1000332,AST
+1000334,1000335,AST
+1000334,1000336,AST
+1000336,1000337,AST
+1000336,1000340,AST
+1000337,1000338,AST
+1000337,1000339,AST
+1000340,1000341,AST
+1000342,1000343,AST
+1000342,1000346,AST
+1000343,1000344,AST
+1000343,1000345,AST
+1000346,1000347,AST
+1000346,1000353,AST
+1000347,1000348,AST
+1000347,1000349,AST
+1000349,1000350,AST
+1000349,1000351,AST
+1000349,1000352,AST
+1000354,1000355,AST
+1000354,1000364,AST
+1000355,1000356,AST
+1000355,1000357,AST
+1000357,1000358,AST
+1000357,1000359,AST
+1000357,1000360,AST
+1000357,1000363,AST
+1000360,1000361,AST
+1000360,1000362,AST
+1000364,1000365,AST
+1000364,1000372,AST
+1000365,1000366,AST
+1000365,1000369,AST
+1000366,1000367,AST
+1000366,1000368,AST
+1000369,1000370,AST
+1000369,1000371,AST
+1000373,1000374,AST
+1000373,1000377,AST
+1000373,1000380,AST
+1000374,1000375,AST
+1000374,1000376,AST
+1000377,1000378,AST
+1000377,1000379,AST
+1000380,1000381,AST
+1000380,1000382,AST
+1000383,1000384,AST
+1000383,1000385,AST
+1000385,1000386,AST
+1000385,1000389,AST
+1000386,1000387,AST
+1000386,1000388,AST
+1000389,1000390,AST
+1000389,1000391,AST
+1000392,1000393,AST
+1000392,1000396,AST
+1000393,1000394,AST
+1000393,1000395,AST
+1000396,1000397,AST
+1000396,1000398,AST
+1000396,1000399,AST
+1000400,1000401,AST
+1000400,1000412,AST
+1000401,1000402,AST
+1000401,1000407,AST
+1000402,1000403,AST
+1000402,1000406,AST
+1000403,1000404,AST
+1000403,1000405,AST
+1000407,1000408,AST
+1000407,1000411,AST
+1000408,1000409,AST
+1000408,1000410,AST
+1000412,1000413,AST
+1000412,1000424,AST
+1000412,1000494,AST
+1000412,1000498,AST
+1000413,1000414,AST
+1000413,1000423,AST
+1000414,1000415,AST
+1000414,1000422,AST
+1000415,1000416,AST
+1000415,1000419,AST
+1000416,1000417,AST
+1000416,1000418,AST
+1000419,1000420,AST
+1000419,1000421,AST
+1000424,1000425,AST
+1000424,1000436,AST
+1000424,1000476,AST
+1000425,1000426,AST
+1000425,1000435,AST
+1000426,1000427,AST
+1000426,1000434,AST
+1000427,1000428,AST
+1000427,1000431,AST
+1000428,1000429,AST
+1000428,1000430,AST
+1000431,1000432,AST
+1000431,1000433,AST
+1000436,1000437,AST
+1000436,1000452,AST
+1000436,1000465,AST
+1000437,1000438,AST
+1000437,1000441,AST
+1000438,1000439,AST
+1000438,1000440,AST
+1000441,1000442,AST
+1000441,1000451,AST
+1000442,1000443,AST
+1000442,1000450,AST
+1000443,1000444,AST
+1000443,1000447,AST
+1000444,1000445,AST
+1000444,1000446,AST
+1000447,1000448,AST
+1000447,1000449,AST
+1000452,1000453,AST
+1000452,1000456,AST
+1000453,1000454,AST
+1000453,1000455,AST
+1000456,1000457,AST
+1000456,1000464,AST
+1000457,1000458,AST
+1000457,1000461,AST
+1000458,1000459,AST
+1000458,1000460,AST
+1000461,1000462,AST
+1000461,1000463,AST
+1000465,1000466,AST
+1000465,1000475,AST
+1000466,1000467,AST
+1000466,1000474,AST
+1000467,1000468,AST
+1000467,1000471,AST
+1000468,1000469,AST
+1000468,1000470,AST
+1000471,1000472,AST
+1000471,1000473,AST
+1000476,1000477,AST
+1000477,1000478,AST
+1000477,1000489,AST
+1000478,1000479,AST
+1000478,1000488,AST
+1000479,1000480,AST
+1000479,1000487,AST
+1000480,1000481,AST
+1000480,1000484,AST
+1000481,1000482,AST
+1000481,1000483,AST
+1000484,1000485,AST
+1000484,1000486,AST
+1000489,1000490,AST
+1000489,1000493,AST
+1000490,1000491,AST
+1000490,1000492,AST
+1000494,1000495,AST
+1000495,1000496,AST
+1000495,1000497,AST
+1000498,1000499,AST
+1000498,1000502,AST
+1000499,1000500,AST
+1000499,1000501,AST
+1000503,1000504,AST
+1000503,1000507,AST
+1000504,1000505,AST
+1000504,1000506,AST
+1000507,1000508,AST
+1000507,1000509,AST
+1000507,1000514,AST
+1000507,1000515,AST
+1000507,1000518,AST
+1000507,1000519,AST
+1000507,1000520,AST
+1000507,1000523,AST
+1000507,1000524,AST
+1000507,1000525,AST
+1000507,1000528,AST
+1000507,1000529,AST
+1000507,1000530,AST
+1000507,1000533,AST
+1000507,1000534,AST
+1000507,1000535,AST
+1000507,1000539,AST
+1000507,1000543,AST
+1000507,1000546,AST
+1000509,1000510,AST
+1000509,1000513,AST
+1000510,1000511,AST
+1000510,1000512,AST
+1000515,1000516,AST
+1000515,1000517,AST
+1000520,1000521,AST
+1000520,1000522,AST
+1000525,1000526,AST
+1000525,1000527,AST
+1000530,1000531,AST
+1000530,1000532,AST
+1000535,1000536,AST
+1000535,1000537,AST
+1000535,1000538,AST
+1000539,1000540,AST
+1000539,1000541,AST
+1000539,1000542,AST
+1000543,1000544,AST
+1000543,1000545,AST
+1000547,1000548,AST
+1000547,1000553,AST
+1000548,1000549,AST
+1000548,1000552,AST
+1000549,1000550,AST
+1000549,1000551,AST
+1000554,1000555,AST
+1000554,1000556,AST
+1000554,1000563,AST
+1000554,1000564,AST
+1000554,1000565,AST
+1000556,1000557,AST
+1000556,1000562,AST
+1000557,1000558,AST
+1000557,1000561,AST
+1000558,1000559,AST
+1000558,1000560,AST
+1000566,1000567,AST
+1000566,1000568,AST
+1000568,1000569,AST
+1000568,1000570,AST
+1000568,1000572,AST
+1000570,1000571,AST
+1000573,1000574,AST
+1000573,1000577,AST
+1000574,1000575,AST
+1000574,1000576,AST
+1000578,1000579,AST
+1000580,1000581,AST
+1000583,1000584,AST
+1000584,1000585,AST
+1000584,1000586,AST
+1000588,1000589,AST
+1000590,1000591,AST
+1000219,1000230,CFG
+1000221,1000219,CFG
+1000223,1000221,CFG
+1000225,1000237,CFG
+1000227,1000225,CFG
+1000228,1000227,CFG
+1000230,1000228,CFG
+1000232,1000240,CFG
+1000234,1000232,CFG
+1000235,1000234,CFG
+1000237,1000235,CFG
+1000240,1000244,CFG
+1000244,1000248,CFG
+1000248,1000256,CFG
+1000253,1000267,CFG
+1000253,1000280,CFG
+1000253,1000286,CFG
+1000254,1000257,CFG
+1000256,1000254,CFG
+1000257,1000253,CFG
+1000260,1000301,CFG
+1000262,1000260,CFG
+1000263,1000270,CFG
+1000264,1000269,CFG
+1000265,1000268,CFG
+1000267,1000265,CFG
+1000268,1000264,CFG
+1000269,1000263,CFG
+1000270,1000262,CFG
+1000273,1000301,CFG
+1000275,1000273,CFG
+1000276,1000283,CFG
+1000277,1000282,CFG
+1000278,1000281,CFG
+1000280,1000278,CFG
+1000281,1000277,CFG
+1000282,1000276,CFG
+1000283,1000275,CFG
+1000286,1000292,CFG
+1000290,1000586,CFG
+1000292,1000290,CFG
+1000295,1000304,CFG
+1000297,1000295,CFG
+1000298,1000297,CFG
+1000300,1000298,CFG
+1000301,1000300,CFG
+1000304,1000309,CFG
+1000304,1000315,CFG
+1000307,1000586,CFG
+1000309,1000307,CFG
+1000312,1000320,CFG
+1000313,1000312,CFG
+1000315,1000313,CFG
+1000317,1000325,CFG
+1000318,1000317,CFG
+1000320,1000318,CFG
+1000322,1000332,CFG
+1000323,1000328,CFG
+1000325,1000323,CFG
+1000326,1000322,CFG
+1000328,1000326,CFG
+1000329,1000339,CFG
+1000330,1000329,CFG
+1000332,1000330,CFG
+1000334,1000343,CFG
+1000336,1000334,CFG
+1000337,1000340,CFG
+1000339,1000337,CFG
+1000340,1000336,CFG
+1000343,1000349,CFG
+1000343,1000362,CFG
+1000347,1000586,CFG
+1000349,1000347,CFG
+1000355,1000368,CFG
+1000355,1000376,CFG
+1000357,1000355,CFG
+1000360,1000357,CFG
+1000362,1000360,CFG
+1000365,1000586,CFG
+1000366,1000371,CFG
+1000368,1000366,CFG
+1000369,1000365,CFG
+1000371,1000369,CFG
+1000373,1000388,CFG
+1000374,1000379,CFG
+1000376,1000374,CFG
+1000377,1000382,CFG
+1000379,1000377,CFG
+1000380,1000373,CFG
+1000382,1000380,CFG
+1000383,1000393,CFG
+1000385,1000383,CFG
+1000386,1000391,CFG
+1000388,1000386,CFG
+1000389,1000385,CFG
+1000391,1000389,CFG
+1000393,1000396,CFG
+1000393,1000405,CFG
+1000396,1000405,CFG
+1000401,1000418,CFG
+1000401,1000506,CFG
+1000402,1000401,CFG
+1000402,1000410,CFG
+1000403,1000402,CFG
+1000405,1000403,CFG
+1000407,1000401,CFG
+1000408,1000407,CFG
+1000410,1000408,CFG
+1000413,1000430,CFG
+1000414,1000413,CFG
+1000415,1000422,CFG
+1000416,1000421,CFG
+1000418,1000416,CFG
+1000419,1000415,CFG
+1000421,1000419,CFG
+1000422,1000414,CFG
+1000425,1000440,CFG
+1000425,1000483,CFG
+1000426,1000425,CFG
+1000427,1000434,CFG
+1000428,1000433,CFG
+1000430,1000428,CFG
+1000431,1000427,CFG
+1000433,1000431,CFG
+1000434,1000426,CFG
+1000437,1000455,CFG
+1000438,1000446,CFG
+1000440,1000438,CFG
+1000441,1000437,CFG
+1000442,1000451,CFG
+1000443,1000450,CFG
+1000444,1000449,CFG
+1000446,1000444,CFG
+1000447,1000443,CFG
+1000449,1000447,CFG
+1000450,1000442,CFG
+1000451,1000441,CFG
+1000452,1000470,CFG
+1000453,1000460,CFG
+1000455,1000453,CFG
+1000456,1000452,CFG
+1000457,1000464,CFG
+1000458,1000463,CFG
+1000460,1000458,CFG
+1000461,1000457,CFG
+1000463,1000461,CFG
+1000464,1000456,CFG
+1000465,1000497,CFG
+1000466,1000465,CFG
+1000467,1000474,CFG
+1000468,1000473,CFG
+1000470,1000468,CFG
+1000471,1000467,CFG
+1000473,1000471,CFG
+1000474,1000466,CFG
+1000478,1000490,CFG
+1000478,1000497,CFG
+1000479,1000478,CFG
+1000480,1000487,CFG
+1000481,1000486,CFG
+1000483,1000481,CFG
+1000484,1000480,CFG
+1000486,1000484,CFG
+1000487,1000479,CFG
+1000490,1000586,CFG
+1000494,1000501,CFG
+1000495,1000494,CFG
+1000497,1000495,CFG
+1000498,1000506,CFG
+1000499,1000498,CFG
+1000501,1000499,CFG
+1000504,1000512,CFG
+1000504,1000515,CFG
+1000504,1000520,CFG
+1000504,1000525,CFG
+1000504,1000530,CFG
+1000504,1000535,CFG
+1000506,1000504,CFG
+1000509,1000515,CFG
+1000510,1000509,CFG
+1000512,1000510,CFG
+1000515,1000551,CFG
+1000520,1000551,CFG
+1000525,1000551,CFG
+1000530,1000551,CFG
+1000535,1000539,CFG
+1000539,1000543,CFG
+1000543,1000586,CFG
+1000547,1000560,CFG
+1000548,1000547,CFG
+1000549,1000552,CFG
+1000551,1000549,CFG
+1000552,1000548,CFG
+1000554,1000570,CFG
+1000556,1000554,CFG
+1000557,1000556,CFG
+1000558,1000557,CFG
+1000560,1000558,CFG
+1000566,1000574,CFG
+1000568,1000566,CFG
+1000570,1000568,CFG
+1000574,1000588,CFG
+1000574,1000578,CFG
+1000578,1000580,CFG
+1000580,1000592,CFG
+1000583,1000588,CFG
+1000584,1000583,CFG
+1000586,1000584,CFG
+1000588,1000590,CFG
+1000590,1000592,CFG
+1000213,1000223,CFG
+1000580,1000592,DDG<RET>
+1000590,1000592,DDG<RET>
+1000213,1000592,DDG
+1000213,1000214,DDG
+1000213,1000215,DDG
+1000213,1000216,DDG
+1000213,1000219,DDG
+1000213,1000221,DDG
+1000219,1000225,DDGctx
+1000213,1000225,DDG
+1000219,1000227,DDGctx
+1000213,1000227,DDG
+1000219,1000228,DDGctx
+1000213,1000228,DDG
+1000225,1000232,DDGdl_fn
+1000213,1000232,DDG
+1000225,1000234,DDGdl_fn
+1000213,1000234,DDG
+1000225,1000235,DDGdl_fn
+1000213,1000235,DDG
+1000213,1000240,DDG
+1000213,1000244,DDG
+1000213,1000248,DDG
+1000213,1000253,DDG
+1000213,1000254,DDG
+1000213,1000260,DDG
+1000219,1000260,DDGctx
+1000213,1000262,DDG
+1000219,1000262,DDGctx
+1000213,1000263,DDG
+1000219,1000263,DDGctx
+1000213,1000264,DDG
+1000219,1000264,DDGctx
+1000213,1000265,DDG
+1000219,1000265,DDGctx
+1000213,1000273,DDG
+1000219,1000273,DDGctx
+1000213,1000275,DDG
+1000219,1000275,DDGctx
+1000213,1000276,DDG
+1000219,1000276,DDGctx
+1000213,1000277,DDG
+1000219,1000277,DDGctx
+1000213,1000278,DDG
+1000219,1000278,DDGctx
+1000213,1000286,DDG
+1000292,1000290,DDGEINVAL
+1000213,1000290,DDG
+1000213,1000292,DDG
+1000297,1000295,DDGslice_mode_data * sizeof(*slice_offsets)
+1000213,1000295,DDG
+1000298,1000297,DDGslice_mode_data
+1000298,1000297,DDGsizeof(*slice_offsets)
+1000273,1000298,DDGslice_mode_data
+1000260,1000298,DDGslice_mode_data
+1000213,1000298,DDG
+1000240,1000301,DDGslice_offsets
+1000213,1000301,DDG
+1000295,1000304,DDGslice_offsets
+1000213,1000304,DDG
+1000309,1000307,DDGENOMEM
+1000213,1000307,DDG
+1000213,1000309,DDG
+1000213,1000312,DDG
+1000244,1000313,DDGlock_params
+1000213,1000313,DDG
+1000213,1000317,DDG
+1000312,1000318,DDGlock_params.version
+1000213,1000318,DDG
+1000244,1000318,DDGlock_params
+1000216,1000322,DDGtmpoutsurf
+1000213,1000322,DDG
+1000312,1000323,DDGlock_params.version
+1000317,1000323,DDGlock_params.doNotWait
+1000213,1000323,DDG
+1000244,1000323,DDGlock_params
+1000216,1000326,DDGtmpoutsurf
+1000213,1000326,DDG
+1000304,1000329,DDGslice_offsets
+1000213,1000329,DDG
+1000317,1000330,DDGlock_params.doNotWait
+1000312,1000330,DDGlock_params.version
+1000322,1000330,DDGlock_params.outputBitstream
+1000213,1000330,DDG
+1000244,1000330,DDGlock_params
+1000336,1000334,DDGctx->nvencoder
+1000336,1000334,DDG&lock_params
+1000213,1000334,DDG
+1000213,1000336,DDG
+1000219,1000336,DDGctx
+1000213,1000337,DDG
+1000219,1000337,DDGctx
+1000317,1000336,DDGlock_params.doNotWait
+1000312,1000336,DDGlock_params.version
+1000329,1000336,DDGlock_params.sliceOffsets
+1000322,1000336,DDGlock_params.outputBitstream
+1000244,1000336,DDGlock_params
+1000317,1000340,DDGlock_params.doNotWait
+1000312,1000340,DDGlock_params.version
+1000329,1000340,DDGlock_params.sliceOffsets
+1000322,1000340,DDGlock_params.outputBitstream
+1000213,1000340,DDG
+1000244,1000340,DDGlock_params
+1000334,1000343,DDGnv_status
+1000213,1000343,DDG
+1000349,1000347,DDGavctx
+1000349,1000347,DDGnv_status
+1000349,1000347,DDG\"Failed locking bitstream buffer\"
+1000213,1000347,DDG
+1000213,1000349,DDG
+1000343,1000349,DDGnv_status
+1000357,1000355,DDGavctx
+1000357,1000355,DDGpkt
+1000357,1000355,DDGlock_params.bitstreamSizeInBytes
+1000357,1000355,DDG0
+1000213,1000355,DDG
+1000213,1000357,DDG
+1000336,1000357,DDG&lock_params
+1000317,1000357,DDGlock_params.doNotWait
+1000312,1000357,DDGlock_params.version
+1000329,1000357,DDGlock_params.sliceOffsets
+1000322,1000357,DDGlock_params.outputBitstream
+1000244,1000357,DDGlock_params
+1000336,1000360,DDG&lock_params
+1000317,1000360,DDGlock_params.doNotWait
+1000312,1000360,DDGlock_params.version
+1000329,1000360,DDGlock_params.sliceOffsets
+1000322,1000360,DDGlock_params.outputBitstream
+1000213,1000360,DDG
+1000244,1000360,DDGlock_params
+1000213,1000365,DDG
+1000219,1000365,DDGctx
+1000213,1000366,DDG
+1000219,1000366,DDGctx
+1000216,1000365,DDGtmpoutsurf
+1000213,1000369,DDG
+1000216,1000369,DDGtmpoutsurf
+1000357,1000373,DDGpkt
+1000213,1000373,DDG
+1000357,1000374,DDGpkt
+1000213,1000374,DDG
+1000336,1000373,DDG&lock_params
+1000357,1000373,DDGlock_params.bitstreamSizeInBytes
+1000317,1000373,DDGlock_params.doNotWait
+1000312,1000373,DDGlock_params.version
+1000329,1000373,DDGlock_params.sliceOffsets
+1000322,1000373,DDGlock_params.outputBitstream
+1000244,1000373,DDGlock_params
+1000357,1000377,DDGlock_params.bitstreamSizeInBytes
+1000336,1000377,DDG&lock_params
+1000317,1000377,DDGlock_params.doNotWait
+1000312,1000377,DDGlock_params.version
+1000329,1000377,DDGlock_params.sliceOffsets
+1000322,1000377,DDGlock_params.outputBitstream
+1000213,1000377,DDG
+1000244,1000377,DDGlock_params
+1000357,1000380,DDGlock_params.bitstreamSizeInBytes
+1000373,1000380,DDGlock_params.bitstreamBufferPtr
+1000336,1000380,DDG&lock_params
+1000317,1000380,DDGlock_params.doNotWait
+1000312,1000380,DDGlock_params.version
+1000329,1000380,DDGlock_params.sliceOffsets
+1000322,1000380,DDGlock_params.outputBitstream
+1000213,1000380,DDG
+1000244,1000380,DDGlock_params
+1000385,1000383,DDGctx->nvencoder
+1000385,1000383,DDGtmpoutsurf->output_surface
+1000213,1000383,DDG
+1000213,1000385,DDG
+1000219,1000385,DDGctx
+1000213,1000386,DDG
+1000219,1000386,DDGctx
+1000216,1000385,DDGtmpoutsurf
+1000213,1000389,DDG
+1000216,1000389,DDGtmpoutsurf
+1000383,1000393,DDGnv_status
+1000213,1000393,DDG
+1000343,1000393,DDGNV_ENC_SUCCESS
+1000357,1000396,DDGavctx
+1000213,1000396,DDG
+1000393,1000396,DDGnv_status
+1000402,1000401,DDGavctx->pix_fmt
+1000402,1000401,DDGAV_PIX_FMT_CUDA
+1000396,1000402,DDGavctx
+1000357,1000402,DDGavctx
+1000213,1000402,DDG
+1000396,1000403,DDGavctx
+1000357,1000403,DDGavctx
+1000213,1000403,DDG
+1000407,1000401,DDGavctx->pix_fmt
+1000407,1000401,DDGAV_PIX_FMT_D3D11
+1000213,1000407,DDG
+1000396,1000407,DDGavctx
+1000357,1000407,DDGavctx
+1000213,1000408,DDG
+1000396,1000408,DDGavctx
+1000357,1000408,DDGavctx
+1000213,1000413,DDG
+1000219,1000413,DDGctx
+1000213,1000414,DDG
+1000219,1000414,DDGctx
+1000213,1000415,DDG
+1000219,1000415,DDGctx
+1000213,1000416,DDG
+1000219,1000416,DDGctx
+1000213,1000419,DDG
+1000216,1000419,DDGtmpoutsurf
+1000413,1000425,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000425,DDG
+1000219,1000425,DDGctx
+1000413,1000426,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000426,DDG
+1000219,1000426,DDGctx
+1000413,1000427,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000427,DDG
+1000219,1000427,DDGctx
+1000213,1000428,DDG
+1000219,1000428,DDGctx
+1000213,1000431,DDG
+1000216,1000431,DDGtmpoutsurf
+1000213,1000437,DDG
+1000219,1000437,DDGctx
+1000213,1000438,DDG
+1000219,1000438,DDGctx
+1000413,1000437,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000437,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000413,1000441,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000441,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000441,DDG
+1000219,1000441,DDGctx
+1000413,1000442,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000442,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000442,DDG
+1000219,1000442,DDGctx
+1000413,1000443,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000443,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000443,DDG
+1000219,1000443,DDGctx
+1000213,1000444,DDG
+1000219,1000444,DDGctx
+1000213,1000447,DDG
+1000216,1000447,DDGtmpoutsurf
+1000213,1000452,DDG
+1000219,1000452,DDGctx
+1000213,1000453,DDG
+1000219,1000453,DDGctx
+1000413,1000452,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000452,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000437,1000452,DDGctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource
+1000413,1000456,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000456,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000437,1000456,DDGctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource
+1000213,1000456,DDG
+1000219,1000456,DDGctx
+1000413,1000457,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000457,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000437,1000457,DDGctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource
+1000213,1000457,DDG
+1000219,1000457,DDGctx
+1000213,1000458,DDG
+1000219,1000458,DDGctx
+1000213,1000461,DDG
+1000216,1000461,DDGtmpoutsurf
+1000213,1000465,DDG
+1000413,1000466,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000466,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000452,1000466,DDGctx->registered_frames[tmpoutsurf->reg_idx].regptr
+1000437,1000466,DDGctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource
+1000213,1000466,DDG
+1000219,1000466,DDGctx
+1000413,1000467,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000467,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000452,1000467,DDGctx->registered_frames[tmpoutsurf->reg_idx].regptr
+1000437,1000467,DDGctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource
+1000213,1000467,DDG
+1000219,1000467,DDGctx
+1000213,1000468,DDG
+1000219,1000468,DDGctx
+1000213,1000471,DDG
+1000216,1000471,DDGtmpoutsurf
+1000413,1000478,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000478,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000478,DDG
+1000219,1000478,DDGctx
+1000413,1000479,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000479,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000479,DDG
+1000219,1000479,DDGctx
+1000413,1000480,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000425,1000480,DDGctx->registered_frames[tmpoutsurf->reg_idx].mapped
+1000213,1000480,DDG
+1000219,1000480,DDGctx
+1000213,1000481,DDG
+1000219,1000481,DDGctx
+1000213,1000484,DDG
+1000216,1000484,DDGtmpoutsurf
+1000213,1000490,DDG
+1000213,1000494,DDG
+1000216,1000494,DDGtmpoutsurf
+1000213,1000495,DDG
+1000216,1000495,DDGtmpoutsurf
+1000213,1000498,DDG
+1000213,1000499,DDG
+1000216,1000499,DDGtmpoutsurf
+1000373,1000504,DDGlock_params.bitstreamBufferPtr
+1000373,1000504,DDGlock_params.bitstreamSizeInBytes
+1000336,1000504,DDG&lock_params
+1000317,1000504,DDGlock_params.doNotWait
+1000312,1000504,DDGlock_params.version
+1000329,1000504,DDGlock_params.sliceOffsets
+1000322,1000504,DDGlock_params.outputBitstream
+1000213,1000504,DDG
+1000357,1000504,DDGlock_params.bitstreamSizeInBytes
+1000244,1000504,DDGlock_params
+1000213,1000509,DDG
+1000357,1000509,DDGpkt
+1000213,1000510,DDG
+1000357,1000510,DDGpkt
+1000213,1000515,DDG
+1000213,1000520,DDG
+1000213,1000525,DDG
+1000213,1000530,DDG
+1000213,1000535,DDG
+1000396,1000535,DDGavctx
+1000357,1000535,DDGavctx
+1000535,1000539,DDGavctx
+1000213,1000539,DDG
+1000535,1000539,DDGAV_LOG_ERROR
+1000213,1000543,DDG
+1000525,1000547,DDGpict_type
+1000515,1000547,DDGpict_type
+1000520,1000547,DDGpict_type
+1000530,1000547,DDGpict_type
+1000213,1000547,DDG
+1000213,1000548,DDG
+1000396,1000548,DDGavctx
+1000357,1000548,DDGavctx
+1000213,1000549,DDG
+1000396,1000549,DDGavctx
+1000357,1000549,DDGavctx
+1000213,1000554,DDG
+1000357,1000554,DDGpkt
+1000556,1000554,DDGlock_params.frameAvgQP - 1
+1000556,1000554,DDGFF_QP2LAMBDA
+1000557,1000556,DDGlock_params.frameAvgQP
+1000557,1000556,DDG1
+1000336,1000557,DDG&lock_params
+1000373,1000557,DDGlock_params.bitstreamBufferPtr
+1000504,1000557,DDGlock_params.pictureType
+1000373,1000557,DDGlock_params.bitstreamSizeInBytes
+1000317,1000557,DDGlock_params.doNotWait
+1000312,1000557,DDGlock_params.version
+1000329,1000557,DDGlock_params.sliceOffsets
+1000322,1000557,DDGlock_params.outputBitstream
+1000213,1000557,DDG
+1000357,1000557,DDGlock_params.bitstreamSizeInBytes
+1000244,1000557,DDGlock_params
+1000373,1000558,DDGlock_params.bitstreamBufferPtr
+1000504,1000558,DDGlock_params.pictureType
+1000373,1000558,DDGlock_params.bitstreamSizeInBytes
+1000336,1000558,DDG&lock_params
+1000317,1000558,DDGlock_params.doNotWait
+1000312,1000558,DDGlock_params.version
+1000329,1000558,DDGlock_params.sliceOffsets
+1000322,1000558,DDGlock_params.outputBitstream
+1000213,1000558,DDG
+1000357,1000558,DDGlock_params.bitstreamSizeInBytes
+1000244,1000558,DDGlock_params
+1000213,1000556,DDG
+1000525,1000554,DDGpict_type
+1000515,1000554,DDGpict_type
+1000520,1000554,DDGpict_type
+1000530,1000554,DDGpict_type
+1000568,1000566,DDGavctx
+1000568,1000566,DDG&lock_params
+1000568,1000566,DDGpkt
+1000213,1000566,DDG
+1000213,1000568,DDG
+1000396,1000568,DDGavctx
+1000357,1000568,DDGavctx
+1000373,1000568,DDGlock_params.bitstreamBufferPtr
+1000373,1000568,DDGlock_params.bitstreamSizeInBytes
+1000336,1000568,DDG&lock_params
+1000317,1000568,DDGlock_params.doNotWait
+1000504,1000568,DDGlock_params.pictureType
+1000557,1000568,DDGlock_params.frameAvgQP
+1000312,1000568,DDGlock_params.version
+1000329,1000568,DDGlock_params.sliceOffsets
+1000322,1000568,DDGlock_params.outputBitstream
+1000357,1000568,DDGlock_params.bitstreamSizeInBytes
+1000244,1000568,DDGlock_params
+1000373,1000570,DDGlock_params.bitstreamBufferPtr
+1000373,1000570,DDGlock_params.bitstreamSizeInBytes
+1000336,1000570,DDG&lock_params
+1000317,1000570,DDGlock_params.doNotWait
+1000504,1000570,DDGlock_params.pictureType
+1000557,1000570,DDGlock_params.frameAvgQP
+1000312,1000570,DDGlock_params.version
+1000329,1000570,DDGlock_params.sliceOffsets
+1000322,1000570,DDGlock_params.outputBitstream
+1000213,1000570,DDG
+1000357,1000570,DDGlock_params.bitstreamSizeInBytes
+1000244,1000570,DDGlock_params
+1000554,1000568,DDGpkt
+1000566,1000574,DDGres
+1000213,1000574,DDG
+1000213,1000578,DDG
+1000304,1000578,DDGslice_offsets
+1000581,1000580,DDG0
+1000213,1000580,DDG
+1000213,1000581,DDG
+1000213,1000583,DDG
+1000219,1000583,DDGctx
+1000213,1000584,DDG
+1000219,1000584,DDGctx
+1000240,1000588,DDGslice_offsets
+1000304,1000588,DDGslice_offsets
+1000213,1000588,DDG
+1000591,1000590,DDGres
+1000355,1000590,DDGres
+1000543,1000590,DDGres
+1000307,1000590,DDGres
+1000574,1000590,DDGres
+1000347,1000590,DDGres
+1000490,1000590,DDGres
+1000290,1000590,DDGres
+1000213,1000591,DDG
+1000253,1000590,CDG
+1000253,1000588,CDG
+1000253,1000586,CDG
+1000253,1000584,CDG
+1000253,1000583,CDG
+1000253,1000270,CDG
+1000253,1000269,CDG
+1000253,1000268,CDG
+1000253,1000267,CDG
+1000253,1000265,CDG
+1000253,1000264,CDG
+1000253,1000263,CDG
+1000253,1000262,CDG
+1000253,1000260,CDG
+1000253,1000286,CDG
+1000253,1000283,CDG
+1000253,1000282,CDG
+1000253,1000281,CDG
+1000253,1000280,CDG
+1000253,1000278,CDG
+1000253,1000277,CDG
+1000253,1000276,CDG
+1000253,1000275,CDG
+1000253,1000273,CDG
+1000253,1000304,CDG
+1000253,1000301,CDG
+1000253,1000300,CDG
+1000253,1000298,CDG
+1000253,1000297,CDG
+1000253,1000295,CDG
+1000253,1000292,CDG
+1000253,1000290,CDG
+1000304,1000590,CDG
+1000304,1000588,CDG
+1000304,1000586,CDG
+1000304,1000584,CDG
+1000304,1000583,CDG
+1000304,1000320,CDG
+1000304,1000318,CDG
+1000304,1000317,CDG
+1000304,1000315,CDG
+1000304,1000313,CDG
+1000304,1000312,CDG
+1000304,1000309,CDG
+1000304,1000307,CDG
+1000304,1000336,CDG
+1000304,1000334,CDG
+1000304,1000332,CDG
+1000304,1000330,CDG
+1000304,1000329,CDG
+1000304,1000328,CDG
+1000304,1000326,CDG
+1000304,1000325,CDG
+1000304,1000323,CDG
+1000304,1000322,CDG
+1000304,1000343,CDG
+1000304,1000340,CDG
+1000304,1000339,CDG
+1000304,1000337,CDG
+1000343,1000590,CDG
+1000343,1000588,CDG
+1000343,1000586,CDG
+1000343,1000584,CDG
+1000343,1000583,CDG
+1000343,1000349,CDG
+1000343,1000347,CDG
+1000343,1000362,CDG
+1000343,1000360,CDG
+1000343,1000357,CDG
+1000343,1000355,CDG
+1000355,1000590,CDG
+1000355,1000588,CDG
+1000355,1000586,CDG
+1000355,1000584,CDG
+1000355,1000583,CDG
+1000355,1000368,CDG
+1000355,1000366,CDG
+1000355,1000365,CDG
+1000355,1000383,CDG
+1000355,1000382,CDG
+1000355,1000380,CDG
+1000355,1000379,CDG
+1000355,1000377,CDG
+1000355,1000376,CDG
+1000355,1000374,CDG
+1000355,1000373,CDG
+1000355,1000371,CDG
+1000355,1000369,CDG
+1000355,1000393,CDG
+1000355,1000391,CDG
+1000355,1000389,CDG
+1000355,1000388,CDG
+1000355,1000386,CDG
+1000355,1000385,CDG
+1000355,1000405,CDG
+1000355,1000403,CDG
+1000355,1000402,CDG
+1000355,1000401,CDG
+1000393,1000396,CDG
+1000401,1000431,CDG
+1000401,1000430,CDG
+1000401,1000428,CDG
+1000401,1000427,CDG
+1000401,1000426,CDG
+1000401,1000425,CDG
+1000401,1000422,CDG
+1000401,1000421,CDG
+1000401,1000419,CDG
+1000401,1000418,CDG
+1000401,1000434,CDG
+1000401,1000433,CDG
+1000401,1000506,CDG
+1000401,1000504,CDG
+1000401,1000416,CDG
+1000401,1000415,CDG
+1000401,1000414,CDG
+1000401,1000413,CDG
+1000402,1000410,CDG
+1000402,1000408,CDG
+1000402,1000407,CDG
+1000425,1000447,CDG
+1000425,1000446,CDG
+1000425,1000444,CDG
+1000425,1000443,CDG
+1000425,1000442,CDG
+1000425,1000441,CDG
+1000425,1000440,CDG
+1000425,1000438,CDG
+1000425,1000437,CDG
+1000425,1000464,CDG
+1000425,1000463,CDG
+1000425,1000461,CDG
+1000425,1000460,CDG
+1000425,1000458,CDG
+1000425,1000457,CDG
+1000425,1000456,CDG
+1000425,1000455,CDG
+1000425,1000453,CDG
+1000425,1000452,CDG
+1000425,1000451,CDG
+1000425,1000450,CDG
+1000425,1000449,CDG
+1000425,1000480,CDG
+1000425,1000479,CDG
+1000425,1000478,CDG
+1000425,1000474,CDG
+1000425,1000473,CDG
+1000425,1000471,CDG
+1000425,1000470,CDG
+1000425,1000468,CDG
+1000425,1000467,CDG
+1000425,1000466,CDG
+1000425,1000465,CDG
+1000425,1000495,CDG
+1000425,1000494,CDG
+1000425,1000487,CDG
+1000425,1000486,CDG
+1000425,1000484,CDG
+1000425,1000483,CDG
+1000425,1000481,CDG
+1000425,1000506,CDG
+1000425,1000504,CDG
+1000425,1000501,CDG
+1000425,1000499,CDG
+1000425,1000498,CDG
+1000425,1000497,CDG
+1000478,1000495,CDG
+1000478,1000494,CDG
+1000478,1000490,CDG
+1000478,1000506,CDG
+1000478,1000504,CDG
+1000478,1000501,CDG
+1000478,1000499,CDG
+1000478,1000498,CDG
+1000478,1000497,CDG
+1000478,1000590,CDG
+1000478,1000588,CDG
+1000478,1000586,CDG
+1000478,1000584,CDG
+1000478,1000583,CDG
+1000504,1000512,CDG
+1000504,1000510,CDG
+1000504,1000509,CDG
+1000504,1000525,CDG
+1000504,1000520,CDG
+1000504,1000515,CDG
+1000504,1000543,CDG
+1000504,1000539,CDG
+1000504,1000535,CDG
+1000504,1000530,CDG
+1000504,1000560,CDG
+1000504,1000558,CDG
+1000504,1000557,CDG
+1000504,1000556,CDG
+1000504,1000554,CDG
+1000504,1000552,CDG
+1000504,1000551,CDG
+1000504,1000549,CDG
+1000504,1000548,CDG
+1000504,1000547,CDG
+1000504,1000574,CDG
+1000504,1000570,CDG
+1000504,1000568,CDG
+1000504,1000566,CDG
+1000504,1000590,CDG
+1000504,1000588,CDG
+1000504,1000586,CDG
+1000504,1000584,CDG
+1000504,1000583,CDG
+1000574,1000590,CDG
+1000574,1000588,CDG
+1000574,1000580,CDG
+1000574,1000578,CDG

@@ -1,0 +1,10 @@
++-EXTERNAL_AVX() <if (EXTERNAL_AVX (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:361>
++-EXTERNAL_AVX2_FAST() <if (EXTERNAL_AVX2_FAST (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:385>
++-EXTERNAL_AVX_FAST() <if (EXTERNAL_AVX_FAST (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:379>
++-EXTERNAL_MMX() <(EXTERNAL_MMX (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:272>
+  +-init_fpel_func()
+  \-init_ipred()
++-EXTERNAL_MMXEXT() <if (EXTERNAL_MMXEXT (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:284>
++-EXTERNAL_SSE() <if (EXTERNAL_SSE (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:297>
++-EXTERNAL_SSE2() <if (EXTERNAL_SSE2 (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:305>
++-EXTERNAL_SSSE3() <if (EXTERNAL_SSSE3 (cpu_flags)) at /app/RepoSPD/data_preproc/ab_file/7ca422bb1b/a/vp9dsp_init.c:335>

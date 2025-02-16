@@ -1,0 +1,29 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/6029b8a6bb/a/s337m.c /app/RepoSPD/data_preproc/ab_file/6029b8a6bb/b/s337m.c
+--- /app/RepoSPD/data_preproc/ab_file/6029b8a6bb/a/s337m.c	2025-02-11 12:48:16.414976999 +0000
++++ /app/RepoSPD/data_preproc/ab_file/6029b8a6bb/b/s337m.c	2025-02-11 12:48:16.340161587 +0000
+@@ -89 +89 @@ static int s337m_probe(AVProbeData *p)
+-    int i, sum, max, data_type, data_size, offset;
++    int i, pos, sum, max, data_type, data_size, offset;
+@@ -92,2 +92,2 @@ static int s337m_probe(AVProbeData *p)
+-    for (buf = p->buf; buf < p->buf + p->buf_size; buf++) {
+-        state = (state << 8) | *buf;
++    for (pos = 0; pos < p->buf_size; pos++) {
++        state = (state << 8) | p->buf[pos];
+@@ -96,0 +97 @@ static int s337m_probe(AVProbeData *p)
++        buf = p->buf + pos + 1;
+@@ -98,3 +99,2 @@ static int s337m_probe(AVProbeData *p)
+-            data_type = AV_RL16(buf + 1);
+-            data_size = AV_RL16(buf + 3);
+-            buf += 4;
++            data_type = AV_RL16(buf    );
++            data_size = AV_RL16(buf + 2);
+@@ -102,3 +102,2 @@ static int s337m_probe(AVProbeData *p)
+-            data_type = AV_RL24(buf + 1);
+-            data_size = AV_RL24(buf + 4);
+-            buf += 6;
++            data_type = AV_RL24(buf    );
++            data_size = AV_RL24(buf + 3);
+@@ -113 +112,2 @@ static int s337m_probe(AVProbeData *p)
+-        buf  += offset;
++        pos  += IS_16LE_MARKER(state) ? 4 : 6;
++        pos  += offset;

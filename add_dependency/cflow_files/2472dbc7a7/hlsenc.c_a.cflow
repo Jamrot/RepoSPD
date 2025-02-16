@@ -1,0 +1,18 @@
++-create_master_playlist() <int create_master_playlist (AVFormatContext *s, VariantStream *const input_vs) at /app/RepoSPD/data_preproc/ab_file/2472dbc7a7/a/hlsenc.c:1161>
+  +-set_http_options()
+  +-hlsenc_io_open()
+  +-av_dict_free()
+  +-av_log()
+  +-ff_hls_write_playlist_version()
+  +-strlen()
+  +-av_strlcpy()
+  +-get_relative_url()
+  +-ff_hls_write_audio_rendition()
+  +-av_freep()
+  +-av_strcasecmp()
+  +-ff_hls_write_stream_info()
+  \-hlsenc_io_close()
++-write_codec_attr() <void write_codec_attr (AVStream *st, VariantStream *vs) at /app/RepoSPD/data_preproc/ab_file/2472dbc7a7/a/hlsenc.c:300>
+  +-strlen()
+  +-snprintf()
+  \-av_stristr()

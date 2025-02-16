@@ -1,0 +1,7 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/1f28a991ef/a/h264_sei.c /app/RepoSPD/data_preproc/ab_file/1f28a991ef/b/h264_sei.c
+--- /app/RepoSPD/data_preproc/ab_file/1f28a991ef/a/h264_sei.c	2025-02-11 12:48:14.533903838 +0000
++++ /app/RepoSPD/data_preproc/ab_file/1f28a991ef/b/h264_sei.c	2025-02-11 12:48:14.448400513 +0000
+@@ -260,3 +259,0 @@ static int decode_unregistered_user_data
+-    if (strlen(user_data + 16) > 0)
+-        av_log(logctx, AV_LOG_DEBUG, "user data:\"%s\"\n", user_data + 16);
+-

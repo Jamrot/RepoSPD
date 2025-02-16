@@ -1,0 +1,12 @@
++-hls_mux_init() <int hls_mux_init (AVFormatContext *s) at /app/RepoSPD/data_preproc/ab_file/1fe40e73a6/a/hlsenc.c:527>
+  +-avformat_alloc_output_context2()
+  +-av_dict_copy()
+  +-avformat_new_stream()
+  +-AVERROR()
+  +-avcodec_parameters_copy()
+  +-av_log()
+  +-av_dict_parse_string()
+  +-av_dict_set()
+  +-avformat_init_output()
+  +-av_dict_count()
+  \-av_dict_free()

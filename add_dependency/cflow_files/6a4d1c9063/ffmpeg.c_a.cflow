@@ -1,0 +1,5 @@
++-get_format() <enum AVPixelFormat get_format (AVCodecContext *s, const enum AVPixelFormat *pix_fmts) at /app/RepoSPD/data_preproc/ab_file/6a4d1c9063/a/ffmpeg.c:2795>
+  +-av_pix_fmt_desc_get()
+  +-get_hwaccel() <const HWAccel *get_hwaccel (enum AVPixelFormat pix_fmt) at /app/RepoSPD/data_preproc/ab_file/6a4d1c9063/a/ffmpeg.c:2785>
+  +-av_log()
+  \-av_buffer_ref()

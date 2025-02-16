@@ -1,0 +1,651 @@
+digraph get_format
+--------
+1000199,(COLUMN_NUMBER,0),(LINE_NUMBER,2795),(COLUMN_NUMBER_END,0),(IS_EXTERNAL,false),(SIGNATURE,static enum AVPixelFormat get_format (AVCodecContext *,const enum AVPixelFormat *)),(NAME,get_format),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,get_format (AVCodecContext *s,const enum AVPixelFormat *pix_fmts)),(FULL_NAME,get_format),(LINE_NUMBER_END,2838),(FILENAME,/app/RepoSPD/data_preproc/ab_file/6a4d1c9063/b/ffmpeg.c),(METHOD,get_format)
+1000200,(ORDER,1),(CODE,AVCodecContext *s),(COLUMN_NUMBER,37),(LINE_NUMBER,2795),(TYPE_FULL_NAME,AVCodecContext *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(PARAM,AVCodecContext *s)
+1000201,(ORDER,2),(CODE,const enum AVPixelFormat *pix_fmts),(COLUMN_NUMBER,56),(LINE_NUMBER,2795),(TYPE_FULL_NAME,const enum AVPixelFormat *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pix_fmts),(PARAM,const enum AVPixelFormat *pix_fmts)
+1000202,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(COLUMN_NUMBER,0),(TYPE_FULL_NAME,void),(LINE_NUMBER,2796),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000203,(TYPE_FULL_NAME,InputStream *),(ORDER,1),(CODE,ist),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(LOCAL,ist: InputStream *)
+1000204,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,*ist = s->opaque),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2797),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*ist = s->opaque)
+1000205,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,17),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2797),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,*ist = s->opaque)
+1000206,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->opaque),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2797),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->opaque)
+1000207,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,2797),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,*ist = s->opaque)
+1000208,(ORDER,2),(LINE_NUMBER,2797),(ARGUMENT_INDEX,2),(CODE,opaque),(COLUMN_NUMBER,26),(CANONICAL_NAME,opaque),(FIELD_IDENTIFIER,opaque,opaque)
+1000209,(TYPE_FULL_NAME,const enum AVPixelFormat *),(ORDER,3),(CODE,p),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(LOCAL,p: const enum AVPixelFormat *)
+1000210,(TYPE_FULL_NAME,int),(ORDER,4),(CODE,ret),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(LOCAL,ret: int)
+1000211,(PARSER_TYPE_NAME,ForStatement),(ORDER,5),(LINE_NUMBER,2801),(ARGUMENT_INDEX,5),(CODE,for (p = pix_fmts; *p != -1; p++)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,for (p = pix_fmts; *p != -1; p++),for (p = pix_fmts; *p != -1; p++))
+1000212,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p = pix_fmts),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,p = pix_fmts)
+1000213,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(IDENTIFIER,p,p = pix_fmts)
+1000214,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,pix_fmts),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pix_fmts),(IDENTIFIER,pix_fmts,p = pix_fmts)
+1000215,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,*p != -1),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,*p != -1)
+1000216,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,*p),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.indirection),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirection),(<operator>.indirection,*p)
+1000217,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(IDENTIFIER,p,*p != -1)
+1000218,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,-1),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.minus),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.minus),(<operator>.minus,-1)
+1000219,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,1),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,int),(LINE_NUMBER,2801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,-1)
+1000220,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,p++),(COLUMN_NUMBER,33),(METHOD_FULL_NAME,<operator>.postIncrement),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2801),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.postIncrement),(<operator>.postIncrement,p++)
+1000221,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p),(COLUMN_NUMBER,33),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2801),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(IDENTIFIER,p,p++)
+1000222,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,void),(LINE_NUMBER,2803),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000223,(TYPE_FULL_NAME,const AVPixFmtDescriptor *),(ORDER,1),(CODE,desc),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,desc),(LOCAL,desc: const AVPixFmtDescriptor *)
+1000224,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,*desc = av_pix_fmt_desc_get(*p)),(COLUMN_NUMBER,33),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*desc = av_pix_fmt_desc_get(*p))
+1000225,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,desc),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,const AVPixFmtDescriptor *),(LINE_NUMBER,2802),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,desc),(IDENTIFIER,desc,*desc = av_pix_fmt_desc_get(*p))
+1000226,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,av_pix_fmt_desc_get(*p)),(COLUMN_NUMBER,41),(METHOD_FULL_NAME,av_pix_fmt_desc_get),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_pix_fmt_desc_get),(av_pix_fmt_desc_get,av_pix_fmt_desc_get(*p))
+1000227,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,*p),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.indirection),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2802),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirection),(<operator>.indirection,*p)
+1000228,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p),(COLUMN_NUMBER,62),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2802),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(IDENTIFIER,p,av_pix_fmt_desc_get(*p))
+1000229,(TYPE_FULL_NAME,const HWAccel *),(ORDER,3),(CODE,hwaccel),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(LOCAL,hwaccel: const HWAccel *)
+1000230,(PARSER_TYPE_NAME,IfStatement),(ORDER,4),(LINE_NUMBER,2805),(ARGUMENT_INDEX,4),(CODE,if (!(desc->flags & AV_PIX_FMT_FLAG_HWACCEL))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (!(desc->flags & AV_PIX_FMT_FLAG_HWACCEL)),if (!(desc->flags & AV_PIX_FMT_FLAG_HWACCEL)))
+1000231,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!(desc->flags & AV_PIX_FMT_FLAG_HWACCEL)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2805),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!(desc->flags & AV_PIX_FMT_FLAG_HWACCEL))
+1000232,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,desc->flags & AV_PIX_FMT_FLAG_HWACCEL),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,<operator>.and),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2805),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.and),(<operator>.and,desc->flags & AV_PIX_FMT_FLAG_HWACCEL)
+1000233,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,desc->flags),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2805),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,desc->flags)
+1000234,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,desc),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,const AVPixFmtDescriptor *),(LINE_NUMBER,2805),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,desc),(IDENTIFIER,desc,desc->flags & AV_PIX_FMT_FLAG_HWACCEL)
+1000235,(ORDER,2),(LINE_NUMBER,2805),(ARGUMENT_INDEX,2),(CODE,flags),(COLUMN_NUMBER,20),(CANONICAL_NAME,flags),(FIELD_IDENTIFIER,flags,flags)
+1000236,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_PIX_FMT_FLAG_HWACCEL),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2805),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PIX_FMT_FLAG_HWACCEL),(IDENTIFIER,AV_PIX_FMT_FLAG_HWACCEL,desc->flags & AV_PIX_FMT_FLAG_HWACCEL)
+1000237,(PARSER_TYPE_NAME,BreakStatement),(ORDER,2),(LINE_NUMBER,2806),(ARGUMENT_INDEX,2),(CODE,break;),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,break;,break;)
+1000238,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,hwaccel = get_hwaccel(*p, ist->hwaccel_id)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2808),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,hwaccel = get_hwaccel(*p, ist->hwaccel_id))
+1000239,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hwaccel),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,const HWAccel *),(LINE_NUMBER,2808),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(IDENTIFIER,hwaccel,hwaccel = get_hwaccel(*p, ist->hwaccel_id))
+1000240,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,get_hwaccel(*p, ist->hwaccel_id)),(COLUMN_NUMBER,18),(METHOD_FULL_NAME,get_hwaccel),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2808),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,get_hwaccel),(get_hwaccel,get_hwaccel(*p, ist->hwaccel_id))
+1000241,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,*p),(COLUMN_NUMBER,30),(METHOD_FULL_NAME,<operator>.indirection),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2808),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirection),(<operator>.indirection,*p)
+1000242,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2808),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(IDENTIFIER,p,get_hwaccel(*p, ist->hwaccel_id))
+1000243,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ist->hwaccel_id),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2808),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->hwaccel_id)
+1000244,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2808),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,get_hwaccel(*p, ist->hwaccel_id))
+1000245,(ORDER,2),(LINE_NUMBER,2808),(ARGUMENT_INDEX,2),(CODE,hwaccel_id),(COLUMN_NUMBER,39),(CANONICAL_NAME,hwaccel_id),(FIELD_IDENTIFIER,hwaccel_id,hwaccel_id)
+1000246,(PARSER_TYPE_NAME,IfStatement),(ORDER,6),(LINE_NUMBER,2809),(ARGUMENT_INDEX,6),(CODE,if (!hwaccel ||\n            (ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id) ||\n            (ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (!hwaccel ||\n            (ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id) ||\n            (ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id)),if (!hwaccel ||\n            (ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id) ||\n            (ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id)))
+1000247,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!hwaccel ||\n            (ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id) ||\n            (ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2809),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,!hwaccel ||\n            (ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id) ||\n            (ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id))
+1000248,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!hwaccel),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2809),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!hwaccel)
+1000249,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hwaccel),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,const HWAccel *),(LINE_NUMBER,2809),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(IDENTIFIER,hwaccel,!hwaccel)
+1000250,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,(ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id) ||\n            (ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2810),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,(ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id) ||\n            (ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id))
+1000251,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2810),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id)
+1000252,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->active_hwaccel_id),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2810),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->active_hwaccel_id)
+1000253,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2810),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,ist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id)
+1000254,(ORDER,2),(LINE_NUMBER,2810),(ARGUMENT_INDEX,2),(CODE,active_hwaccel_id),(COLUMN_NUMBER,18),(CANONICAL_NAME,active_hwaccel_id),(FIELD_IDENTIFIER,active_hwaccel_id,active_hwaccel_id)
+1000255,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ist->active_hwaccel_id != hwaccel->id),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2810),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,ist->active_hwaccel_id != hwaccel->id)
+1000256,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->active_hwaccel_id),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2810),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->active_hwaccel_id)
+1000257,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,39),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2810),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,ist->active_hwaccel_id != hwaccel->id)
+1000258,(ORDER,2),(LINE_NUMBER,2810),(ARGUMENT_INDEX,2),(CODE,active_hwaccel_id),(COLUMN_NUMBER,44),(CANONICAL_NAME,active_hwaccel_id),(FIELD_IDENTIFIER,active_hwaccel_id,active_hwaccel_id)
+1000259,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hwaccel->id),(COLUMN_NUMBER,65),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2810),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hwaccel->id)
+1000260,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hwaccel),(COLUMN_NUMBER,65),(TYPE_FULL_NAME,const HWAccel *),(LINE_NUMBER,2810),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(IDENTIFIER,hwaccel,ist->active_hwaccel_id != hwaccel->id)
+1000261,(ORDER,2),(LINE_NUMBER,2810),(ARGUMENT_INDEX,2),(CODE,id),(COLUMN_NUMBER,74),(CANONICAL_NAME,id),(FIELD_IDENTIFIER,id,id)
+1000262,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2811),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,ist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id)
+1000263,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hwaccel_id != HWACCEL_AUTO),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2811),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,ist->hwaccel_id != HWACCEL_AUTO)
+1000264,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hwaccel_id),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2811),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->hwaccel_id)
+1000265,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2811),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,ist->hwaccel_id != HWACCEL_AUTO)
+1000266,(ORDER,2),(LINE_NUMBER,2811),(ARGUMENT_INDEX,2),(CODE,hwaccel_id),(COLUMN_NUMBER,18),(CANONICAL_NAME,hwaccel_id),(FIELD_IDENTIFIER,hwaccel_id,hwaccel_id)
+1000267,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,HWACCEL_AUTO),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2811),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,HWACCEL_AUTO),(IDENTIFIER,HWACCEL_AUTO,ist->hwaccel_id != HWACCEL_AUTO)
+1000268,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ist->hwaccel_id != hwaccel->id),(COLUMN_NUMBER,48),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2811),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,ist->hwaccel_id != hwaccel->id)
+1000269,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hwaccel_id),(COLUMN_NUMBER,48),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2811),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->hwaccel_id)
+1000270,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,48),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2811),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,ist->hwaccel_id != hwaccel->id)
+1000271,(ORDER,2),(LINE_NUMBER,2811),(ARGUMENT_INDEX,2),(CODE,hwaccel_id),(COLUMN_NUMBER,53),(CANONICAL_NAME,hwaccel_id),(FIELD_IDENTIFIER,hwaccel_id,hwaccel_id)
+1000272,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hwaccel->id),(COLUMN_NUMBER,67),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2811),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hwaccel->id)
+1000273,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hwaccel),(COLUMN_NUMBER,67),(TYPE_FULL_NAME,const HWAccel *),(LINE_NUMBER,2811),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(IDENTIFIER,hwaccel,ist->hwaccel_id != hwaccel->id)
+1000274,(ORDER,2),(LINE_NUMBER,2811),(ARGUMENT_INDEX,2),(CODE,id),(COLUMN_NUMBER,76),(CANONICAL_NAME,id),(FIELD_IDENTIFIER,id,id)
+1000275,(PARSER_TYPE_NAME,ContinueStatement),(ORDER,2),(LINE_NUMBER,2812),(ARGUMENT_INDEX,2),(CODE,continue;),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,continue;,continue;)
+1000276,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,ret = hwaccel->init(s)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2814),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ret = hwaccel->init(s))
+1000277,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,2814),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret = hwaccel->init(s))
+1000278,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hwaccel->init(s)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,hwaccel->init),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2814),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel->init),(hwaccel->init,hwaccel->init(s))
+1000279,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,2814),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,hwaccel->init(s))
+1000280,(PARSER_TYPE_NAME,IfStatement),(ORDER,8),(LINE_NUMBER,2815),(ARGUMENT_INDEX,8),(CODE,if (ret < 0)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (ret < 0),if (ret < 0))
+1000281,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret < 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2815),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,ret < 0)
+1000282,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,2815),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret < 0)
+1000283,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,int),(LINE_NUMBER,2815),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ret < 0)
+1000284,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,void),(LINE_NUMBER,2815),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000285,(PARSER_TYPE_NAME,IfStatement),(ORDER,1),(LINE_NUMBER,2816),(ARGUMENT_INDEX,1),(CODE,if (ist->hwaccel_id == hwaccel->id)),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,if (ist->hwaccel_id == hwaccel->id),if (ist->hwaccel_id == hwaccel->id))
+1000286,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hwaccel_id == hwaccel->id),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2816),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,ist->hwaccel_id == hwaccel->id)
+1000287,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hwaccel_id),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2816),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->hwaccel_id)
+1000288,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2816),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,ist->hwaccel_id == hwaccel->id)
+1000289,(ORDER,2),(LINE_NUMBER,2816),(ARGUMENT_INDEX,2),(CODE,hwaccel_id),(COLUMN_NUMBER,21),(CANONICAL_NAME,hwaccel_id),(FIELD_IDENTIFIER,hwaccel_id,hwaccel_id)
+1000290,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hwaccel->id),(COLUMN_NUMBER,35),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2816),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hwaccel->id)
+1000291,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hwaccel),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,const HWAccel *),(LINE_NUMBER,2816),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(IDENTIFIER,hwaccel,ist->hwaccel_id == hwaccel->id)
+1000292,(ORDER,2),(LINE_NUMBER,2816),(ARGUMENT_INDEX,2),(CODE,id),(COLUMN_NUMBER,44),(CANONICAL_NAME,id),(FIELD_IDENTIFIER,id,id)
+1000293,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,48),(TYPE_FULL_NAME,void),(LINE_NUMBER,2816),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000294,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,av_log(NULL, AV_LOG_FATAL,\n                       "%s hwaccel requested for input stream #%d:%d, "\n                       "but cannot be initialized.\n", hwaccel->name,\n                       ist->file_index, ist->st->index)),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2817),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(NULL, AV_LOG_FATAL,\n                       \"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\", hwaccel->name,\n                       ist->file_index, ist->st->index))
+1000295,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NULL),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2817),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,av_log(NULL, AV_LOG_FATAL,\n                       \"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\", hwaccel->name,\n                       ist->file_index, ist->st->index))
+1000296,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_FATAL),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2817),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_FATAL),(IDENTIFIER,AV_LOG_FATAL,av_log(NULL, AV_LOG_FATAL,\n                       \"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\", hwaccel->name,\n                       ist->file_index, ist->st->index))
+1000297,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"%s hwaccel requested for input stream #%d:%d, "\n                       "but cannot be initialized.\n"),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,char *),(LINE_NUMBER,2818),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\",av_log(NULL, AV_LOG_FATAL,\n                       \"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\", hwaccel->name,\n                       ist->file_index, ist->st->index))
+1000298,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,hwaccel->name),(COLUMN_NUMBER,55),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2819),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hwaccel->name)
+1000299,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hwaccel),(COLUMN_NUMBER,55),(TYPE_FULL_NAME,const HWAccel *),(LINE_NUMBER,2819),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(IDENTIFIER,hwaccel,av_log(NULL, AV_LOG_FATAL,\n                       \"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\", hwaccel->name,\n                       ist->file_index, ist->st->index))
+1000300,(ORDER,2),(LINE_NUMBER,2819),(ARGUMENT_INDEX,2),(CODE,name),(COLUMN_NUMBER,64),(CANONICAL_NAME,name),(FIELD_IDENTIFIER,name,name)
+1000301,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,ist->file_index),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2820),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->file_index)
+1000302,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2820),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,av_log(NULL, AV_LOG_FATAL,\n                       \"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\", hwaccel->name,\n                       ist->file_index, ist->st->index))
+1000303,(ORDER,2),(LINE_NUMBER,2820),(ARGUMENT_INDEX,2),(CODE,file_index),(COLUMN_NUMBER,28),(CANONICAL_NAME,file_index),(FIELD_IDENTIFIER,file_index,file_index)
+1000304,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,ist->st->index),(COLUMN_NUMBER,40),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2820),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->st->index)
+1000305,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->st),(COLUMN_NUMBER,40),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2820),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->st)
+1000306,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2820),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,av_log(NULL, AV_LOG_FATAL,\n                       \"%s hwaccel requested for input stream #%d:%d, \"\n                       \"but cannot be initialized.\n\", hwaccel->name,\n                       ist->file_index, ist->st->index))
+1000307,(ORDER,2),(LINE_NUMBER,2820),(ARGUMENT_INDEX,2),(CODE,st),(COLUMN_NUMBER,45),(CANONICAL_NAME,st),(FIELD_IDENTIFIER,st,st)
+1000308,(ORDER,2),(LINE_NUMBER,2820),(ARGUMENT_INDEX,2),(CODE,index),(COLUMN_NUMBER,49),(CANONICAL_NAME,index),(FIELD_IDENTIFIER,index,index)
+1000309,(ORDER,2),(LINE_NUMBER,2821),(ARGUMENT_INDEX,2),(CODE,return AV_PIX_FMT_NONE;),(COLUMN_NUMBER,16),(RETURN,return AV_PIX_FMT_NONE;,return AV_PIX_FMT_NONE;)
+1000310,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,AV_PIX_FMT_NONE),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2821),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PIX_FMT_NONE),(IDENTIFIER,AV_PIX_FMT_NONE,return AV_PIX_FMT_NONE;)
+1000311,(PARSER_TYPE_NAME,ContinueStatement),(ORDER,2),(LINE_NUMBER,2823),(ARGUMENT_INDEX,2),(CODE,continue;),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,continue;,continue;)
+1000312,(PARSER_TYPE_NAME,IfStatement),(ORDER,9),(LINE_NUMBER,2826),(ARGUMENT_INDEX,9),(CODE,if (ist->hw_frames_ctx)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (ist->hw_frames_ctx),if (ist->hw_frames_ctx))
+1000313,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hw_frames_ctx),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2826),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->hw_frames_ctx)
+1000314,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2826),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,if (ist->hw_frames_ctx))
+1000315,(ORDER,2),(LINE_NUMBER,2826),(ARGUMENT_INDEX,2),(CODE,hw_frames_ctx),(COLUMN_NUMBER,17),(CANONICAL_NAME,hw_frames_ctx),(FIELD_IDENTIFIER,hw_frames_ctx,hw_frames_ctx)
+1000316,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,void),(LINE_NUMBER,2826),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000317,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->hw_frames_ctx = av_buffer_ref(ist->hw_frames_ctx)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2827),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,s->hw_frames_ctx = av_buffer_ref(ist->hw_frames_ctx))
+1000318,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->hw_frames_ctx),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2827),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->hw_frames_ctx)
+1000319,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,2827),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->hw_frames_ctx = av_buffer_ref(ist->hw_frames_ctx))
+1000320,(ORDER,2),(LINE_NUMBER,2827),(ARGUMENT_INDEX,2),(CODE,hw_frames_ctx),(COLUMN_NUMBER,15),(CANONICAL_NAME,hw_frames_ctx),(FIELD_IDENTIFIER,hw_frames_ctx,hw_frames_ctx)
+1000321,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,av_buffer_ref(ist->hw_frames_ctx)),(COLUMN_NUMBER,31),(METHOD_FULL_NAME,av_buffer_ref),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2827),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_buffer_ref),(av_buffer_ref,av_buffer_ref(ist->hw_frames_ctx))
+1000322,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hw_frames_ctx),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2827),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->hw_frames_ctx)
+1000323,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2827),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,av_buffer_ref(ist->hw_frames_ctx))
+1000324,(ORDER,2),(LINE_NUMBER,2827),(ARGUMENT_INDEX,2),(CODE,hw_frames_ctx),(COLUMN_NUMBER,50),(CANONICAL_NAME,hw_frames_ctx),(FIELD_IDENTIFIER,hw_frames_ctx,hw_frames_ctx)
+1000325,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,2828),(ARGUMENT_INDEX,2),(CODE,if (!s->hw_frames_ctx)),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,if (!s->hw_frames_ctx),if (!s->hw_frames_ctx))
+1000326,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!s->hw_frames_ctx),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2828),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!s->hw_frames_ctx)
+1000327,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->hw_frames_ctx),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2828),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->hw_frames_ctx)
+1000328,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,17),(TYPE_FULL_NAME,AVCodecContext *),(LINE_NUMBER,2828),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,!s->hw_frames_ctx)
+1000329,(ORDER,2),(LINE_NUMBER,2828),(ARGUMENT_INDEX,2),(CODE,hw_frames_ctx),(COLUMN_NUMBER,20),(CANONICAL_NAME,hw_frames_ctx),(FIELD_IDENTIFIER,hw_frames_ctx,hw_frames_ctx)
+1000330,(ORDER,2),(LINE_NUMBER,2829),(ARGUMENT_INDEX,2),(CODE,return AV_PIX_FMT_NONE;),(COLUMN_NUMBER,16),(RETURN,return AV_PIX_FMT_NONE;,return AV_PIX_FMT_NONE;)
+1000331,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,AV_PIX_FMT_NONE),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2829),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_PIX_FMT_NONE),(IDENTIFIER,AV_PIX_FMT_NONE,return AV_PIX_FMT_NONE;)
+1000332,(ORDER,10),(ARGUMENT_INDEX,10),(CODE,ist->active_hwaccel_id = hwaccel->id),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2832),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ist->active_hwaccel_id = hwaccel->id)
+1000333,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->active_hwaccel_id),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2832),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->active_hwaccel_id)
+1000334,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2832),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,ist->active_hwaccel_id = hwaccel->id)
+1000335,(ORDER,2),(LINE_NUMBER,2832),(ARGUMENT_INDEX,2),(CODE,active_hwaccel_id),(COLUMN_NUMBER,13),(CANONICAL_NAME,active_hwaccel_id),(FIELD_IDENTIFIER,active_hwaccel_id,active_hwaccel_id)
+1000336,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hwaccel->id),(COLUMN_NUMBER,33),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2832),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hwaccel->id)
+1000337,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hwaccel),(COLUMN_NUMBER,33),(TYPE_FULL_NAME,const HWAccel *),(LINE_NUMBER,2832),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hwaccel),(IDENTIFIER,hwaccel,ist->active_hwaccel_id = hwaccel->id)
+1000338,(ORDER,2),(LINE_NUMBER,2832),(ARGUMENT_INDEX,2),(CODE,id),(COLUMN_NUMBER,42),(CANONICAL_NAME,id),(FIELD_IDENTIFIER,id,id)
+1000339,(ORDER,11),(ARGUMENT_INDEX,11),(CODE,ist->hwaccel_pix_fmt   = *p),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2833),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ist->hwaccel_pix_fmt   = *p)
+1000340,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist->hwaccel_pix_fmt),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2833),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ist->hwaccel_pix_fmt)
+1000341,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ist),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,InputStream *),(LINE_NUMBER,2833),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ist),(IDENTIFIER,ist,ist->hwaccel_pix_fmt   = *p)
+1000342,(ORDER,2),(LINE_NUMBER,2833),(ARGUMENT_INDEX,2),(CODE,hwaccel_pix_fmt),(COLUMN_NUMBER,13),(CANONICAL_NAME,hwaccel_pix_fmt),(FIELD_IDENTIFIER,hwaccel_pix_fmt,hwaccel_pix_fmt)
+1000343,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,*p),(COLUMN_NUMBER,33),(METHOD_FULL_NAME,<operator>.indirection),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2833),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirection),(<operator>.indirection,*p)
+1000344,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2833),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(IDENTIFIER,p,ist->hwaccel_pix_fmt   = *p)
+1000345,(PARSER_TYPE_NAME,BreakStatement),(ORDER,12),(LINE_NUMBER,2834),(ARGUMENT_INDEX,12),(CODE,break;),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,break;,break;)
+1000346,(ORDER,6),(LINE_NUMBER,2837),(ARGUMENT_INDEX,6),(CODE,return *p;),(COLUMN_NUMBER,4),(RETURN,return *p;,return *p;)
+1000347,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,*p),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.indirection),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2837),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirection),(<operator>.indirection,*p)
+1000348,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,p),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,const enum AVPixelFormat *),(LINE_NUMBER,2837),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,p),(IDENTIFIER,p,return *p;)
+1000349,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,2795),(TYPE_FULL_NAME,static enum AVPixelFormat),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static enum AVPixelFormat)
+--------
+1000199,1000200,AST
+1000199,1000201,AST
+1000199,1000202,AST
+1000199,1000349,AST
+1000202,1000203,AST
+1000202,1000204,AST
+1000202,1000209,AST
+1000202,1000210,AST
+1000202,1000211,AST
+1000202,1000346,AST
+1000204,1000205,AST
+1000204,1000206,AST
+1000206,1000207,AST
+1000206,1000208,AST
+1000211,1000212,AST
+1000211,1000215,AST
+1000211,1000220,AST
+1000211,1000222,AST
+1000212,1000213,AST
+1000212,1000214,AST
+1000215,1000216,AST
+1000215,1000218,AST
+1000216,1000217,AST
+1000218,1000219,AST
+1000220,1000221,AST
+1000222,1000223,AST
+1000222,1000224,AST
+1000222,1000229,AST
+1000222,1000230,AST
+1000222,1000238,AST
+1000222,1000246,AST
+1000222,1000276,AST
+1000222,1000280,AST
+1000222,1000312,AST
+1000222,1000332,AST
+1000222,1000339,AST
+1000222,1000345,AST
+1000224,1000225,AST
+1000224,1000226,AST
+1000226,1000227,AST
+1000227,1000228,AST
+1000230,1000231,AST
+1000230,1000237,AST
+1000231,1000232,AST
+1000232,1000233,AST
+1000232,1000236,AST
+1000233,1000234,AST
+1000233,1000235,AST
+1000238,1000239,AST
+1000238,1000240,AST
+1000240,1000241,AST
+1000240,1000243,AST
+1000241,1000242,AST
+1000243,1000244,AST
+1000243,1000245,AST
+1000246,1000247,AST
+1000246,1000275,AST
+1000247,1000248,AST
+1000247,1000250,AST
+1000248,1000249,AST
+1000250,1000251,AST
+1000250,1000262,AST
+1000251,1000252,AST
+1000251,1000255,AST
+1000252,1000253,AST
+1000252,1000254,AST
+1000255,1000256,AST
+1000255,1000259,AST
+1000256,1000257,AST
+1000256,1000258,AST
+1000259,1000260,AST
+1000259,1000261,AST
+1000262,1000263,AST
+1000262,1000268,AST
+1000263,1000264,AST
+1000263,1000267,AST
+1000264,1000265,AST
+1000264,1000266,AST
+1000268,1000269,AST
+1000268,1000272,AST
+1000269,1000270,AST
+1000269,1000271,AST
+1000272,1000273,AST
+1000272,1000274,AST
+1000276,1000277,AST
+1000276,1000278,AST
+1000278,1000279,AST
+1000280,1000281,AST
+1000280,1000284,AST
+1000281,1000282,AST
+1000281,1000283,AST
+1000284,1000285,AST
+1000284,1000311,AST
+1000285,1000286,AST
+1000285,1000293,AST
+1000286,1000287,AST
+1000286,1000290,AST
+1000287,1000288,AST
+1000287,1000289,AST
+1000290,1000291,AST
+1000290,1000292,AST
+1000293,1000294,AST
+1000293,1000309,AST
+1000294,1000295,AST
+1000294,1000296,AST
+1000294,1000297,AST
+1000294,1000298,AST
+1000294,1000301,AST
+1000294,1000304,AST
+1000298,1000299,AST
+1000298,1000300,AST
+1000301,1000302,AST
+1000301,1000303,AST
+1000304,1000305,AST
+1000304,1000308,AST
+1000305,1000306,AST
+1000305,1000307,AST
+1000309,1000310,AST
+1000312,1000313,AST
+1000312,1000316,AST
+1000313,1000314,AST
+1000313,1000315,AST
+1000316,1000317,AST
+1000316,1000325,AST
+1000317,1000318,AST
+1000317,1000321,AST
+1000318,1000319,AST
+1000318,1000320,AST
+1000321,1000322,AST
+1000322,1000323,AST
+1000322,1000324,AST
+1000325,1000326,AST
+1000325,1000330,AST
+1000326,1000327,AST
+1000327,1000328,AST
+1000327,1000329,AST
+1000330,1000331,AST
+1000332,1000333,AST
+1000332,1000336,AST
+1000333,1000334,AST
+1000333,1000335,AST
+1000336,1000337,AST
+1000336,1000338,AST
+1000339,1000340,AST
+1000339,1000343,AST
+1000340,1000341,AST
+1000340,1000342,AST
+1000343,1000344,AST
+1000346,1000347,AST
+1000347,1000348,AST
+1000204,1000212,CFG
+1000206,1000204,CFG
+1000208,1000206,CFG
+1000212,1000216,CFG
+1000215,1000227,CFG
+1000215,1000347,CFG
+1000216,1000218,CFG
+1000218,1000215,CFG
+1000220,1000216,CFG
+1000224,1000235,CFG
+1000226,1000224,CFG
+1000227,1000226,CFG
+1000231,1000347,CFG
+1000231,1000241,CFG
+1000232,1000231,CFG
+1000233,1000232,CFG
+1000235,1000233,CFG
+1000238,1000248,CFG
+1000240,1000238,CFG
+1000241,1000245,CFG
+1000243,1000240,CFG
+1000245,1000243,CFG
+1000247,1000220,CFG
+1000247,1000278,CFG
+1000248,1000247,CFG
+1000248,1000254,CFG
+1000250,1000247,CFG
+1000251,1000250,CFG
+1000251,1000266,CFG
+1000252,1000251,CFG
+1000252,1000258,CFG
+1000254,1000252,CFG
+1000255,1000251,CFG
+1000256,1000261,CFG
+1000258,1000256,CFG
+1000259,1000255,CFG
+1000261,1000259,CFG
+1000262,1000250,CFG
+1000263,1000262,CFG
+1000263,1000271,CFG
+1000264,1000263,CFG
+1000266,1000264,CFG
+1000268,1000262,CFG
+1000269,1000274,CFG
+1000271,1000269,CFG
+1000272,1000268,CFG
+1000274,1000272,CFG
+1000276,1000281,CFG
+1000278,1000276,CFG
+1000281,1000289,CFG
+1000281,1000315,CFG
+1000286,1000300,CFG
+1000286,1000220,CFG
+1000287,1000292,CFG
+1000289,1000287,CFG
+1000290,1000286,CFG
+1000292,1000290,CFG
+1000294,1000309,CFG
+1000298,1000303,CFG
+1000300,1000298,CFG
+1000301,1000307,CFG
+1000303,1000301,CFG
+1000304,1000294,CFG
+1000305,1000308,CFG
+1000307,1000305,CFG
+1000308,1000304,CFG
+1000309,1000349,CFG
+1000313,1000320,CFG
+1000313,1000335,CFG
+1000315,1000313,CFG
+1000317,1000329,CFG
+1000318,1000324,CFG
+1000320,1000318,CFG
+1000321,1000317,CFG
+1000322,1000321,CFG
+1000324,1000322,CFG
+1000326,1000330,CFG
+1000326,1000335,CFG
+1000327,1000326,CFG
+1000329,1000327,CFG
+1000330,1000349,CFG
+1000332,1000342,CFG
+1000333,1000338,CFG
+1000335,1000333,CFG
+1000336,1000332,CFG
+1000338,1000336,CFG
+1000339,1000347,CFG
+1000340,1000343,CFG
+1000342,1000340,CFG
+1000343,1000339,CFG
+1000346,1000349,CFG
+1000347,1000346,CFG
+1000199,1000208,CFG
+1000309,1000349,DDG<RET>
+1000330,1000349,DDG<RET>
+1000346,1000349,DDG<RET>
+1000199,1000349,DDG
+1000199,1000200,DDG
+1000199,1000201,DDG
+1000199,1000204,DDG
+1000199,1000206,DDG
+1000201,1000212,DDGpix_fmts
+1000199,1000212,DDG
+1000240,1000215,DDG*p
+1000212,1000215,DDGp
+1000220,1000215,DDGp
+1000199,1000215,DDG
+1000240,1000216,DDG*p
+1000212,1000216,DDGp
+1000220,1000216,DDGp
+1000199,1000216,DDG
+1000218,1000215,DDG1
+1000199,1000218,DDG
+1000240,1000220,DDG*p
+1000199,1000220,DDG
+1000226,1000220,DDG*p
+1000215,1000220,DDG*p
+1000212,1000220,DDGp
+1000226,1000224,DDG*p
+1000199,1000224,DDG
+1000215,1000226,DDG*p
+1000199,1000226,DDG
+1000240,1000226,DDG*p
+1000212,1000226,DDGp
+1000220,1000226,DDGp
+1000215,1000227,DDG*p
+1000199,1000227,DDG
+1000240,1000227,DDG*p
+1000212,1000227,DDGp
+1000220,1000227,DDGp
+1000232,1000231,DDGdesc->flags
+1000232,1000231,DDGAV_PIX_FMT_FLAG_HWACCEL
+1000224,1000232,DDGdesc
+1000199,1000232,DDG
+1000224,1000233,DDGdesc
+1000199,1000233,DDG
+1000240,1000238,DDG*p
+1000240,1000238,DDGist->hwaccel_id
+1000199,1000238,DDG
+1000226,1000240,DDG*p
+1000199,1000240,DDG
+1000215,1000240,DDG*p
+1000212,1000240,DDGp
+1000220,1000240,DDGp
+1000204,1000240,DDGist
+1000226,1000241,DDG*p
+1000199,1000241,DDG
+1000215,1000241,DDG*p
+1000240,1000241,DDG*p
+1000212,1000241,DDGp
+1000220,1000241,DDGp
+1000204,1000243,DDGist
+1000199,1000243,DDG
+1000248,1000247,DDGhwaccel
+1000238,1000248,DDGhwaccel
+1000199,1000248,DDG
+1000250,1000247,DDGist->active_hwaccel_id && ist->active_hwaccel_id != hwaccel->id
+1000250,1000247,DDGist->hwaccel_id != HWACCEL_AUTO && ist->hwaccel_id != hwaccel->id
+1000251,1000250,DDGist->active_hwaccel_id
+1000251,1000250,DDGist->active_hwaccel_id != hwaccel->id
+1000255,1000251,DDGist->active_hwaccel_id
+1000199,1000251,DDG
+1000199,1000252,DDG
+1000255,1000251,DDGhwaccel->id
+1000199,1000255,DDG
+1000199,1000256,DDG
+1000248,1000255,DDGhwaccel
+1000248,1000259,DDGhwaccel
+1000199,1000259,DDG
+1000262,1000250,DDGist->hwaccel_id != HWACCEL_AUTO
+1000262,1000250,DDGist->hwaccel_id != hwaccel->id
+1000263,1000262,DDGist->hwaccel_id
+1000263,1000262,DDGHWACCEL_AUTO
+1000199,1000263,DDG
+1000199,1000264,DDG
+1000268,1000262,DDGist->hwaccel_id
+1000268,1000262,DDGhwaccel->id
+1000199,1000268,DDG
+1000199,1000269,DDG
+1000248,1000268,DDGhwaccel
+1000248,1000272,DDGhwaccel
+1000199,1000272,DDG
+1000278,1000276,DDGs
+1000199,1000276,DDG
+1000199,1000278,DDG
+1000276,1000281,DDGret
+1000199,1000281,DDG
+1000199,1000286,DDG
+1000199,1000287,DDG
+1000248,1000286,DDGhwaccel
+1000248,1000290,DDGhwaccel
+1000199,1000290,DDG
+1000199,1000294,DDG
+1000248,1000294,DDGhwaccel
+1000199,1000298,DDG
+1000248,1000298,DDGhwaccel
+1000199,1000301,DDG
+1000199,1000304,DDG
+1000199,1000305,DDG
+1000310,1000309,DDGAV_PIX_FMT_NONE
+1000199,1000309,DDG
+1000199,1000310,DDG
+1000199,1000313,DDG
+1000204,1000313,DDGist
+1000321,1000317,DDGist->hw_frames_ctx
+1000278,1000318,DDGs
+1000199,1000318,DDG
+1000199,1000321,DDG
+1000204,1000321,DDGist
+1000199,1000322,DDG
+1000204,1000322,DDGist
+1000199,1000326,DDG
+1000278,1000326,DDGs
+1000199,1000327,DDG
+1000278,1000327,DDGs
+1000331,1000330,DDGAV_PIX_FMT_NONE
+1000199,1000330,DDG
+1000199,1000331,DDG
+1000248,1000332,DDGhwaccel
+1000199,1000332,DDG
+1000199,1000333,DDG
+1000204,1000333,DDGist
+1000248,1000336,DDGhwaccel
+1000199,1000336,DDG
+1000240,1000339,DDG*p
+1000199,1000339,DDG
+1000226,1000339,DDG*p
+1000215,1000339,DDG*p
+1000212,1000339,DDGp
+1000220,1000339,DDGp
+1000199,1000340,DDG
+1000204,1000340,DDGist
+1000240,1000343,DDG*p
+1000199,1000343,DDG
+1000226,1000343,DDG*p
+1000215,1000343,DDG*p
+1000212,1000343,DDGp
+1000220,1000343,DDGp
+1000347,1000346,DDG*p
+1000226,1000346,DDG*p
+1000215,1000346,DDG*p
+1000199,1000346,DDG
+1000240,1000346,DDG*p
+1000212,1000346,DDGp
+1000220,1000346,DDGp
+1000226,1000347,DDG*p
+1000215,1000347,DDG*p
+1000199,1000347,DDG
+1000240,1000347,DDG*p
+1000212,1000347,DDGp
+1000220,1000347,DDGp
+1000215,1000224,CDG
+1000215,1000235,CDG
+1000215,1000233,CDG
+1000215,1000232,CDG
+1000215,1000231,CDG
+1000215,1000227,CDG
+1000215,1000226,CDG
+1000215,1000347,CDG
+1000215,1000346,CDG
+1000231,1000240,CDG
+1000231,1000238,CDG
+1000231,1000248,CDG
+1000231,1000247,CDG
+1000231,1000245,CDG
+1000231,1000243,CDG
+1000231,1000241,CDG
+1000231,1000347,CDG
+1000231,1000346,CDG
+1000247,1000220,CDG
+1000247,1000218,CDG
+1000247,1000216,CDG
+1000247,1000215,CDG
+1000247,1000281,CDG
+1000247,1000278,CDG
+1000247,1000276,CDG
+1000248,1000254,CDG
+1000248,1000252,CDG
+1000248,1000251,CDG
+1000248,1000250,CDG
+1000251,1000266,CDG
+1000251,1000264,CDG
+1000251,1000263,CDG
+1000251,1000262,CDG
+1000252,1000256,CDG
+1000252,1000255,CDG
+1000252,1000261,CDG
+1000252,1000259,CDG
+1000252,1000258,CDG
+1000263,1000272,CDG
+1000263,1000271,CDG
+1000263,1000269,CDG
+1000263,1000268,CDG
+1000263,1000274,CDG
+1000281,1000287,CDG
+1000281,1000286,CDG
+1000281,1000292,CDG
+1000281,1000290,CDG
+1000281,1000289,CDG
+1000281,1000315,CDG
+1000281,1000313,CDG
+1000286,1000220,CDG
+1000286,1000218,CDG
+1000286,1000216,CDG
+1000286,1000215,CDG
+1000286,1000304,CDG
+1000286,1000303,CDG
+1000286,1000301,CDG
+1000286,1000300,CDG
+1000286,1000298,CDG
+1000286,1000294,CDG
+1000286,1000309,CDG
+1000286,1000308,CDG
+1000286,1000307,CDG
+1000286,1000305,CDG
+1000313,1000320,CDG
+1000313,1000318,CDG
+1000313,1000317,CDG
+1000313,1000336,CDG
+1000313,1000335,CDG
+1000313,1000333,CDG
+1000313,1000332,CDG
+1000313,1000329,CDG
+1000313,1000327,CDG
+1000313,1000326,CDG
+1000313,1000324,CDG
+1000313,1000322,CDG
+1000313,1000321,CDG
+1000313,1000347,CDG
+1000313,1000346,CDG
+1000313,1000343,CDG
+1000313,1000342,CDG
+1000313,1000340,CDG
+1000313,1000339,CDG
+1000313,1000338,CDG
+1000326,1000336,CDG
+1000326,1000335,CDG
+1000326,1000333,CDG
+1000326,1000332,CDG
+1000326,1000330,CDG
+1000326,1000347,CDG
+1000326,1000346,CDG
+1000326,1000343,CDG
+1000326,1000342,CDG
+1000326,1000340,CDG
+1000326,1000339,CDG
+1000326,1000338,CDG

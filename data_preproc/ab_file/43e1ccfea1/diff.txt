@@ -1,0 +1,17 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/43e1ccfea1/a/http.c /app/RepoSPD/data_preproc/ab_file/43e1ccfea1/b/http.c
+--- /app/RepoSPD/data_preproc/ab_file/43e1ccfea1/a/http.c	2025-02-11 12:48:14.095699295 +0000
++++ /app/RepoSPD/data_preproc/ab_file/43e1ccfea1/b/http.c	2025-02-11 12:48:13.924692643 +0000
+@@ -1452,2 +1452 @@ static int http_read_stream(URLContext *
+-    while ((read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)
+-        || (read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed))) {
++    while (read_ret < 0) {
+@@ -1457 +1456,8 @@ static int http_read_stream(URLContext *
+-            return read_ret;
++            break;
++
++        if (h->is_streamed && !s->reconnect_streamed)
++            break;
++
++        if (!(s->reconnect && s->filesize > 0 && s->off < s->filesize) &&
++            !(s->reconnect_at_eof && read_ret == AVERROR_EOF))
++            break;

@@ -2,7 +2,7 @@ import json
 import os
 from merge_cpg import merge_cpg,getdirsize, generateLog
 
-root = '/data1/lzr/code/GraphTwin9/release' # Absolute path to `release`
+root = '/app/RepoSPD' # Absolute path to `release`
 path =            root + '/dataset/example.json' # path of json dataset
 path_ab_file =    root + '/data_preproc/ab_file/' # path of ab_file
 path_repo =       root + '/data_preproc/repo/' # path of repositories
@@ -98,6 +98,7 @@ def gen_cpg():
             print('cpg exist, skipping')
             continue
         os.system(f'cd {path_joern}; ./joern --script {path_locateFunc} --params inputFile={path_ab_file+d}/a/,outFile={path_ab_file+d}/cpg_a.txt')
+        # ./joern --script /app/RepoSPD/data_preproc/locateFunc.sc --params inputFile=../data_preproc/ab_file/1a0d9b503d/a/,outFile=../data_preproc/ab_file/1a0d9b503d/cpg_a.txt
 
         os.system(f'cd {path_joern}; ./joern --script {path_locateFunc} --params inputFile={path_ab_file+d}/b/,outFile={path_ab_file+d}/cpg_b.txt')
         
@@ -109,17 +110,18 @@ def merge_cpg():
     if not os.path.exists(path_result):
         os.mkdir(path_result)
 
-    commits = os.listdir(path_ab_file)
+    # commits = os.listdir(path_ab_file)
+    commits = ['1f28a991ef']
     files= (os.path.join(path_ab_file, cmt) for cmt in commits if cmt != '.DS_Store')
     commits = sorted(files, key = getdirsize)
 
     i = 0
     for cmt in commits:
-        if os.path.isfile(cmt.replace('/ab_file/','/data/')+'/out_slim_ninf_noast_n1_w.log'):
-            print('log file exist, skipping')
-            i += 1
-            print(i, cmt)
-            continue
+        # if os.path.isfile(cmt.replace('/ab_file/','/data/')+'/out_slim_ninf_noast_n1_w.log'):
+        #     print('log file exist, skipping')
+        #     i += 1
+        #     print(i, cmt)
+        #     continue
         if os.path.isfile(cmt+'/cpg_a.txt') and os.path.isfile(cmt+'/cpg_b.txt'):
             os.system(f'cd {path_joern}; ./joern-parse {cmt}/a; ./joern-export --repr cpg14 --out {cmt}/outA')
             os.system(f'cd {path_joern}; ./joern-parse {cmt}/b; ./joern-export --repr cpg14 --out {cmt}/outB')

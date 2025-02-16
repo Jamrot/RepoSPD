@@ -1,0 +1,6 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/2472dbc7a7/a/hlsenc.c /app/RepoSPD/data_preproc/ab_file/2472dbc7a7/b/hlsenc.c
+--- /app/RepoSPD/data_preproc/ab_file/2472dbc7a7/a/hlsenc.c	2025-02-11 12:48:14.330833440 +0000
++++ /app/RepoSPD/data_preproc/ab_file/2472dbc7a7/b/hlsenc.c	2025-02-11 12:48:14.298769692 +0000
+@@ -311 +311 @@ static void write_codec_attr(AVStream *s
+-        if ((data[0] | data[1] | data[2]) == 0 && data[3] == 1 && (data[4] & 0x1F) == 7) {
++        if (data && (data[0] | data[1] | data[2]) == 0 && data[3] == 1 && (data[4] & 0x1F) == 7) {

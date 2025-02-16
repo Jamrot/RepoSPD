@@ -1,0 +1,13 @@
+digraph ifilter_has_all_input_formats
+--------
+1000138,(COLUMN_NUMBER,0),(LINE_NUMBER,129),(COLUMN_NUMBER_END,57),(IS_EXTERNAL,false),(SIGNATURE,static int ifilter_has_all_input_formats (FilterGraph *)),(NAME,ifilter_has_all_input_formats),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ifilter_has_all_input_formats (FilterGraph *fg)),(FULL_NAME,ifilter_has_all_input_formats),(LINE_NUMBER_END,129),(FILENAME,/app/RepoSPD/data_preproc/ab_file/6a4d1c9063/a/ffmpeg.c),(METHOD,ifilter_has_all_input_formats)
+1000139,(ORDER,1),(CODE,FilterGraph *fg),(COLUMN_NUMBER,41),(LINE_NUMBER,129),(TYPE_FULL_NAME,FilterGraph *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,fg),(PARAM,FilterGraph *fg)
+1000140,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000141,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,129),(TYPE_FULL_NAME,static int),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static int)
+--------
+1000138,1000139,AST
+1000138,1000140,AST
+1000138,1000141,AST
+1000138,1000141,CFG
+1000138,1000141,DDG
+1000138,1000139,DDG

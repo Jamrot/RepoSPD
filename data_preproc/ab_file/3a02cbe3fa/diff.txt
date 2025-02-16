@@ -1,0 +1,37 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/3a02cbe3fa/a/x86inc.asm /app/RepoSPD/data_preproc/ab_file/3a02cbe3fa/b/x86inc.asm
+--- /app/RepoSPD/data_preproc/ab_file/3a02cbe3fa/a/x86inc.asm	2025-02-11 12:48:14.256018029 +0000
++++ /app/RepoSPD/data_preproc/ab_file/3a02cbe3fa/b/x86inc.asm	2025-02-11 12:48:14.223954284 +0000
+@@ -1299,0 +1300,28 @@ AVX_INSTR blendvps, sse4 ; can't be emul
++AVX_INSTR cmpeqpd, sse2, 1, 0, 1
++AVX_INSTR cmpeqps, sse, 1, 0, 1
++AVX_INSTR cmpeqsd, sse2, 1, 0, 0
++AVX_INSTR cmpeqss, sse, 1, 0, 0
++AVX_INSTR cmplepd, sse2, 1, 0, 0
++AVX_INSTR cmpleps, sse, 1, 0, 0
++AVX_INSTR cmplesd, sse2, 1, 0, 0
++AVX_INSTR cmpless, sse, 1, 0, 0
++AVX_INSTR cmpltpd, sse2, 1, 0, 0
++AVX_INSTR cmpltps, sse, 1, 0, 0
++AVX_INSTR cmpltsd, sse2, 1, 0, 0
++AVX_INSTR cmpltss, sse, 1, 0, 0
++AVX_INSTR cmpneqpd, sse2, 1, 0, 1
++AVX_INSTR cmpneqps, sse, 1, 0, 1
++AVX_INSTR cmpneqsd, sse2, 1, 0, 0
++AVX_INSTR cmpneqss, sse, 1, 0, 0
++AVX_INSTR cmpnlepd, sse2, 1, 0, 0
++AVX_INSTR cmpnleps, sse, 1, 0, 0
++AVX_INSTR cmpnlesd, sse2, 1, 0, 0
++AVX_INSTR cmpnless, sse, 1, 0, 0
++AVX_INSTR cmpnltpd, sse2, 1, 0, 0
++AVX_INSTR cmpnltps, sse, 1, 0, 0
++AVX_INSTR cmpnltsd, sse2, 1, 0, 0
++AVX_INSTR cmpnltss, sse, 1, 0, 0
++AVX_INSTR cmpordpd, sse2 1, 0, 1
++AVX_INSTR cmpordps, sse 1, 0, 1
++AVX_INSTR cmpordsd, sse2 1, 0, 0
++AVX_INSTR cmpordss, sse 1, 0, 0
+@@ -1303,0 +1332,4 @@ AVX_INSTR cmpss, sse, 1, 1, 0
++AVX_INSTR cmpunordpd, sse2, 1, 0, 1
++AVX_INSTR cmpunordps, sse, 1, 0, 1
++AVX_INSTR cmpunordsd, sse2, 1, 0, 0
++AVX_INSTR cmpunordss, sse, 1, 0, 0

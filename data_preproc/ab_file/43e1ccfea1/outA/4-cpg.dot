@@ -1,0 +1,861 @@
+digraph http_read_stream
+--------
+1000208,(COLUMN_NUMBER,0),(LINE_NUMBER,1431),(COLUMN_NUMBER_END,0),(IS_EXTERNAL,false),(SIGNATURE,static int http_read_stream (URLContext *,uint8_t *,int)),(NAME,http_read_stream),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,http_read_stream (URLContext *h,uint8_t *buf,int size)),(FULL_NAME,http_read_stream),(LINE_NUMBER_END,1484),(FILENAME,/app/RepoSPD/data_preproc/ab_file/43e1ccfea1/a/http.c),(METHOD,http_read_stream)
+1000209,(ORDER,1),(CODE,URLContext *h),(COLUMN_NUMBER,28),(LINE_NUMBER,1431),(TYPE_FULL_NAME,URLContext *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(PARAM,URLContext *h)
+1000210,(ORDER,2),(CODE,uint8_t *buf),(COLUMN_NUMBER,43),(LINE_NUMBER,1431),(TYPE_FULL_NAME,uint8_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,buf),(PARAM,uint8_t *buf)
+1000211,(ORDER,3),(CODE,int size),(COLUMN_NUMBER,57),(LINE_NUMBER,1431),(TYPE_FULL_NAME,int),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,size),(PARAM,int size)
+1000212,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(COLUMN_NUMBER,0),(TYPE_FULL_NAME,void),(LINE_NUMBER,1432),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000213,(TYPE_FULL_NAME,HTTPContext *),(ORDER,1),(CODE,s),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(LOCAL,s: HTTPContext *)
+1000214,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,*s = h->priv_data),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1433),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*s = h->priv_data)
+1000215,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,17),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1433),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,*s = h->priv_data)
+1000216,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,h->priv_data),(COLUMN_NUMBER,21),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1433),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,h->priv_data)
+1000217,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1433),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,*s = h->priv_data)
+1000218,(ORDER,2),(LINE_NUMBER,1433),(ARGUMENT_INDEX,2),(CODE,priv_data),(COLUMN_NUMBER,24),(CANONICAL_NAME,priv_data),(FIELD_IDENTIFIER,priv_data,priv_data)
+1000219,(TYPE_FULL_NAME,int),(ORDER,3),(CODE,err),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(LOCAL,err: int)
+1000220,(TYPE_FULL_NAME,int),(ORDER,4),(CODE,new_location),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,new_location),(LOCAL,new_location: int)
+1000221,(TYPE_FULL_NAME,int),(ORDER,5),(CODE,read_ret),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(LOCAL,read_ret: int)
+1000222,(TYPE_FULL_NAME,int64_t),(ORDER,6),(CODE,seek_ret),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,seek_ret),(LOCAL,seek_ret: int64_t)
+1000223,(TYPE_FULL_NAME,int),(ORDER,7),(CODE,reconnect_delay),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,reconnect_delay),(LOCAL,reconnect_delay: int)
+1000224,(ORDER,8),(ARGUMENT_INDEX,8),(CODE,reconnect_delay = 0),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1436),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,reconnect_delay = 0)
+1000225,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,reconnect_delay),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1436),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,reconnect_delay),(IDENTIFIER,reconnect_delay,reconnect_delay = 0)
+1000226,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,int),(LINE_NUMBER,1436),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,reconnect_delay = 0)
+1000227,(PARSER_TYPE_NAME,IfStatement),(ORDER,9),(LINE_NUMBER,1438),(ARGUMENT_INDEX,9),(CODE,if (!s->hd)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (!s->hd),if (!s->hd))
+1000228,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!s->hd),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1438),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!s->hd)
+1000229,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->hd),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1438),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->hd)
+1000230,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1438),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,!s->hd)
+1000231,(ORDER,2),(LINE_NUMBER,1438),(ARGUMENT_INDEX,2),(CODE,hd),(COLUMN_NUMBER,12),(CANONICAL_NAME,hd),(FIELD_IDENTIFIER,hd,hd)
+1000232,(ORDER,2),(LINE_NUMBER,1439),(ARGUMENT_INDEX,2),(CODE,return AVERROR_EOF;),(COLUMN_NUMBER,8),(RETURN,return AVERROR_EOF;,return AVERROR_EOF;)
+1000233,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,AVERROR_EOF),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1439),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR_EOF),(IDENTIFIER,AVERROR_EOF,return AVERROR_EOF;)
+1000234,(PARSER_TYPE_NAME,IfStatement),(ORDER,10),(LINE_NUMBER,1441),(ARGUMENT_INDEX,10),(CODE,if (s->end_chunked_post && !s->end_header)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (s->end_chunked_post && !s->end_header),if (s->end_chunked_post && !s->end_header))
+1000235,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->end_chunked_post && !s->end_header),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1441),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,s->end_chunked_post && !s->end_header)
+1000236,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->end_chunked_post),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1441),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->end_chunked_post)
+1000237,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1441),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->end_chunked_post && !s->end_header)
+1000238,(ORDER,2),(LINE_NUMBER,1441),(ARGUMENT_INDEX,2),(CODE,end_chunked_post),(COLUMN_NUMBER,11),(CANONICAL_NAME,end_chunked_post),(FIELD_IDENTIFIER,end_chunked_post,end_chunked_post)
+1000239,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,!s->end_header),(COLUMN_NUMBER,31),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1441),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!s->end_header)
+1000240,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->end_header),(COLUMN_NUMBER,32),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1441),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->end_header)
+1000241,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1441),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,!s->end_header)
+1000242,(ORDER,2),(LINE_NUMBER,1441),(ARGUMENT_INDEX,2),(CODE,end_header),(COLUMN_NUMBER,35),(CANONICAL_NAME,end_header),(FIELD_IDENTIFIER,end_header,end_header)
+1000243,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,47),(TYPE_FULL_NAME,void),(LINE_NUMBER,1441),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000244,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err = http_read_header(h, &new_location)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1442),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,err = http_read_header(h, &new_location))
+1000245,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1442),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(IDENTIFIER,err,err = http_read_header(h, &new_location))
+1000246,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,http_read_header(h, &new_location)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,http_read_header),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1442),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,http_read_header),(http_read_header,http_read_header(h, &new_location))
+1000247,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1442),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,http_read_header(h, &new_location))
+1000248,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&new_location),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1442),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&new_location)
+1000249,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,new_location),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,int),(LINE_NUMBER,1442),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,new_location),(IDENTIFIER,new_location,http_read_header(h, &new_location))
+1000250,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,1443),(ARGUMENT_INDEX,2),(CODE,if (err < 0)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (err < 0),if (err < 0))
+1000251,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err < 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1443),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,err < 0)
+1000252,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,1443),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(IDENTIFIER,err,err < 0)
+1000253,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,int),(LINE_NUMBER,1443),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,err < 0)
+1000254,(ORDER,2),(LINE_NUMBER,1444),(ARGUMENT_INDEX,2),(CODE,return err;),(COLUMN_NUMBER,12),(RETURN,return err;,return err;)
+1000255,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,int),(LINE_NUMBER,1444),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(IDENTIFIER,err,return err;)
+1000256,(PARSER_TYPE_NAME,IfStatement),(ORDER,11),(LINE_NUMBER,1448),(ARGUMENT_INDEX,11),(CODE,if (s->compressed)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (s->compressed),if (s->compressed))
+1000257,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->compressed),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1448),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->compressed)
+1000258,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1448),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,if (s->compressed))
+1000259,(ORDER,2),(LINE_NUMBER,1448),(ARGUMENT_INDEX,2),(CODE,compressed),(COLUMN_NUMBER,11),(CANONICAL_NAME,compressed),(FIELD_IDENTIFIER,compressed,compressed)
+1000260,(ORDER,2),(LINE_NUMBER,1449),(ARGUMENT_INDEX,2),(CODE,return http_buf_read_compressed(h, buf, size);),(COLUMN_NUMBER,8),(RETURN,return http_buf_read_compressed(h, buf, size);,return http_buf_read_compressed(h, buf, size);)
+1000261,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,http_buf_read_compressed(h, buf, size)),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,http_buf_read_compressed),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1449),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,http_buf_read_compressed),(http_buf_read_compressed,http_buf_read_compressed(h, buf, size))
+1000262,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1449),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,http_buf_read_compressed(h, buf, size))
+1000263,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,buf),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,uint8_t *),(LINE_NUMBER,1449),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,buf),(IDENTIFIER,buf,http_buf_read_compressed(h, buf, size))
+1000264,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,size),(COLUMN_NUMBER,48),(TYPE_FULL_NAME,int),(LINE_NUMBER,1449),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,size),(IDENTIFIER,size,http_buf_read_compressed(h, buf, size))
+1000265,(ORDER,12),(ARGUMENT_INDEX,12),(CODE,read_ret = http_buf_read(h, buf, size)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1451),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,read_ret = http_buf_read(h, buf, size))
+1000266,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,int),(LINE_NUMBER,1451),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,read_ret = http_buf_read(h, buf, size))
+1000267,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,http_buf_read(h, buf, size)),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,http_buf_read),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1451),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,http_buf_read),(http_buf_read,http_buf_read(h, buf, size))
+1000268,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1451),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,http_buf_read(h, buf, size))
+1000269,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,buf),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,uint8_t *),(LINE_NUMBER,1451),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,buf),(IDENTIFIER,buf,http_buf_read(h, buf, size))
+1000270,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,size),(COLUMN_NUMBER,37),(TYPE_FULL_NAME,int),(LINE_NUMBER,1451),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,size),(IDENTIFIER,size,http_buf_read(h, buf, size))
+1000271,(PARSER_TYPE_NAME,WhileStatement),(ORDER,13),(LINE_NUMBER,1452),(ARGUMENT_INDEX,13),(CODE,while ((read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)\n        || (read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed)))),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,while ((read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)\n        || (read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed))),while ((read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)\n        || (read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed))))
+1000272,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,(read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)\n        || (read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed))),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,(read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)\n        || (read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed)))
+1000273,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,read_ret  < 0           && s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)
+1000274,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret  < 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,read_ret  < 0)
+1000275,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,read_ret  < 0)
+1000276,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,int),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,read_ret  < 0)
+1000277,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)
+1000278,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->reconnect),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->reconnect)
+1000279,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,39),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)
+1000280,(ORDER,2),(LINE_NUMBER,1452),(ARGUMENT_INDEX,2),(CODE,reconnect),(COLUMN_NUMBER,42),(CANONICAL_NAME,reconnect),(FIELD_IDENTIFIER,reconnect,reconnect)
+1000281,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,(!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize),(COLUMN_NUMBER,62),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,(!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize)
+1000282,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!h->is_streamed || s->reconnect_streamed),(COLUMN_NUMBER,63),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,!h->is_streamed || s->reconnect_streamed)
+1000283,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!h->is_streamed),(COLUMN_NUMBER,63),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!h->is_streamed)
+1000284,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h->is_streamed),(COLUMN_NUMBER,64),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,h->is_streamed)
+1000285,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,64),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,!h->is_streamed)
+1000286,(ORDER,2),(LINE_NUMBER,1452),(ARGUMENT_INDEX,2),(CODE,is_streamed),(COLUMN_NUMBER,67),(CANONICAL_NAME,is_streamed),(FIELD_IDENTIFIER,is_streamed,is_streamed)
+1000287,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->reconnect_streamed),(COLUMN_NUMBER,82),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->reconnect_streamed)
+1000288,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,82),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,!h->is_streamed || s->reconnect_streamed)
+1000289,(ORDER,2),(LINE_NUMBER,1452),(ARGUMENT_INDEX,2),(CODE,reconnect_streamed),(COLUMN_NUMBER,85),(CANONICAL_NAME,reconnect_streamed),(FIELD_IDENTIFIER,reconnect_streamed,reconnect_streamed)
+1000290,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->filesize > 0 && s->off < s->filesize),(COLUMN_NUMBER,108),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,s->filesize > 0 && s->off < s->filesize)
+1000291,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->filesize > 0),(COLUMN_NUMBER,108),(METHOD_FULL_NAME,<operator>.greaterThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.greaterThan),(<operator>.greaterThan,s->filesize > 0)
+1000292,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->filesize),(COLUMN_NUMBER,108),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->filesize)
+1000293,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,108),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->filesize > 0)
+1000294,(ORDER,2),(LINE_NUMBER,1452),(ARGUMENT_INDEX,2),(CODE,filesize),(COLUMN_NUMBER,111),(CANONICAL_NAME,filesize),(FIELD_IDENTIFIER,filesize,filesize)
+1000295,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,122),(TYPE_FULL_NAME,int),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,s->filesize > 0)
+1000296,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->off < s->filesize),(COLUMN_NUMBER,127),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,s->off < s->filesize)
+1000297,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->off),(COLUMN_NUMBER,127),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->off)
+1000298,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,127),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->off < s->filesize)
+1000299,(ORDER,2),(LINE_NUMBER,1452),(ARGUMENT_INDEX,2),(CODE,off),(COLUMN_NUMBER,130),(CANONICAL_NAME,off),(FIELD_IDENTIFIER,off,off)
+1000300,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->filesize),(COLUMN_NUMBER,136),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1452),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->filesize)
+1000301,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,136),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->off < s->filesize)
+1000302,(ORDER,2),(LINE_NUMBER,1452),(ARGUMENT_INDEX,2),(CODE,filesize),(COLUMN_NUMBER,139),(CANONICAL_NAME,filesize),(FIELD_IDENTIFIER,filesize,filesize)
+1000303,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,read_ret == AVERROR_EOF && s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed))
+1000304,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret == AVERROR_EOF),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,read_ret == AVERROR_EOF)
+1000305,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,1453),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,read_ret == AVERROR_EOF)
+1000306,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVERROR_EOF),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR_EOF),(IDENTIFIER,AVERROR_EOF,read_ret == AVERROR_EOF)
+1000307,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed)),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed))
+1000308,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->reconnect_at_eof),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->reconnect_at_eof)
+1000309,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,39),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1453),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed))
+1000310,(ORDER,2),(LINE_NUMBER,1453),(ARGUMENT_INDEX,2),(CODE,reconnect_at_eof),(COLUMN_NUMBER,42),(CANONICAL_NAME,reconnect_at_eof),(FIELD_IDENTIFIER,reconnect_at_eof,reconnect_at_eof)
+1000311,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,!h->is_streamed || s->reconnect_streamed),(COLUMN_NUMBER,63),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,!h->is_streamed || s->reconnect_streamed)
+1000312,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!h->is_streamed),(COLUMN_NUMBER,63),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!h->is_streamed)
+1000313,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h->is_streamed),(COLUMN_NUMBER,64),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,h->is_streamed)
+1000314,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,64),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1453),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,!h->is_streamed)
+1000315,(ORDER,2),(LINE_NUMBER,1453),(ARGUMENT_INDEX,2),(CODE,is_streamed),(COLUMN_NUMBER,67),(CANONICAL_NAME,is_streamed),(FIELD_IDENTIFIER,is_streamed,is_streamed)
+1000316,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->reconnect_streamed),(COLUMN_NUMBER,82),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1453),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->reconnect_streamed)
+1000317,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,82),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1453),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,!h->is_streamed || s->reconnect_streamed)
+1000318,(ORDER,2),(LINE_NUMBER,1453),(ARGUMENT_INDEX,2),(CODE,reconnect_streamed),(COLUMN_NUMBER,85),(CANONICAL_NAME,reconnect_streamed),(FIELD_IDENTIFIER,reconnect_streamed,reconnect_streamed)
+1000319,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,void),(LINE_NUMBER,1454),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000320,(TYPE_FULL_NAME,uint64_t),(ORDER,1),(CODE,target),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,target),(LOCAL,target: uint64_t)
+1000321,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,target = h->is_streamed ? 0 : s->off),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1454),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,target = h->is_streamed ? 0 : s->off)
+1000322,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,target),(COLUMN_NUMBER,17),(TYPE_FULL_NAME,uint64_t),(LINE_NUMBER,1454),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,target),(IDENTIFIER,target,target = h->is_streamed ? 0 : s->off)
+1000323,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,h->is_streamed ? 0 : s->off),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.conditional),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1454),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.conditional),(<operator>.conditional,h->is_streamed ? 0 : s->off)
+1000324,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h->is_streamed),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1454),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,h->is_streamed)
+1000325,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1454),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,h->is_streamed ? 0 : s->off)
+1000326,(ORDER,2),(LINE_NUMBER,1454),(ARGUMENT_INDEX,2),(CODE,is_streamed),(COLUMN_NUMBER,29),(CANONICAL_NAME,is_streamed),(FIELD_IDENTIFIER,is_streamed,is_streamed)
+1000327,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,int),(LINE_NUMBER,1454),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,h->is_streamed ? 0 : s->off)
+1000328,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,s->off),(COLUMN_NUMBER,47),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1454),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->off)
+1000329,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,47),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1454),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,h->is_streamed ? 0 : s->off)
+1000330,(ORDER,2),(LINE_NUMBER,1454),(ARGUMENT_INDEX,2),(CODE,off),(COLUMN_NUMBER,50),(CANONICAL_NAME,off),(FIELD_IDENTIFIER,off,off)
+1000331,(PARSER_TYPE_NAME,IfStatement),(ORDER,3),(LINE_NUMBER,1456),(ARGUMENT_INDEX,3),(CODE,if (read_ret == AVERROR_EXIT)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (read_ret == AVERROR_EXIT),if (read_ret == AVERROR_EXIT))
+1000332,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret == AVERROR_EXIT),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1456),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,read_ret == AVERROR_EXIT)
+1000333,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,1456),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,read_ret == AVERROR_EXIT)
+1000334,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVERROR_EXIT),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1456),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR_EXIT),(IDENTIFIER,AVERROR_EXIT,read_ret == AVERROR_EXIT)
+1000335,(ORDER,2),(LINE_NUMBER,1457),(ARGUMENT_INDEX,2),(CODE,return read_ret;),(COLUMN_NUMBER,12),(RETURN,return read_ret;,return read_ret;)
+1000336,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,int),(LINE_NUMBER,1457),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,return read_ret;)
+1000337,(PARSER_TYPE_NAME,IfStatement),(ORDER,4),(LINE_NUMBER,1466),(ARGUMENT_INDEX,4),(CODE,if (reconnect_delay > s->reconnect_delay_max)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (reconnect_delay > s->reconnect_delay_max),if (reconnect_delay > s->reconnect_delay_max))
+1000338,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,reconnect_delay > s->reconnect_delay_max),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.greaterThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1466),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.greaterThan),(<operator>.greaterThan,reconnect_delay > s->reconnect_delay_max)
+1000339,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,reconnect_delay),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,1466),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,reconnect_delay),(IDENTIFIER,reconnect_delay,reconnect_delay > s->reconnect_delay_max)
+1000340,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->reconnect_delay_max),(COLUMN_NUMBER,30),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1466),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->reconnect_delay_max)
+1000341,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1466),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,reconnect_delay > s->reconnect_delay_max)
+1000342,(ORDER,2),(LINE_NUMBER,1466),(ARGUMENT_INDEX,2),(CODE,reconnect_delay_max),(COLUMN_NUMBER,33),(CANONICAL_NAME,reconnect_delay_max),(FIELD_IDENTIFIER,reconnect_delay_max,reconnect_delay_max)
+1000343,(ORDER,2),(LINE_NUMBER,1467),(ARGUMENT_INDEX,2),(CODE,return AVERROR(EIO);),(COLUMN_NUMBER,12),(RETURN,return AVERROR(EIO);,return AVERROR(EIO);)
+1000344,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,AVERROR(EIO)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,AVERROR),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1467),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR),(AVERROR,AVERROR(EIO))
+1000345,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,EIO),(COLUMN_NUMBER,27),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1467),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,EIO),(IDENTIFIER,EIO,AVERROR(EIO))
+1000346,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,av_log(h, AV_LOG_WARNING, "Will reconnect at %"PRIu64" in %d second(s), error=%s.\n", s->off, reconnect_delay, av_err2str(read_ret))),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1469),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(h, AV_LOG_WARNING, \"Will reconnect at %\"PRIu64\" in %d second(s), error=%s.\n\", s->off, reconnect_delay, av_err2str(read_ret)))
+1000347,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,av_log(h, AV_LOG_WARNING, \"Will reconnect at %\"PRIu64\" in %d second(s), error=%s.\n\", s->off, reconnect_delay, av_err2str(read_ret)))
+1000348,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_WARNING),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_WARNING),(IDENTIFIER,AV_LOG_WARNING,av_log(h, AV_LOG_WARNING, \"Will reconnect at %\"PRIu64\" in %d second(s), error=%s.\n\", s->off, reconnect_delay, av_err2str(read_ret)))
+1000349,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Will reconnect at %"PRIu64" in %d second(s), error=%s.\n"),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Will reconnect at %\"PRIu64\" in %d second(s), error=%s.\n\",av_log(h, AV_LOG_WARNING, \"Will reconnect at %\"PRIu64\" in %d second(s), error=%s.\n\", s->off, reconnect_delay, av_err2str(read_ret)))
+1000350,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,s->off),(COLUMN_NUMBER,94),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1469),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->off)
+1000351,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,94),(TYPE_FULL_NAME,HTTPContext *),(LINE_NUMBER,1469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,av_log(h, AV_LOG_WARNING, \"Will reconnect at %\"PRIu64\" in %d second(s), error=%s.\n\", s->off, reconnect_delay, av_err2str(read_ret)))
+1000352,(ORDER,2),(LINE_NUMBER,1469),(ARGUMENT_INDEX,2),(CODE,off),(COLUMN_NUMBER,97),(CANONICAL_NAME,off),(FIELD_IDENTIFIER,off,off)
+1000353,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,reconnect_delay),(COLUMN_NUMBER,102),(TYPE_FULL_NAME,int),(LINE_NUMBER,1469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,reconnect_delay),(IDENTIFIER,reconnect_delay,av_log(h, AV_LOG_WARNING, \"Will reconnect at %\"PRIu64\" in %d second(s), error=%s.\n\", s->off, reconnect_delay, av_err2str(read_ret)))
+1000354,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,av_err2str(read_ret)),(COLUMN_NUMBER,119),(METHOD_FULL_NAME,av_err2str),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1469),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_err2str),(av_err2str,av_err2str(read_ret))
+1000355,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,130),(TYPE_FULL_NAME,int),(LINE_NUMBER,1469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,av_err2str(read_ret))
+1000356,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,err = ff_network_sleep_interruptible(1000U*1000*reconnect_delay, &h->interrupt_callback)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1470),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,err = ff_network_sleep_interruptible(1000U*1000*reconnect_delay, &h->interrupt_callback))
+1000357,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1470),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(IDENTIFIER,err,err = ff_network_sleep_interruptible(1000U*1000*reconnect_delay, &h->interrupt_callback))
+1000358,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ff_network_sleep_interruptible(1000U*1000*reconnect_delay, &h->interrupt_callback)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,ff_network_sleep_interruptible),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1470),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ff_network_sleep_interruptible),(ff_network_sleep_interruptible,ff_network_sleep_interruptible(1000U*1000*reconnect_delay, &h->interrupt_callback))
+1000359,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,1000U*1000*reconnect_delay),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.multiplication),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1470),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.multiplication),(<operator>.multiplication,1000U*1000*reconnect_delay)
+1000360,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,1000U),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,int),(LINE_NUMBER,1470),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1000U,1000U*1000*reconnect_delay)
+1000361,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1000*reconnect_delay),(COLUMN_NUMBER,51),(METHOD_FULL_NAME,<operator>.multiplication),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1470),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.multiplication),(<operator>.multiplication,1000*reconnect_delay)
+1000362,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,1000),(COLUMN_NUMBER,51),(TYPE_FULL_NAME,int),(LINE_NUMBER,1470),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1000,1000*reconnect_delay)
+1000363,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,reconnect_delay),(COLUMN_NUMBER,56),(TYPE_FULL_NAME,int),(LINE_NUMBER,1470),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,reconnect_delay),(IDENTIFIER,reconnect_delay,1000*reconnect_delay)
+1000364,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&h->interrupt_callback),(COLUMN_NUMBER,73),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1470),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&h->interrupt_callback)
+1000365,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h->interrupt_callback),(COLUMN_NUMBER,74),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1470),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,h->interrupt_callback)
+1000366,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,74),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1470),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,ff_network_sleep_interruptible(1000U*1000*reconnect_delay, &h->interrupt_callback))
+1000367,(ORDER,2),(LINE_NUMBER,1470),(ARGUMENT_INDEX,2),(CODE,interrupt_callback),(COLUMN_NUMBER,77),(CANONICAL_NAME,interrupt_callback),(FIELD_IDENTIFIER,interrupt_callback,interrupt_callback)
+1000368,(PARSER_TYPE_NAME,IfStatement),(ORDER,7),(LINE_NUMBER,1471),(ARGUMENT_INDEX,7),(CODE,if (err != AVERROR(ETIMEDOUT))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (err != AVERROR(ETIMEDOUT)),if (err != AVERROR(ETIMEDOUT)))
+1000369,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err != AVERROR(ETIMEDOUT)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1471),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,err != AVERROR(ETIMEDOUT))
+1000370,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,1471),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(IDENTIFIER,err,err != AVERROR(ETIMEDOUT))
+1000371,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVERROR(ETIMEDOUT)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,AVERROR),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1471),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR),(AVERROR,AVERROR(ETIMEDOUT))
+1000372,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ETIMEDOUT),(COLUMN_NUMBER,27),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1471),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ETIMEDOUT),(IDENTIFIER,ETIMEDOUT,AVERROR(ETIMEDOUT))
+1000373,(ORDER,2),(LINE_NUMBER,1472),(ARGUMENT_INDEX,2),(CODE,return err;),(COLUMN_NUMBER,12),(RETURN,return err;,return err;)
+1000374,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,err),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,int),(LINE_NUMBER,1472),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(IDENTIFIER,err,return err;)
+1000375,(ORDER,8),(ARGUMENT_INDEX,8),(CODE,reconnect_delay = 1 + 2*reconnect_delay),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1473),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,reconnect_delay = 1 + 2*reconnect_delay)
+1000376,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,reconnect_delay),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1473),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,reconnect_delay),(IDENTIFIER,reconnect_delay,reconnect_delay = 1 + 2*reconnect_delay)
+1000377,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1 + 2*reconnect_delay),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.addition),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1473),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addition),(<operator>.addition,1 + 2*reconnect_delay)
+1000378,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,1),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,int),(LINE_NUMBER,1473),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,1 + 2*reconnect_delay)
+1000379,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,2*reconnect_delay),(COLUMN_NUMBER,30),(METHOD_FULL_NAME,<operator>.multiplication),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1473),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.multiplication),(<operator>.multiplication,2*reconnect_delay)
+1000380,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,2),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,int),(LINE_NUMBER,1473),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,2,2*reconnect_delay)
+1000381,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,reconnect_delay),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,int),(LINE_NUMBER,1473),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,reconnect_delay),(IDENTIFIER,reconnect_delay,2*reconnect_delay)
+1000382,(ORDER,9),(ARGUMENT_INDEX,9),(CODE,seek_ret = http_seek_internal(h, target, SEEK_SET, 1)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1474),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,seek_ret = http_seek_internal(h, target, SEEK_SET, 1))
+1000383,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,seek_ret),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int64_t),(LINE_NUMBER,1474),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,seek_ret),(IDENTIFIER,seek_ret,seek_ret = http_seek_internal(h, target, SEEK_SET, 1))
+1000384,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,http_seek_internal(h, target, SEEK_SET, 1)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,http_seek_internal),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1474),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,http_seek_internal),(http_seek_internal,http_seek_internal(h, target, SEEK_SET, 1))
+1000385,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,38),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1474),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,http_seek_internal(h, target, SEEK_SET, 1))
+1000386,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,target),(COLUMN_NUMBER,41),(TYPE_FULL_NAME,uint64_t),(LINE_NUMBER,1474),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,target),(IDENTIFIER,target,http_seek_internal(h, target, SEEK_SET, 1))
+1000387,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,SEEK_SET),(COLUMN_NUMBER,49),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1474),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,SEEK_SET),(IDENTIFIER,SEEK_SET,http_seek_internal(h, target, SEEK_SET, 1))
+1000388,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,1),(COLUMN_NUMBER,59),(TYPE_FULL_NAME,int),(LINE_NUMBER,1474),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,http_seek_internal(h, target, SEEK_SET, 1))
+1000389,(PARSER_TYPE_NAME,IfStatement),(ORDER,10),(LINE_NUMBER,1475),(ARGUMENT_INDEX,10),(CODE,if (seek_ret >= 0 && seek_ret != target)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (seek_ret >= 0 && seek_ret != target),if (seek_ret >= 0 && seek_ret != target))
+1000390,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,seek_ret >= 0 && seek_ret != target),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1475),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,seek_ret >= 0 && seek_ret != target)
+1000391,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,seek_ret >= 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.greaterEqualsThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1475),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.greaterEqualsThan),(<operator>.greaterEqualsThan,seek_ret >= 0)
+1000392,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,seek_ret),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int64_t),(LINE_NUMBER,1475),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,seek_ret),(IDENTIFIER,seek_ret,seek_ret >= 0)
+1000393,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,int),(LINE_NUMBER,1475),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,seek_ret >= 0)
+1000394,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,seek_ret != target),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1475),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,seek_ret != target)
+1000395,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,seek_ret),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,int64_t),(LINE_NUMBER,1475),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,seek_ret),(IDENTIFIER,seek_ret,seek_ret != target)
+1000396,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,target),(COLUMN_NUMBER,41),(TYPE_FULL_NAME,uint64_t),(LINE_NUMBER,1475),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,target),(IDENTIFIER,target,seek_ret != target)
+1000397,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,49),(TYPE_FULL_NAME,void),(LINE_NUMBER,1475),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000398,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,av_log(h, AV_LOG_ERROR, "Failed to reconnect at %"PRIu64".\n", target)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1476),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(h, AV_LOG_ERROR, \"Failed to reconnect at %\"PRIu64\".\n\", target))
+1000399,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1476),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,av_log(h, AV_LOG_ERROR, \"Failed to reconnect at %\"PRIu64\".\n\", target))
+1000400,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_ERROR),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1476),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_ERROR),(IDENTIFIER,AV_LOG_ERROR,av_log(h, AV_LOG_ERROR, \"Failed to reconnect at %\"PRIu64\".\n\", target))
+1000401,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Failed to reconnect at %"PRIu64".\n"),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1476),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Failed to reconnect at %\"PRIu64\".\n\",av_log(h, AV_LOG_ERROR, \"Failed to reconnect at %\"PRIu64\".\n\", target))
+1000402,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,target),(COLUMN_NUMBER,75),(TYPE_FULL_NAME,uint64_t),(LINE_NUMBER,1476),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,target),(IDENTIFIER,target,av_log(h, AV_LOG_ERROR, \"Failed to reconnect at %\"PRIu64\".\n\", target))
+1000403,(ORDER,2),(LINE_NUMBER,1477),(ARGUMENT_INDEX,2),(CODE,return read_ret;),(COLUMN_NUMBER,12),(RETURN,return read_ret;,return read_ret;)
+1000404,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,int),(LINE_NUMBER,1477),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,return read_ret;)
+1000405,(ORDER,11),(ARGUMENT_INDEX,11),(CODE,read_ret = http_buf_read(h, buf, size)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1480),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,read_ret = http_buf_read(h, buf, size))
+1000406,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,1480),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,read_ret = http_buf_read(h, buf, size))
+1000407,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,http_buf_read(h, buf, size)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,http_buf_read),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1480),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,http_buf_read),(http_buf_read,http_buf_read(h, buf, size))
+1000408,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,h),(COLUMN_NUMBER,33),(TYPE_FULL_NAME,URLContext *),(LINE_NUMBER,1480),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(IDENTIFIER,h,http_buf_read(h, buf, size))
+1000409,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,buf),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,uint8_t *),(LINE_NUMBER,1480),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,buf),(IDENTIFIER,buf,http_buf_read(h, buf, size))
+1000410,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,size),(COLUMN_NUMBER,41),(TYPE_FULL_NAME,int),(LINE_NUMBER,1480),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,size),(IDENTIFIER,size,http_buf_read(h, buf, size))
+1000411,(ORDER,14),(LINE_NUMBER,1483),(ARGUMENT_INDEX,14),(CODE,return read_ret;),(COLUMN_NUMBER,4),(RETURN,return read_ret;,return read_ret;)
+1000412,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,read_ret),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,int),(LINE_NUMBER,1483),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,read_ret),(IDENTIFIER,read_ret,return read_ret;)
+1000413,(ORDER,5),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,1431),(TYPE_FULL_NAME,static int),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static int)
+--------
+1000208,1000209,AST
+1000208,1000210,AST
+1000208,1000211,AST
+1000208,1000212,AST
+1000208,1000413,AST
+1000212,1000213,AST
+1000212,1000214,AST
+1000212,1000219,AST
+1000212,1000220,AST
+1000212,1000221,AST
+1000212,1000222,AST
+1000212,1000223,AST
+1000212,1000224,AST
+1000212,1000227,AST
+1000212,1000234,AST
+1000212,1000256,AST
+1000212,1000265,AST
+1000212,1000271,AST
+1000212,1000411,AST
+1000214,1000215,AST
+1000214,1000216,AST
+1000216,1000217,AST
+1000216,1000218,AST
+1000224,1000225,AST
+1000224,1000226,AST
+1000227,1000228,AST
+1000227,1000232,AST
+1000228,1000229,AST
+1000229,1000230,AST
+1000229,1000231,AST
+1000232,1000233,AST
+1000234,1000235,AST
+1000234,1000243,AST
+1000235,1000236,AST
+1000235,1000239,AST
+1000236,1000237,AST
+1000236,1000238,AST
+1000239,1000240,AST
+1000240,1000241,AST
+1000240,1000242,AST
+1000243,1000244,AST
+1000243,1000250,AST
+1000244,1000245,AST
+1000244,1000246,AST
+1000246,1000247,AST
+1000246,1000248,AST
+1000248,1000249,AST
+1000250,1000251,AST
+1000250,1000254,AST
+1000251,1000252,AST
+1000251,1000253,AST
+1000254,1000255,AST
+1000256,1000257,AST
+1000256,1000260,AST
+1000257,1000258,AST
+1000257,1000259,AST
+1000260,1000261,AST
+1000261,1000262,AST
+1000261,1000263,AST
+1000261,1000264,AST
+1000265,1000266,AST
+1000265,1000267,AST
+1000267,1000268,AST
+1000267,1000269,AST
+1000267,1000270,AST
+1000271,1000272,AST
+1000271,1000319,AST
+1000272,1000273,AST
+1000272,1000303,AST
+1000273,1000274,AST
+1000273,1000277,AST
+1000274,1000275,AST
+1000274,1000276,AST
+1000277,1000278,AST
+1000277,1000281,AST
+1000278,1000279,AST
+1000278,1000280,AST
+1000281,1000282,AST
+1000281,1000290,AST
+1000282,1000283,AST
+1000282,1000287,AST
+1000283,1000284,AST
+1000284,1000285,AST
+1000284,1000286,AST
+1000287,1000288,AST
+1000287,1000289,AST
+1000290,1000291,AST
+1000290,1000296,AST
+1000291,1000292,AST
+1000291,1000295,AST
+1000292,1000293,AST
+1000292,1000294,AST
+1000296,1000297,AST
+1000296,1000300,AST
+1000297,1000298,AST
+1000297,1000299,AST
+1000300,1000301,AST
+1000300,1000302,AST
+1000303,1000304,AST
+1000303,1000307,AST
+1000304,1000305,AST
+1000304,1000306,AST
+1000307,1000308,AST
+1000307,1000311,AST
+1000308,1000309,AST
+1000308,1000310,AST
+1000311,1000312,AST
+1000311,1000316,AST
+1000312,1000313,AST
+1000313,1000314,AST
+1000313,1000315,AST
+1000316,1000317,AST
+1000316,1000318,AST
+1000319,1000320,AST
+1000319,1000321,AST
+1000319,1000331,AST
+1000319,1000337,AST
+1000319,1000346,AST
+1000319,1000356,AST
+1000319,1000368,AST
+1000319,1000375,AST
+1000319,1000382,AST
+1000319,1000389,AST
+1000319,1000405,AST
+1000321,1000322,AST
+1000321,1000323,AST
+1000323,1000324,AST
+1000323,1000327,AST
+1000323,1000328,AST
+1000324,1000325,AST
+1000324,1000326,AST
+1000328,1000329,AST
+1000328,1000330,AST
+1000331,1000332,AST
+1000331,1000335,AST
+1000332,1000333,AST
+1000332,1000334,AST
+1000335,1000336,AST
+1000337,1000338,AST
+1000337,1000343,AST
+1000338,1000339,AST
+1000338,1000340,AST
+1000340,1000341,AST
+1000340,1000342,AST
+1000343,1000344,AST
+1000344,1000345,AST
+1000346,1000347,AST
+1000346,1000348,AST
+1000346,1000349,AST
+1000346,1000350,AST
+1000346,1000353,AST
+1000346,1000354,AST
+1000350,1000351,AST
+1000350,1000352,AST
+1000354,1000355,AST
+1000356,1000357,AST
+1000356,1000358,AST
+1000358,1000359,AST
+1000358,1000364,AST
+1000359,1000360,AST
+1000359,1000361,AST
+1000361,1000362,AST
+1000361,1000363,AST
+1000364,1000365,AST
+1000365,1000366,AST
+1000365,1000367,AST
+1000368,1000369,AST
+1000368,1000373,AST
+1000369,1000370,AST
+1000369,1000371,AST
+1000371,1000372,AST
+1000373,1000374,AST
+1000375,1000376,AST
+1000375,1000377,AST
+1000377,1000378,AST
+1000377,1000379,AST
+1000379,1000380,AST
+1000379,1000381,AST
+1000382,1000383,AST
+1000382,1000384,AST
+1000384,1000385,AST
+1000384,1000386,AST
+1000384,1000387,AST
+1000384,1000388,AST
+1000389,1000390,AST
+1000389,1000397,AST
+1000390,1000391,AST
+1000390,1000394,AST
+1000391,1000392,AST
+1000391,1000393,AST
+1000394,1000395,AST
+1000394,1000396,AST
+1000397,1000398,AST
+1000397,1000403,AST
+1000398,1000399,AST
+1000398,1000400,AST
+1000398,1000401,AST
+1000398,1000402,AST
+1000403,1000404,AST
+1000405,1000406,AST
+1000405,1000407,AST
+1000407,1000408,AST
+1000407,1000409,AST
+1000407,1000410,AST
+1000411,1000412,AST
+1000214,1000224,CFG
+1000216,1000214,CFG
+1000218,1000216,CFG
+1000224,1000231,CFG
+1000228,1000232,CFG
+1000228,1000238,CFG
+1000229,1000228,CFG
+1000231,1000229,CFG
+1000232,1000413,CFG
+1000235,1000248,CFG
+1000235,1000259,CFG
+1000236,1000235,CFG
+1000236,1000242,CFG
+1000238,1000236,CFG
+1000239,1000235,CFG
+1000240,1000239,CFG
+1000242,1000240,CFG
+1000244,1000251,CFG
+1000246,1000244,CFG
+1000248,1000246,CFG
+1000251,1000254,CFG
+1000251,1000259,CFG
+1000254,1000413,CFG
+1000257,1000261,CFG
+1000257,1000267,CFG
+1000259,1000257,CFG
+1000260,1000413,CFG
+1000261,1000260,CFG
+1000265,1000274,CFG
+1000267,1000265,CFG
+1000272,1000326,CFG
+1000272,1000411,CFG
+1000273,1000272,CFG
+1000273,1000304,CFG
+1000274,1000273,CFG
+1000274,1000280,CFG
+1000277,1000273,CFG
+1000278,1000277,CFG
+1000278,1000286,CFG
+1000280,1000278,CFG
+1000281,1000277,CFG
+1000282,1000281,CFG
+1000282,1000294,CFG
+1000283,1000282,CFG
+1000283,1000289,CFG
+1000284,1000283,CFG
+1000286,1000284,CFG
+1000287,1000282,CFG
+1000289,1000287,CFG
+1000290,1000281,CFG
+1000291,1000290,CFG
+1000291,1000299,CFG
+1000292,1000291,CFG
+1000294,1000292,CFG
+1000296,1000290,CFG
+1000297,1000302,CFG
+1000299,1000297,CFG
+1000300,1000296,CFG
+1000302,1000300,CFG
+1000303,1000272,CFG
+1000304,1000303,CFG
+1000304,1000310,CFG
+1000307,1000303,CFG
+1000308,1000307,CFG
+1000308,1000315,CFG
+1000310,1000308,CFG
+1000311,1000307,CFG
+1000312,1000311,CFG
+1000312,1000318,CFG
+1000313,1000312,CFG
+1000315,1000313,CFG
+1000316,1000311,CFG
+1000318,1000316,CFG
+1000321,1000332,CFG
+1000323,1000321,CFG
+1000324,1000323,CFG
+1000324,1000330,CFG
+1000326,1000324,CFG
+1000328,1000323,CFG
+1000330,1000328,CFG
+1000332,1000335,CFG
+1000332,1000342,CFG
+1000335,1000413,CFG
+1000338,1000344,CFG
+1000338,1000352,CFG
+1000340,1000338,CFG
+1000342,1000340,CFG
+1000343,1000413,CFG
+1000344,1000343,CFG
+1000346,1000361,CFG
+1000350,1000354,CFG
+1000352,1000350,CFG
+1000354,1000346,CFG
+1000356,1000371,CFG
+1000358,1000356,CFG
+1000359,1000367,CFG
+1000361,1000359,CFG
+1000364,1000358,CFG
+1000365,1000364,CFG
+1000367,1000365,CFG
+1000369,1000373,CFG
+1000369,1000379,CFG
+1000371,1000369,CFG
+1000373,1000413,CFG
+1000375,1000384,CFG
+1000377,1000375,CFG
+1000379,1000377,CFG
+1000382,1000391,CFG
+1000384,1000382,CFG
+1000390,1000398,CFG
+1000390,1000407,CFG
+1000391,1000390,CFG
+1000391,1000394,CFG
+1000394,1000390,CFG
+1000398,1000403,CFG
+1000403,1000413,CFG
+1000405,1000274,CFG
+1000407,1000405,CFG
+1000411,1000413,CFG
+1000208,1000218,CFG
+1000232,1000413,DDG<RET>
+1000254,1000413,DDG<RET>
+1000260,1000413,DDG<RET>
+1000335,1000413,DDG<RET>
+1000343,1000413,DDG<RET>
+1000373,1000413,DDG<RET>
+1000403,1000413,DDG<RET>
+1000411,1000413,DDG<RET>
+1000208,1000413,DDG
+1000208,1000209,DDG
+1000208,1000210,DDG
+1000208,1000211,DDG
+1000208,1000214,DDG
+1000208,1000216,DDG
+1000208,1000224,DDG
+1000214,1000228,DDGs
+1000208,1000228,DDG
+1000214,1000229,DDGs
+1000208,1000229,DDG
+1000233,1000232,DDGAVERROR_EOF
+1000208,1000232,DDG
+1000208,1000233,DDG
+1000208,1000235,DDG
+1000214,1000235,DDGs
+1000208,1000236,DDG
+1000214,1000236,DDGs
+1000239,1000235,DDGs->end_header
+1000208,1000239,DDG
+1000214,1000239,DDGs
+1000208,1000240,DDG
+1000214,1000240,DDGs
+1000246,1000244,DDGh
+1000246,1000244,DDG&new_location
+1000208,1000244,DDG
+1000208,1000246,DDG
+1000208,1000248,DDG
+1000244,1000251,DDGerr
+1000208,1000251,DDG
+1000255,1000254,DDGerr
+1000251,1000254,DDGerr
+1000208,1000255,DDG
+1000208,1000257,DDG
+1000214,1000257,DDGs
+1000261,1000260,DDGhttp_buf_read_compressed(h, buf, size)
+1000246,1000261,DDGh
+1000208,1000261,DDG
+1000211,1000261,DDGsize
+1000267,1000265,DDGh
+1000267,1000265,DDGbuf
+1000267,1000265,DDGsize
+1000208,1000265,DDG
+1000246,1000267,DDGh
+1000208,1000267,DDG
+1000211,1000267,DDGsize
+1000273,1000272,DDGread_ret  < 0
+1000273,1000272,DDGs->reconnect        && (!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize
+1000274,1000273,DDGread_ret
+1000274,1000273,DDG0
+1000265,1000274,DDGread_ret
+1000405,1000274,DDGread_ret
+1000208,1000274,DDG
+1000277,1000273,DDGs->reconnect
+1000277,1000273,DDG(!h->is_streamed || s->reconnect_streamed) && s->filesize > 0 && s->off < s->filesize
+1000208,1000277,DDG
+1000214,1000277,DDGs
+1000208,1000278,DDG
+1000214,1000278,DDGs
+1000281,1000277,DDG!h->is_streamed || s->reconnect_streamed
+1000281,1000277,DDGs->filesize > 0 && s->off < s->filesize
+1000282,1000281,DDG!h->is_streamed
+1000282,1000281,DDGs->reconnect_streamed
+1000307,1000281,DDG!h->is_streamed || s->reconnect_streamed
+1000283,1000282,DDGh->is_streamed
+1000311,1000282,DDG!h->is_streamed
+1000267,1000283,DDGh
+1000407,1000283,DDGh
+1000208,1000283,DDG
+1000267,1000284,DDGh
+1000407,1000284,DDGh
+1000208,1000284,DDG
+1000311,1000282,DDGs->reconnect_streamed
+1000208,1000282,DDG
+1000214,1000282,DDGs
+1000208,1000287,DDG
+1000290,1000281,DDGs->filesize > 0
+1000290,1000281,DDGs->off < s->filesize
+1000291,1000290,DDGs->filesize
+1000291,1000290,DDG0
+1000208,1000291,DDG
+1000208,1000292,DDG
+1000296,1000290,DDGs->off
+1000296,1000290,DDGs->filesize
+1000208,1000296,DDG
+1000208,1000297,DDG
+1000208,1000300,DDG
+1000303,1000272,DDGread_ret == AVERROR_EOF
+1000303,1000272,DDGs->reconnect_at_eof && (!h->is_streamed || s->reconnect_streamed)
+1000304,1000303,DDGread_ret
+1000304,1000303,DDGAVERROR_EOF
+1000274,1000304,DDGread_ret
+1000208,1000304,DDG
+1000307,1000303,DDGs->reconnect_at_eof
+1000307,1000303,DDG!h->is_streamed || s->reconnect_streamed
+1000208,1000307,DDG
+1000214,1000307,DDGs
+1000208,1000308,DDG
+1000214,1000308,DDGs
+1000281,1000307,DDG!h->is_streamed || s->reconnect_streamed
+1000311,1000307,DDG!h->is_streamed
+1000311,1000307,DDGs->reconnect_streamed
+1000312,1000311,DDGh->is_streamed
+1000282,1000311,DDG!h->is_streamed
+1000267,1000312,DDGh
+1000407,1000312,DDGh
+1000208,1000312,DDG
+1000267,1000313,DDGh
+1000407,1000313,DDGh
+1000208,1000313,DDG
+1000282,1000311,DDGs->reconnect_streamed
+1000208,1000311,DDG
+1000214,1000311,DDGs
+1000208,1000316,DDG
+1000214,1000316,DDGs
+1000208,1000321,DDG
+1000346,1000321,DDGs->off
+1000296,1000321,DDGs->off
+1000214,1000321,DDGs
+1000407,1000324,DDGh
+1000267,1000324,DDGh
+1000208,1000324,DDG
+1000208,1000323,DDG
+1000346,1000323,DDGs->off
+1000296,1000323,DDGs->off
+1000214,1000323,DDGs
+1000208,1000328,DDG
+1000214,1000328,DDGs
+1000274,1000332,DDGread_ret
+1000304,1000332,DDGread_ret
+1000208,1000332,DDG
+1000336,1000335,DDGread_ret
+1000332,1000335,DDGread_ret
+1000208,1000336,DDG
+1000224,1000338,DDGreconnect_delay
+1000375,1000338,DDGreconnect_delay
+1000208,1000338,DDG
+1000214,1000338,DDGs
+1000208,1000340,DDG
+1000214,1000340,DDGs
+1000344,1000343,DDGAVERROR(EIO)
+1000208,1000344,DDG
+1000208,1000346,DDG
+1000407,1000346,DDGh
+1000267,1000346,DDGh
+1000214,1000346,DDGs
+1000208,1000350,DDG
+1000214,1000350,DDGs
+1000338,1000346,DDGreconnect_delay
+1000354,1000346,DDGread_ret
+1000332,1000354,DDGread_ret
+1000208,1000354,DDG
+1000358,1000356,DDG1000U*1000*reconnect_delay
+1000358,1000356,DDG&h->interrupt_callback
+1000208,1000356,DDG
+1000359,1000358,DDG1000U
+1000359,1000358,DDG1000*reconnect_delay
+1000208,1000359,DDG
+1000361,1000359,DDG1000
+1000361,1000359,DDGreconnect_delay
+1000208,1000361,DDG
+1000346,1000361,DDGreconnect_delay
+1000346,1000358,DDGh
+1000208,1000358,DDG
+1000358,1000364,DDG&h->interrupt_callback
+1000346,1000364,DDGh
+1000208,1000364,DDG
+1000346,1000365,DDGh
+1000208,1000365,DDG
+1000356,1000369,DDGerr
+1000208,1000369,DDG
+1000371,1000369,DDGETIMEDOUT
+1000208,1000371,DDG
+1000374,1000373,DDGerr
+1000369,1000373,DDGerr
+1000208,1000374,DDG
+1000208,1000375,DDG
+1000379,1000375,DDG2
+1000379,1000375,DDGreconnect_delay
+1000208,1000377,DDG
+1000379,1000377,DDG2
+1000379,1000377,DDGreconnect_delay
+1000208,1000379,DDG
+1000361,1000379,DDGreconnect_delay
+1000384,1000382,DDGh
+1000384,1000382,DDGtarget
+1000384,1000382,DDGSEEK_SET
+1000384,1000382,DDG1
+1000208,1000382,DDG
+1000208,1000384,DDG
+1000346,1000384,DDGh
+1000321,1000384,DDGtarget
+1000391,1000390,DDGseek_ret
+1000391,1000390,DDG0
+1000382,1000391,DDGseek_ret
+1000208,1000391,DDG
+1000394,1000390,DDGseek_ret
+1000394,1000390,DDGtarget
+1000391,1000394,DDGseek_ret
+1000208,1000394,DDG
+1000384,1000394,DDGtarget
+1000384,1000398,DDGh
+1000208,1000398,DDG
+1000394,1000398,DDGtarget
+1000384,1000398,DDGtarget
+1000404,1000403,DDGread_ret
+1000354,1000403,DDGread_ret
+1000208,1000404,DDG
+1000407,1000405,DDGh
+1000407,1000405,DDGbuf
+1000407,1000405,DDGsize
+1000267,1000405,DDGh
+1000267,1000405,DDGbuf
+1000267,1000405,DDGsize
+1000208,1000405,DDG
+1000384,1000407,DDGh
+1000208,1000407,DDG
+1000267,1000407,DDGbuf
+1000267,1000407,DDGsize
+1000412,1000411,DDGread_ret
+1000274,1000411,DDGread_ret
+1000304,1000411,DDGread_ret
+1000208,1000412,DDG
+1000228,1000238,CDG
+1000228,1000236,CDG
+1000228,1000235,CDG
+1000228,1000232,CDG
+1000235,1000251,CDG
+1000235,1000248,CDG
+1000235,1000246,CDG
+1000235,1000244,CDG
+1000235,1000259,CDG
+1000235,1000257,CDG
+1000236,1000240,CDG
+1000236,1000239,CDG
+1000236,1000242,CDG
+1000251,1000254,CDG
+1000251,1000259,CDG
+1000251,1000257,CDG
+1000257,1000272,CDG
+1000257,1000267,CDG
+1000257,1000265,CDG
+1000257,1000261,CDG
+1000257,1000260,CDG
+1000257,1000274,CDG
+1000257,1000273,CDG
+1000272,1000332,CDG
+1000272,1000326,CDG
+1000272,1000324,CDG
+1000272,1000323,CDG
+1000272,1000321,CDG
+1000272,1000411,CDG
+1000273,1000304,CDG
+1000273,1000303,CDG
+1000274,1000280,CDG
+1000274,1000278,CDG
+1000274,1000277,CDG
+1000278,1000286,CDG
+1000278,1000284,CDG
+1000278,1000283,CDG
+1000278,1000282,CDG
+1000278,1000281,CDG
+1000282,1000294,CDG
+1000282,1000292,CDG
+1000282,1000291,CDG
+1000282,1000290,CDG
+1000283,1000287,CDG
+1000283,1000289,CDG
+1000291,1000302,CDG
+1000291,1000300,CDG
+1000291,1000299,CDG
+1000291,1000297,CDG
+1000291,1000296,CDG
+1000304,1000310,CDG
+1000304,1000308,CDG
+1000304,1000307,CDG
+1000308,1000315,CDG
+1000308,1000313,CDG
+1000308,1000312,CDG
+1000308,1000311,CDG
+1000312,1000318,CDG
+1000312,1000316,CDG
+1000324,1000330,CDG
+1000324,1000328,CDG
+1000332,1000335,CDG
+1000332,1000342,CDG
+1000332,1000340,CDG
+1000332,1000338,CDG
+1000338,1000352,CDG
+1000338,1000350,CDG
+1000338,1000346,CDG
+1000338,1000344,CDG
+1000338,1000343,CDG
+1000338,1000367,CDG
+1000338,1000365,CDG
+1000338,1000364,CDG
+1000338,1000361,CDG
+1000338,1000359,CDG
+1000338,1000358,CDG
+1000338,1000356,CDG
+1000338,1000354,CDG
+1000338,1000371,CDG
+1000338,1000369,CDG
+1000369,1000384,CDG
+1000369,1000382,CDG
+1000369,1000379,CDG
+1000369,1000377,CDG
+1000369,1000375,CDG
+1000369,1000373,CDG
+1000369,1000391,CDG
+1000369,1000390,CDG
+1000390,1000272,CDG
+1000390,1000274,CDG
+1000390,1000273,CDG
+1000390,1000398,CDG
+1000390,1000407,CDG
+1000390,1000405,CDG
+1000390,1000403,CDG
+1000391,1000394,CDG

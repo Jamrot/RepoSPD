@@ -1,0 +1,1523 @@
+digraph hls_mux_init
+--------
+1000207,(COLUMN_NUMBER,0),(LINE_NUMBER,527),(COLUMN_NUMBER_END,0),(IS_EXTERNAL,false),(SIGNATURE,static int hls_mux_init (AVFormatContext *)),(NAME,hls_mux_init),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,hls_mux_init (AVFormatContext *s)),(FULL_NAME,hls_mux_init),(LINE_NUMBER_END,613),(FILENAME,/app/RepoSPD/data_preproc/ab_file/1fe40e73a6/a/hlsenc.c),(METHOD,hls_mux_init)
+1000208,(ORDER,1),(CODE,AVFormatContext *s),(COLUMN_NUMBER,24),(LINE_NUMBER,527),(TYPE_FULL_NAME,AVFormatContext *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(PARAM,AVFormatContext *s)
+1000209,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,0),(TYPE_FULL_NAME,void),(LINE_NUMBER,528),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000210,(TYPE_FULL_NAME,AVDictionary *),(ORDER,1),(CODE,options),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(LOCAL,options: AVDictionary *)
+1000211,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,*options = NULL),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,529),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*options = NULL)
+1000212,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,529),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,*options = NULL)
+1000213,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NULL),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,529),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,*options = NULL)
+1000214,(TYPE_FULL_NAME,HLSContext *),(ORDER,3),(CODE,hls),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(LOCAL,hls: HLSContext *)
+1000215,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,*hls = s->priv_data),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,530),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*hls = s->priv_data)
+1000216,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,530),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,*hls = s->priv_data)
+1000217,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->priv_data),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,530),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->priv_data)
+1000218,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,530),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,*hls = s->priv_data)
+1000219,(ORDER,2),(LINE_NUMBER,530),(ARGUMENT_INDEX,2),(CODE,priv_data),(COLUMN_NUMBER,25),(CANONICAL_NAME,priv_data),(FIELD_IDENTIFIER,priv_data,priv_data)
+1000220,(TYPE_FULL_NAME,AVFormatContext *),(ORDER,5),(CODE,oc),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(LOCAL,oc: AVFormatContext *)
+1000221,(TYPE_FULL_NAME,AVFormatContext *),(ORDER,6),(CODE,vtt_oc),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,vtt_oc),(LOCAL,vtt_oc: AVFormatContext *)
+1000222,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,*vtt_oc = NULL),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,532),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,*vtt_oc = NULL)
+1000223,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,vtt_oc),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,532),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,vtt_oc),(IDENTIFIER,vtt_oc,*vtt_oc = NULL)
+1000224,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NULL),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,532),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,*vtt_oc = NULL)
+1000225,(TYPE_FULL_NAME,int),(ORDER,8),(CODE,i),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(LOCAL,i: int)
+1000226,(TYPE_FULL_NAME,int),(ORDER,9),(CODE,ret),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(LOCAL,ret: int)
+1000227,(ORDER,10),(ARGUMENT_INDEX,10),(CODE,ret = avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,535),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ret = avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL))
+1000228,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,int),(LINE_NUMBER,535),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret = avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL))
+1000229,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL)),(COLUMN_NUMBER,10),(METHOD_FULL_NAME,avformat_alloc_output_context2),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,535),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avformat_alloc_output_context2),(avformat_alloc_output_context2,avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL))
+1000230,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&hls->avf),(COLUMN_NUMBER,41),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,535),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&hls->avf)
+1000231,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->avf),(COLUMN_NUMBER,42),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,535),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->avf)
+1000232,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,42),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,535),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL))
+1000233,(ORDER,2),(LINE_NUMBER,535),(ARGUMENT_INDEX,2),(CODE,avf),(COLUMN_NUMBER,47),(CANONICAL_NAME,avf),(FIELD_IDENTIFIER,avf,avf)
+1000234,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->oformat),(COLUMN_NUMBER,52),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,535),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->oformat)
+1000235,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,52),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,535),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL))
+1000236,(ORDER,2),(LINE_NUMBER,535),(ARGUMENT_INDEX,2),(CODE,oformat),(COLUMN_NUMBER,57),(CANONICAL_NAME,oformat),(FIELD_IDENTIFIER,oformat,oformat)
+1000237,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,NULL),(COLUMN_NUMBER,66),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,535),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL))
+1000238,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,NULL),(COLUMN_NUMBER,72),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,535),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,avformat_alloc_output_context2(&hls->avf, hls->oformat, NULL, NULL))
+1000239,(PARSER_TYPE_NAME,IfStatement),(ORDER,11),(LINE_NUMBER,536),(ARGUMENT_INDEX,11),(CODE,if (ret < 0)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (ret < 0),if (ret < 0))
+1000240,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret < 0),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,536),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,ret < 0)
+1000241,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,536),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret < 0)
+1000242,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,int),(LINE_NUMBER,536),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ret < 0)
+1000243,(ORDER,2),(LINE_NUMBER,537),(ARGUMENT_INDEX,2),(CODE,return ret;),(COLUMN_NUMBER,8),(RETURN,return ret;,return ret;)
+1000244,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,int),(LINE_NUMBER,537),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,return ret;)
+1000245,(ORDER,12),(ARGUMENT_INDEX,12),(CODE,oc = hls->avf),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,538),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc = hls->avf)
+1000246,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,538),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc = hls->avf)
+1000247,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->avf),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,538),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->avf)
+1000248,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,538),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,oc = hls->avf)
+1000249,(ORDER,2),(LINE_NUMBER,538),(ARGUMENT_INDEX,2),(CODE,avf),(COLUMN_NUMBER,14),(CANONICAL_NAME,avf),(FIELD_IDENTIFIER,avf,avf)
+1000250,(ORDER,13),(ARGUMENT_INDEX,13),(CODE,oc->filename[0]        = '\0'),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,540),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc->filename[0]        = '\0')
+1000251,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->filename[0]),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,540),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,oc->filename[0])
+1000252,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->filename),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,540),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->filename)
+1000253,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,540),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc->filename[0]        = '\0')
+1000254,(ORDER,2),(LINE_NUMBER,540),(ARGUMENT_INDEX,2),(CODE,filename),(COLUMN_NUMBER,8),(CANONICAL_NAME,filename),(FIELD_IDENTIFIER,filename,filename)
+1000255,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,17),(TYPE_FULL_NAME,int),(LINE_NUMBER,540),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,oc->filename[0]        = '\0')
+1000256,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,'\0'),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,char),(LINE_NUMBER,540),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,'\0',oc->filename[0]        = '\0')
+1000257,(ORDER,14),(ARGUMENT_INDEX,14),(CODE,oc->oformat            = hls->oformat),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,541),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc->oformat            = hls->oformat)
+1000258,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->oformat),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,541),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->oformat)
+1000259,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,541),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc->oformat            = hls->oformat)
+1000260,(ORDER,2),(LINE_NUMBER,541),(ARGUMENT_INDEX,2),(CODE,oformat),(COLUMN_NUMBER,8),(CANONICAL_NAME,oformat),(FIELD_IDENTIFIER,oformat,oformat)
+1000261,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->oformat),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,541),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->oformat)
+1000262,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,541),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,oc->oformat            = hls->oformat)
+1000263,(ORDER,2),(LINE_NUMBER,541),(ARGUMENT_INDEX,2),(CODE,oformat),(COLUMN_NUMBER,34),(CANONICAL_NAME,oformat),(FIELD_IDENTIFIER,oformat,oformat)
+1000264,(ORDER,15),(ARGUMENT_INDEX,15),(CODE,oc->interrupt_callback = s->interrupt_callback),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,542),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc->interrupt_callback = s->interrupt_callback)
+1000265,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->interrupt_callback),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,542),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->interrupt_callback)
+1000266,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,542),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc->interrupt_callback = s->interrupt_callback)
+1000267,(ORDER,2),(LINE_NUMBER,542),(ARGUMENT_INDEX,2),(CODE,interrupt_callback),(COLUMN_NUMBER,8),(CANONICAL_NAME,interrupt_callback),(FIELD_IDENTIFIER,interrupt_callback,interrupt_callback)
+1000268,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->interrupt_callback),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,542),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->interrupt_callback)
+1000269,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,542),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,oc->interrupt_callback = s->interrupt_callback)
+1000270,(ORDER,2),(LINE_NUMBER,542),(ARGUMENT_INDEX,2),(CODE,interrupt_callback),(COLUMN_NUMBER,32),(CANONICAL_NAME,interrupt_callback),(FIELD_IDENTIFIER,interrupt_callback,interrupt_callback)
+1000271,(ORDER,16),(ARGUMENT_INDEX,16),(CODE,oc->max_delay          = s->max_delay),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,543),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc->max_delay          = s->max_delay)
+1000272,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->max_delay),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,543),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->max_delay)
+1000273,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,543),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc->max_delay          = s->max_delay)
+1000274,(ORDER,2),(LINE_NUMBER,543),(ARGUMENT_INDEX,2),(CODE,max_delay),(COLUMN_NUMBER,8),(CANONICAL_NAME,max_delay),(FIELD_IDENTIFIER,max_delay,max_delay)
+1000275,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->max_delay),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,543),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->max_delay)
+1000276,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,543),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,oc->max_delay          = s->max_delay)
+1000277,(ORDER,2),(LINE_NUMBER,543),(ARGUMENT_INDEX,2),(CODE,max_delay),(COLUMN_NUMBER,32),(CANONICAL_NAME,max_delay),(FIELD_IDENTIFIER,max_delay,max_delay)
+1000278,(ORDER,17),(ARGUMENT_INDEX,17),(CODE,oc->opaque             = s->opaque),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,544),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc->opaque             = s->opaque)
+1000279,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->opaque),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,544),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->opaque)
+1000280,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,544),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc->opaque             = s->opaque)
+1000281,(ORDER,2),(LINE_NUMBER,544),(ARGUMENT_INDEX,2),(CODE,opaque),(COLUMN_NUMBER,8),(CANONICAL_NAME,opaque),(FIELD_IDENTIFIER,opaque,opaque)
+1000282,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->opaque),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,544),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->opaque)
+1000283,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,544),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,oc->opaque             = s->opaque)
+1000284,(ORDER,2),(LINE_NUMBER,544),(ARGUMENT_INDEX,2),(CODE,opaque),(COLUMN_NUMBER,32),(CANONICAL_NAME,opaque),(FIELD_IDENTIFIER,opaque,opaque)
+1000285,(ORDER,18),(ARGUMENT_INDEX,18),(CODE,oc->io_open            = s->io_open),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,545),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc->io_open            = s->io_open)
+1000286,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->io_open),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,545),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->io_open)
+1000287,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,545),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc->io_open            = s->io_open)
+1000288,(ORDER,2),(LINE_NUMBER,545),(ARGUMENT_INDEX,2),(CODE,io_open),(COLUMN_NUMBER,8),(CANONICAL_NAME,io_open),(FIELD_IDENTIFIER,io_open,io_open)
+1000289,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->io_open),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,545),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->io_open)
+1000290,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,545),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,oc->io_open            = s->io_open)
+1000291,(ORDER,2),(LINE_NUMBER,545),(ARGUMENT_INDEX,2),(CODE,io_open),(COLUMN_NUMBER,32),(CANONICAL_NAME,io_open),(FIELD_IDENTIFIER,io_open,io_open)
+1000292,(ORDER,19),(ARGUMENT_INDEX,19),(CODE,oc->io_close           = s->io_close),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,546),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,oc->io_close           = s->io_close)
+1000293,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->io_close),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,546),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->io_close)
+1000294,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,546),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,oc->io_close           = s->io_close)
+1000295,(ORDER,2),(LINE_NUMBER,546),(ARGUMENT_INDEX,2),(CODE,io_close),(COLUMN_NUMBER,8),(CANONICAL_NAME,io_close),(FIELD_IDENTIFIER,io_close,io_close)
+1000296,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->io_close),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,546),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->io_close)
+1000297,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,546),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,oc->io_close           = s->io_close)
+1000298,(ORDER,2),(LINE_NUMBER,546),(ARGUMENT_INDEX,2),(CODE,io_close),(COLUMN_NUMBER,32),(CANONICAL_NAME,io_close),(FIELD_IDENTIFIER,io_close,io_close)
+1000299,(ORDER,20),(ARGUMENT_INDEX,20),(CODE,av_dict_copy(&oc->metadata, s->metadata, 0)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,av_dict_copy),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,547),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_copy),(av_dict_copy,av_dict_copy(&oc->metadata, s->metadata, 0))
+1000300,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&oc->metadata),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,547),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&oc->metadata)
+1000301,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->metadata),(COLUMN_NUMBER,18),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,547),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->metadata)
+1000302,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,547),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,av_dict_copy(&oc->metadata, s->metadata, 0))
+1000303,(ORDER,2),(LINE_NUMBER,547),(ARGUMENT_INDEX,2),(CODE,metadata),(COLUMN_NUMBER,22),(CANONICAL_NAME,metadata),(FIELD_IDENTIFIER,metadata,metadata)
+1000304,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->metadata),(COLUMN_NUMBER,32),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,547),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->metadata)
+1000305,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,547),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,av_dict_copy(&oc->metadata, s->metadata, 0))
+1000306,(ORDER,2),(LINE_NUMBER,547),(ARGUMENT_INDEX,2),(CODE,metadata),(COLUMN_NUMBER,35),(CANONICAL_NAME,metadata),(FIELD_IDENTIFIER,metadata,metadata)
+1000307,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,int),(LINE_NUMBER,547),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,av_dict_copy(&oc->metadata, s->metadata, 0))
+1000308,(PARSER_TYPE_NAME,IfStatement),(ORDER,21),(LINE_NUMBER,549),(ARGUMENT_INDEX,21),(CODE,if(hls->vtt_oformat)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if(hls->vtt_oformat),if(hls->vtt_oformat))
+1000309,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->vtt_oformat),(COLUMN_NUMBER,7),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,549),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->vtt_oformat)
+1000310,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,7),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,549),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,if(hls->vtt_oformat))
+1000311,(ORDER,2),(LINE_NUMBER,549),(ARGUMENT_INDEX,2),(CODE,vtt_oformat),(COLUMN_NUMBER,12),(CANONICAL_NAME,vtt_oformat),(FIELD_IDENTIFIER,vtt_oformat,vtt_oformat)
+1000312,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,25),(TYPE_FULL_NAME,void),(LINE_NUMBER,549),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000313,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret = avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,550),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ret = avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL))
+1000314,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,550),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret = avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL))
+1000315,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,avformat_alloc_output_context2),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,550),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avformat_alloc_output_context2),(avformat_alloc_output_context2,avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL))
+1000316,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&hls->vtt_avf),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,550),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&hls->vtt_avf)
+1000317,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->vtt_avf),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,550),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->vtt_avf)
+1000318,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,46),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,550),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL))
+1000319,(ORDER,2),(LINE_NUMBER,550),(ARGUMENT_INDEX,2),(CODE,vtt_avf),(COLUMN_NUMBER,51),(CANONICAL_NAME,vtt_avf),(FIELD_IDENTIFIER,vtt_avf,vtt_avf)
+1000320,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->vtt_oformat),(COLUMN_NUMBER,60),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,550),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->vtt_oformat)
+1000321,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,60),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,550),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL))
+1000322,(ORDER,2),(LINE_NUMBER,550),(ARGUMENT_INDEX,2),(CODE,vtt_oformat),(COLUMN_NUMBER,65),(CANONICAL_NAME,vtt_oformat),(FIELD_IDENTIFIER,vtt_oformat,vtt_oformat)
+1000323,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,NULL),(COLUMN_NUMBER,78),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,550),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL))
+1000324,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,NULL),(COLUMN_NUMBER,84),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,550),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,avformat_alloc_output_context2(&hls->vtt_avf, hls->vtt_oformat, NULL, NULL))
+1000325,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,551),(ARGUMENT_INDEX,2),(CODE,if (ret < 0)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (ret < 0),if (ret < 0))
+1000326,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret < 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,551),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,ret < 0)
+1000327,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,551),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret < 0)
+1000328,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,int),(LINE_NUMBER,551),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ret < 0)
+1000329,(ORDER,2),(LINE_NUMBER,552),(ARGUMENT_INDEX,2),(CODE,return ret;),(COLUMN_NUMBER,12),(RETURN,return ret;,return ret;)
+1000330,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,int),(LINE_NUMBER,552),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,return ret;)
+1000331,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,vtt_oc          = hls->vtt_avf),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,553),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,vtt_oc          = hls->vtt_avf)
+1000332,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,vtt_oc),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,553),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,vtt_oc),(IDENTIFIER,vtt_oc,vtt_oc          = hls->vtt_avf)
+1000333,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->vtt_avf),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,553),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->vtt_avf)
+1000334,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,553),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,vtt_oc          = hls->vtt_avf)
+1000335,(ORDER,2),(LINE_NUMBER,553),(ARGUMENT_INDEX,2),(CODE,vtt_avf),(COLUMN_NUMBER,31),(CANONICAL_NAME,vtt_avf),(FIELD_IDENTIFIER,vtt_avf,vtt_avf)
+1000336,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,vtt_oc->oformat = hls->vtt_oformat),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,554),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,vtt_oc->oformat = hls->vtt_oformat)
+1000337,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,vtt_oc->oformat),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,554),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,vtt_oc->oformat)
+1000338,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,vtt_oc),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,554),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,vtt_oc),(IDENTIFIER,vtt_oc,vtt_oc->oformat = hls->vtt_oformat)
+1000339,(ORDER,2),(LINE_NUMBER,554),(ARGUMENT_INDEX,2),(CODE,oformat),(COLUMN_NUMBER,16),(CANONICAL_NAME,oformat),(FIELD_IDENTIFIER,oformat,oformat)
+1000340,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->vtt_oformat),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,554),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->vtt_oformat)
+1000341,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,554),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,vtt_oc->oformat = hls->vtt_oformat)
+1000342,(ORDER,2),(LINE_NUMBER,554),(ARGUMENT_INDEX,2),(CODE,vtt_oformat),(COLUMN_NUMBER,31),(CANONICAL_NAME,vtt_oformat),(FIELD_IDENTIFIER,vtt_oformat,vtt_oformat)
+1000343,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,av_dict_copy(&vtt_oc->metadata, s->metadata, 0)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_dict_copy),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,555),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_copy),(av_dict_copy,av_dict_copy(&vtt_oc->metadata, s->metadata, 0))
+1000344,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&vtt_oc->metadata),(COLUMN_NUMBER,21),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,555),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&vtt_oc->metadata)
+1000345,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,vtt_oc->metadata),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,555),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,vtt_oc->metadata)
+1000346,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,vtt_oc),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,555),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,vtt_oc),(IDENTIFIER,vtt_oc,av_dict_copy(&vtt_oc->metadata, s->metadata, 0))
+1000347,(ORDER,2),(LINE_NUMBER,555),(ARGUMENT_INDEX,2),(CODE,metadata),(COLUMN_NUMBER,30),(CANONICAL_NAME,metadata),(FIELD_IDENTIFIER,metadata,metadata)
+1000348,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->metadata),(COLUMN_NUMBER,40),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,555),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->metadata)
+1000349,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,555),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,av_dict_copy(&vtt_oc->metadata, s->metadata, 0))
+1000350,(ORDER,2),(LINE_NUMBER,555),(ARGUMENT_INDEX,2),(CODE,metadata),(COLUMN_NUMBER,43),(CANONICAL_NAME,metadata),(FIELD_IDENTIFIER,metadata,metadata)
+1000351,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,53),(TYPE_FULL_NAME,int),(LINE_NUMBER,555),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,av_dict_copy(&vtt_oc->metadata, s->metadata, 0))
+1000352,(PARSER_TYPE_NAME,ForStatement),(ORDER,22),(LINE_NUMBER,558),(ARGUMENT_INDEX,22),(CODE,for (i = 0; i < s->nb_streams; i++)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,for (i = 0; i < s->nb_streams; i++),for (i = 0; i < s->nb_streams; i++))
+1000353,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i = 0),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,558),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,i = 0)
+1000354,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,int),(LINE_NUMBER,558),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i = 0)
+1000355,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,int),(LINE_NUMBER,558),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,i = 0)
+1000356,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i < s->nb_streams),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,558),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,i < s->nb_streams)
+1000357,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,int),(LINE_NUMBER,558),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i < s->nb_streams)
+1000358,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->nb_streams),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,558),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->nb_streams)
+1000359,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,558),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,i < s->nb_streams)
+1000360,(ORDER,2),(LINE_NUMBER,558),(ARGUMENT_INDEX,2),(CODE,nb_streams),(COLUMN_NUMBER,23),(CANONICAL_NAME,nb_streams),(FIELD_IDENTIFIER,nb_streams,nb_streams)
+1000361,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,i++),(COLUMN_NUMBER,35),(METHOD_FULL_NAME,<operator>.postIncrement),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,558),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.postIncrement),(<operator>.postIncrement,i++)
+1000362,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,int),(LINE_NUMBER,558),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i++)
+1000363,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,void),(LINE_NUMBER,560),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000364,(TYPE_FULL_NAME,AVStream *),(ORDER,1),(CODE,st),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,st),(LOCAL,st: AVStream *)
+1000365,(TYPE_FULL_NAME,AVFormatContext *),(ORDER,2),(CODE,loc),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,loc),(LOCAL,loc: AVFormatContext *)
+1000366,(PARSER_TYPE_NAME,IfStatement),(ORDER,3),(LINE_NUMBER,561),(ARGUMENT_INDEX,3),(CODE,if (s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE),if (s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE))
+1000367,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,561),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE)
+1000368,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]->codecpar->codec_type),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,561),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams[i]->codecpar->codec_type)
+1000369,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]->codecpar),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,561),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams[i]->codecpar)
+1000370,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,561),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,s->streams[i])
+1000371,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,561),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams)
+1000372,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,561),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE)
+1000373,(ORDER,2),(LINE_NUMBER,561),(ARGUMENT_INDEX,2),(CODE,streams),(COLUMN_NUMBER,15),(CANONICAL_NAME,streams),(FIELD_IDENTIFIER,streams,streams)
+1000374,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,int),(LINE_NUMBER,561),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE)
+1000375,(ORDER,2),(LINE_NUMBER,561),(ARGUMENT_INDEX,2),(CODE,codecpar),(COLUMN_NUMBER,27),(CANONICAL_NAME,codecpar),(FIELD_IDENTIFIER,codecpar,codecpar)
+1000376,(ORDER,2),(LINE_NUMBER,561),(ARGUMENT_INDEX,2),(CODE,codec_type),(COLUMN_NUMBER,37),(CANONICAL_NAME,codec_type),(FIELD_IDENTIFIER,codec_type,codec_type)
+1000377,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AVMEDIA_TYPE_SUBTITLE),(COLUMN_NUMBER,51),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,561),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVMEDIA_TYPE_SUBTITLE),(IDENTIFIER,AVMEDIA_TYPE_SUBTITLE,s->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE)
+1000378,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,loc = vtt_oc),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,562),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,loc = vtt_oc)
+1000379,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,loc),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,562),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,loc),(IDENTIFIER,loc,loc = vtt_oc)
+1000380,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,vtt_oc),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,562),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,vtt_oc),(IDENTIFIER,vtt_oc,loc = vtt_oc)
+1000381,(PARSER_TYPE_NAME,ElseStatement),(ORDER,3),(LINE_NUMBER,563),(ARGUMENT_INDEX,3),(CODE,else),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,else,else)
+1000382,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,loc = oc),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,564),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,loc = oc)
+1000383,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,loc),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,564),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,loc),(IDENTIFIER,loc,loc = oc)
+1000384,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,oc),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,564),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,loc = oc)
+1000385,(PARSER_TYPE_NAME,IfStatement),(ORDER,4),(LINE_NUMBER,566),(ARGUMENT_INDEX,4),(CODE,if (!(st = avformat_new_stream(loc, NULL)))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (!(st = avformat_new_stream(loc, NULL))),if (!(st = avformat_new_stream(loc, NULL))))
+1000386,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,!(st = avformat_new_stream(loc, NULL))),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalNot),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,566),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalNot),(<operator>.logicalNot,!(st = avformat_new_stream(loc, NULL)))
+1000387,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st = avformat_new_stream(loc, NULL)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,566),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,st = avformat_new_stream(loc, NULL))
+1000388,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,AVStream *),(LINE_NUMBER,566),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,st),(IDENTIFIER,st,st = avformat_new_stream(loc, NULL))
+1000389,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,avformat_new_stream(loc, NULL)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,avformat_new_stream),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,566),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avformat_new_stream),(avformat_new_stream,avformat_new_stream(loc, NULL))
+1000390,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,loc),(COLUMN_NUMBER,39),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,566),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,loc),(IDENTIFIER,loc,avformat_new_stream(loc, NULL))
+1000391,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NULL),(COLUMN_NUMBER,44),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,566),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,avformat_new_stream(loc, NULL))
+1000392,(ORDER,2),(LINE_NUMBER,567),(ARGUMENT_INDEX,2),(CODE,return AVERROR(ENOMEM);),(COLUMN_NUMBER,12),(RETURN,return AVERROR(ENOMEM);,return AVERROR(ENOMEM);)
+1000393,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,AVERROR(ENOMEM)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,AVERROR),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,567),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR),(AVERROR,AVERROR(ENOMEM))
+1000394,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ENOMEM),(COLUMN_NUMBER,27),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,567),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ENOMEM),(IDENTIFIER,ENOMEM,AVERROR(ENOMEM))
+1000395,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,avcodec_parameters_copy(st->codecpar, s->streams[i]->codecpar)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,avcodec_parameters_copy),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,568),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avcodec_parameters_copy),(avcodec_parameters_copy,avcodec_parameters_copy(st->codecpar, s->streams[i]->codecpar))
+1000396,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st->codecpar),(COLUMN_NUMBER,32),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,568),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,st->codecpar)
+1000397,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,AVStream *),(LINE_NUMBER,568),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,st),(IDENTIFIER,st,avcodec_parameters_copy(st->codecpar, s->streams[i]->codecpar))
+1000398,(ORDER,2),(LINE_NUMBER,568),(ARGUMENT_INDEX,2),(CODE,codecpar),(COLUMN_NUMBER,36),(CANONICAL_NAME,codecpar),(FIELD_IDENTIFIER,codecpar,codecpar)
+1000399,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->streams[i]->codecpar),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,568),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams[i]->codecpar)
+1000400,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,568),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,s->streams[i])
+1000401,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,568),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams)
+1000402,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,46),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,568),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,avcodec_parameters_copy(st->codecpar, s->streams[i]->codecpar))
+1000403,(ORDER,2),(LINE_NUMBER,568),(ARGUMENT_INDEX,2),(CODE,streams),(COLUMN_NUMBER,49),(CANONICAL_NAME,streams),(FIELD_IDENTIFIER,streams,streams)
+1000404,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,57),(TYPE_FULL_NAME,int),(LINE_NUMBER,568),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,avcodec_parameters_copy(st->codecpar, s->streams[i]->codecpar))
+1000405,(ORDER,2),(LINE_NUMBER,568),(ARGUMENT_INDEX,2),(CODE,codecpar),(COLUMN_NUMBER,61),(CANONICAL_NAME,codecpar),(FIELD_IDENTIFIER,codecpar,codecpar)
+1000406,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,st->sample_aspect_ratio = s->streams[i]->sample_aspect_ratio),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,577),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,st->sample_aspect_ratio = s->streams[i]->sample_aspect_ratio)
+1000407,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st->sample_aspect_ratio),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,577),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,st->sample_aspect_ratio)
+1000408,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,AVStream *),(LINE_NUMBER,577),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,st),(IDENTIFIER,st,st->sample_aspect_ratio = s->streams[i]->sample_aspect_ratio)
+1000409,(ORDER,2),(LINE_NUMBER,577),(ARGUMENT_INDEX,2),(CODE,sample_aspect_ratio),(COLUMN_NUMBER,12),(CANONICAL_NAME,sample_aspect_ratio),(FIELD_IDENTIFIER,sample_aspect_ratio,sample_aspect_ratio)
+1000410,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->streams[i]->sample_aspect_ratio),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,577),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams[i]->sample_aspect_ratio)
+1000411,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,577),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,s->streams[i])
+1000412,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,577),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams)
+1000413,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,577),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,st->sample_aspect_ratio = s->streams[i]->sample_aspect_ratio)
+1000414,(ORDER,2),(LINE_NUMBER,577),(ARGUMENT_INDEX,2),(CODE,streams),(COLUMN_NUMBER,37),(CANONICAL_NAME,streams),(FIELD_IDENTIFIER,streams,streams)
+1000415,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,int),(LINE_NUMBER,577),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,st->sample_aspect_ratio = s->streams[i]->sample_aspect_ratio)
+1000416,(ORDER,2),(LINE_NUMBER,577),(ARGUMENT_INDEX,2),(CODE,sample_aspect_ratio),(COLUMN_NUMBER,49),(CANONICAL_NAME,sample_aspect_ratio),(FIELD_IDENTIFIER,sample_aspect_ratio,sample_aspect_ratio)
+1000417,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,st->time_base = s->streams[i]->time_base),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,578),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,st->time_base = s->streams[i]->time_base)
+1000418,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st->time_base),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,578),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,st->time_base)
+1000419,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,AVStream *),(LINE_NUMBER,578),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,st),(IDENTIFIER,st,st->time_base = s->streams[i]->time_base)
+1000420,(ORDER,2),(LINE_NUMBER,578),(ARGUMENT_INDEX,2),(CODE,time_base),(COLUMN_NUMBER,12),(CANONICAL_NAME,time_base),(FIELD_IDENTIFIER,time_base,time_base)
+1000421,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->streams[i]->time_base),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,578),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams[i]->time_base)
+1000422,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,578),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,s->streams[i])
+1000423,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,578),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams)
+1000424,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,578),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,st->time_base = s->streams[i]->time_base)
+1000425,(ORDER,2),(LINE_NUMBER,578),(ARGUMENT_INDEX,2),(CODE,streams),(COLUMN_NUMBER,27),(CANONICAL_NAME,streams),(FIELD_IDENTIFIER,streams,streams)
+1000426,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,int),(LINE_NUMBER,578),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,st->time_base = s->streams[i]->time_base)
+1000427,(ORDER,2),(LINE_NUMBER,578),(ARGUMENT_INDEX,2),(CODE,time_base),(COLUMN_NUMBER,39),(CANONICAL_NAME,time_base),(FIELD_IDENTIFIER,time_base,time_base)
+1000428,(ORDER,8),(ARGUMENT_INDEX,8),(CODE,av_dict_copy(&st->metadata, s->streams[i]->metadata, 0)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_dict_copy),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,579),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_copy),(av_dict_copy,av_dict_copy(&st->metadata, s->streams[i]->metadata, 0))
+1000429,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&st->metadata),(COLUMN_NUMBER,21),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,579),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&st->metadata)
+1000430,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st->metadata),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,579),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,st->metadata)
+1000431,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,st),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,AVStream *),(LINE_NUMBER,579),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,st),(IDENTIFIER,st,av_dict_copy(&st->metadata, s->streams[i]->metadata, 0))
+1000432,(ORDER,2),(LINE_NUMBER,579),(ARGUMENT_INDEX,2),(CODE,metadata),(COLUMN_NUMBER,26),(CANONICAL_NAME,metadata),(FIELD_IDENTIFIER,metadata,metadata)
+1000433,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->streams[i]->metadata),(COLUMN_NUMBER,36),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,579),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams[i]->metadata)
+1000434,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams[i]),(COLUMN_NUMBER,36),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,579),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,s->streams[i])
+1000435,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s->streams),(COLUMN_NUMBER,36),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,579),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,s->streams)
+1000436,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,579),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,av_dict_copy(&st->metadata, s->streams[i]->metadata, 0))
+1000437,(ORDER,2),(LINE_NUMBER,579),(ARGUMENT_INDEX,2),(CODE,streams),(COLUMN_NUMBER,39),(CANONICAL_NAME,streams),(FIELD_IDENTIFIER,streams,streams)
+1000438,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,47),(TYPE_FULL_NAME,int),(LINE_NUMBER,579),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,av_dict_copy(&st->metadata, s->streams[i]->metadata, 0))
+1000439,(ORDER,2),(LINE_NUMBER,579),(ARGUMENT_INDEX,2),(CODE,metadata),(COLUMN_NUMBER,51),(CANONICAL_NAME,metadata),(FIELD_IDENTIFIER,metadata,metadata)
+1000440,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,61),(TYPE_FULL_NAME,int),(LINE_NUMBER,579),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,av_dict_copy(&st->metadata, s->streams[i]->metadata, 0))
+1000441,(ORDER,23),(ARGUMENT_INDEX,23),(CODE,hls->start_pos = 0),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,581),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,hls->start_pos = 0)
+1000442,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->start_pos),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,581),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->start_pos)
+1000443,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,581),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,hls->start_pos = 0)
+1000444,(ORDER,2),(LINE_NUMBER,581),(ARGUMENT_INDEX,2),(CODE,start_pos),(COLUMN_NUMBER,9),(CANONICAL_NAME,start_pos),(FIELD_IDENTIFIER,start_pos,start_pos)
+1000445,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,int),(LINE_NUMBER,581),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,hls->start_pos = 0)
+1000446,(ORDER,24),(ARGUMENT_INDEX,24),(CODE,hls->new_start = 1),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,582),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,hls->new_start = 1)
+1000447,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->new_start),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,582),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->new_start)
+1000448,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,582),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,hls->new_start = 1)
+1000449,(ORDER,2),(LINE_NUMBER,582),(ARGUMENT_INDEX,2),(CODE,new_start),(COLUMN_NUMBER,9),(CANONICAL_NAME,new_start),(FIELD_IDENTIFIER,new_start,new_start)
+1000450,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,int),(LINE_NUMBER,582),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,hls->new_start = 1)
+1000451,(ORDER,25),(ARGUMENT_INDEX,25),(CODE,hls->fmp4_init_mode = 0),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,583),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,hls->fmp4_init_mode = 0)
+1000452,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->fmp4_init_mode),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,583),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->fmp4_init_mode)
+1000453,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,583),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,hls->fmp4_init_mode = 0)
+1000454,(ORDER,2),(LINE_NUMBER,583),(ARGUMENT_INDEX,2),(CODE,fmp4_init_mode),(COLUMN_NUMBER,9),(CANONICAL_NAME,fmp4_init_mode),(FIELD_IDENTIFIER,fmp4_init_mode,fmp4_init_mode)
+1000455,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,int),(LINE_NUMBER,583),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,hls->fmp4_init_mode = 0)
+1000456,(PARSER_TYPE_NAME,IfStatement),(ORDER,26),(LINE_NUMBER,585),(ARGUMENT_INDEX,26),(CODE,if (hls->segment_type == SEGMENT_TYPE_FMP4)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (hls->segment_type == SEGMENT_TYPE_FMP4),if (hls->segment_type == SEGMENT_TYPE_FMP4))
+1000457,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->segment_type == SEGMENT_TYPE_FMP4),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,585),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,hls->segment_type == SEGMENT_TYPE_FMP4)
+1000458,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->segment_type),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,585),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->segment_type)
+1000459,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,585),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,hls->segment_type == SEGMENT_TYPE_FMP4)
+1000460,(ORDER,2),(LINE_NUMBER,585),(ARGUMENT_INDEX,2),(CODE,segment_type),(COLUMN_NUMBER,13),(CANONICAL_NAME,segment_type),(FIELD_IDENTIFIER,segment_type,segment_type)
+1000461,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,SEGMENT_TYPE_FMP4),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,585),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,SEGMENT_TYPE_FMP4),(IDENTIFIER,SEGMENT_TYPE_FMP4,hls->segment_type == SEGMENT_TYPE_FMP4)
+1000462,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,48),(TYPE_FULL_NAME,void),(LINE_NUMBER,585),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000463,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->fmp4_init_mode = 1),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,586),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,hls->fmp4_init_mode = 1)
+1000464,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->fmp4_init_mode),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,586),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->fmp4_init_mode)
+1000465,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,586),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,hls->fmp4_init_mode = 1)
+1000466,(ORDER,2),(LINE_NUMBER,586),(ARGUMENT_INDEX,2),(CODE,fmp4_init_mode),(COLUMN_NUMBER,13),(CANONICAL_NAME,fmp4_init_mode),(FIELD_IDENTIFIER,fmp4_init_mode,fmp4_init_mode)
+1000467,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,int),(LINE_NUMBER,586),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,hls->fmp4_init_mode = 1)
+1000468,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,587),(ARGUMENT_INDEX,2),(CODE,if ((ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)) < 0)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if ((ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)) < 0),if ((ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)) < 0))
+1000469,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,(ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)) < 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,(ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)) < 0)
+1000470,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000471,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,int),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000472,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,s->io_open),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s->io_open),(s->io_open,s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000473,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000474,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&oc->pb),(COLUMN_NUMBER,33),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&oc->pb)
+1000475,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc->pb),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,oc->pb)
+1000476,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000477,(ORDER,2),(LINE_NUMBER,587),(ARGUMENT_INDEX,2),(CODE,pb),(COLUMN_NUMBER,38),(CANONICAL_NAME,pb),(FIELD_IDENTIFIER,pb,pb)
+1000478,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,hls->fmp4_init_filename),(COLUMN_NUMBER,42),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->fmp4_init_filename)
+1000479,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,42),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000480,(ORDER,2),(LINE_NUMBER,587),(ARGUMENT_INDEX,2),(CODE,fmp4_init_filename),(COLUMN_NUMBER,47),(CANONICAL_NAME,fmp4_init_filename),(FIELD_IDENTIFIER,fmp4_init_filename,fmp4_init_filename)
+1000481,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,AVIO_FLAG_WRITE),(COLUMN_NUMBER,67),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVIO_FLAG_WRITE),(IDENTIFIER,AVIO_FLAG_WRITE,s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000482,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,NULL),(COLUMN_NUMBER,84),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NULL),(IDENTIFIER,NULL,s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL))
+1000483,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,93),(TYPE_FULL_NAME,int),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,(ret = s->io_open(s, &oc->pb, hls->fmp4_init_filename, AVIO_FLAG_WRITE, NULL)) < 0)
+1000484,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,96),(TYPE_FULL_NAME,void),(LINE_NUMBER,587),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000485,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,av_log(s, AV_LOG_ERROR, "Failed to open segment '%s'\n", hls->fmp4_init_filename)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,588),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(s, AV_LOG_ERROR, \"Failed to open segment '%s'\n\", hls->fmp4_init_filename))
+1000486,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,588),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,av_log(s, AV_LOG_ERROR, \"Failed to open segment '%s'\n\", hls->fmp4_init_filename))
+1000487,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_ERROR),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,588),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_ERROR),(IDENTIFIER,AV_LOG_ERROR,av_log(s, AV_LOG_ERROR, \"Failed to open segment '%s'\n\", hls->fmp4_init_filename))
+1000488,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Failed to open segment '%s'\n"),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,char *),(LINE_NUMBER,588),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Failed to open segment '%s'\n\",av_log(s, AV_LOG_ERROR, \"Failed to open segment '%s'\n\", hls->fmp4_init_filename))
+1000489,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,hls->fmp4_init_filename),(COLUMN_NUMBER,69),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,588),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->fmp4_init_filename)
+1000490,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,69),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,588),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,av_log(s, AV_LOG_ERROR, \"Failed to open segment '%s'\n\", hls->fmp4_init_filename))
+1000491,(ORDER,2),(LINE_NUMBER,588),(ARGUMENT_INDEX,2),(CODE,fmp4_init_filename),(COLUMN_NUMBER,74),(CANONICAL_NAME,fmp4_init_filename),(FIELD_IDENTIFIER,fmp4_init_filename,fmp4_init_filename)
+1000492,(ORDER,2),(LINE_NUMBER,589),(ARGUMENT_INDEX,2),(CODE,return ret;),(COLUMN_NUMBER,12),(RETURN,return ret;,return ret;)
+1000493,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,int),(LINE_NUMBER,589),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,return ret;)
+1000494,(PARSER_TYPE_NAME,IfStatement),(ORDER,3),(LINE_NUMBER,592),(ARGUMENT_INDEX,3),(CODE,if (hls->format_options_str)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (hls->format_options_str),if (hls->format_options_str))
+1000495,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->format_options_str),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,592),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->format_options_str)
+1000496,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,592),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,if (hls->format_options_str))
+1000497,(ORDER,2),(LINE_NUMBER,592),(ARGUMENT_INDEX,2),(CODE,format_options_str),(COLUMN_NUMBER,17),(CANONICAL_NAME,format_options_str),(FIELD_IDENTIFIER,format_options_str,format_options_str)
+1000498,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,37),(TYPE_FULL_NAME,void),(LINE_NUMBER,592),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000499,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret = av_dict_parse_string(&hls->format_options, hls->format_options_str, "=", ":", 0)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,593),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ret = av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000500,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,int),(LINE_NUMBER,593),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret = av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000501,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,av_dict_parse_string(&hls->format_options, hls->format_options_str, "=", ":", 0)),(COLUMN_NUMBER,18),(METHOD_FULL_NAME,av_dict_parse_string),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,593),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_parse_string),(av_dict_parse_string,av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000502,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&hls->format_options),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,593),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&hls->format_options)
+1000503,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls->format_options),(COLUMN_NUMBER,40),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,593),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->format_options)
+1000504,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,593),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000505,(ORDER,2),(LINE_NUMBER,593),(ARGUMENT_INDEX,2),(CODE,format_options),(COLUMN_NUMBER,45),(CANONICAL_NAME,format_options),(FIELD_IDENTIFIER,format_options,format_options)
+1000506,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->format_options_str),(COLUMN_NUMBER,61),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,593),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->format_options_str)
+1000507,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,61),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,593),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000508,(ORDER,2),(LINE_NUMBER,593),(ARGUMENT_INDEX,2),(CODE,format_options_str),(COLUMN_NUMBER,66),(CANONICAL_NAME,format_options_str),(FIELD_IDENTIFIER,format_options_str,format_options_str)
+1000509,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"="),(COLUMN_NUMBER,86),(TYPE_FULL_NAME,char *),(LINE_NUMBER,593),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"=\",av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000510,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,":"),(COLUMN_NUMBER,91),(TYPE_FULL_NAME,char *),(LINE_NUMBER,593),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\":\",av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000511,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,0),(COLUMN_NUMBER,96),(TYPE_FULL_NAME,int),(LINE_NUMBER,593),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,av_dict_parse_string(&hls->format_options, hls->format_options_str, \"=\", \":\", 0))
+1000512,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,594),(ARGUMENT_INDEX,2),(CODE,if (ret < 0)),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,if (ret < 0),if (ret < 0))
+1000513,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret < 0),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,594),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,ret < 0)
+1000514,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,int),(LINE_NUMBER,594),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret < 0)
+1000515,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,int),(LINE_NUMBER,594),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ret < 0)
+1000516,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,25),(TYPE_FULL_NAME,void),(LINE_NUMBER,594),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000517,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,av_log(s, AV_LOG_ERROR, "Could not parse format options list '%s'\n",\n                       hls->format_options_str)),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,595),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(s, AV_LOG_ERROR, \"Could not parse format options list '%s'\n\",\n                       hls->format_options_str))
+1000518,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,595),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,av_log(s, AV_LOG_ERROR, \"Could not parse format options list '%s'\n\",\n                       hls->format_options_str))
+1000519,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_ERROR),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,595),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_ERROR),(IDENTIFIER,AV_LOG_ERROR,av_log(s, AV_LOG_ERROR, \"Could not parse format options list '%s'\n\",\n                       hls->format_options_str))
+1000520,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Could not parse format options list '%s'\n"),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,char *),(LINE_NUMBER,595),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Could not parse format options list '%s'\n\",av_log(s, AV_LOG_ERROR, \"Could not parse format options list '%s'\n\",\n                       hls->format_options_str))
+1000521,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,hls->format_options_str),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,596),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->format_options_str)
+1000522,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,596),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,av_log(s, AV_LOG_ERROR, \"Could not parse format options list '%s'\n\",\n                       hls->format_options_str))
+1000523,(ORDER,2),(LINE_NUMBER,596),(ARGUMENT_INDEX,2),(CODE,format_options_str),(COLUMN_NUMBER,28),(CANONICAL_NAME,format_options_str),(FIELD_IDENTIFIER,format_options_str,format_options_str)
+1000524,(ORDER,2),(LINE_NUMBER,597),(ARGUMENT_INDEX,2),(CODE,return ret;),(COLUMN_NUMBER,16),(RETURN,return ret;,return ret;)
+1000525,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,int),(LINE_NUMBER,597),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,return ret;)
+1000526,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,av_dict_copy(&options, hls->format_options, 0)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_dict_copy),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,601),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_copy),(av_dict_copy,av_dict_copy(&options, hls->format_options, 0))
+1000527,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&options),(COLUMN_NUMBER,21),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,601),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&options)
+1000528,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,601),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,av_dict_copy(&options, hls->format_options, 0))
+1000529,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,hls->format_options),(COLUMN_NUMBER,31),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,601),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->format_options)
+1000530,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,601),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,av_dict_copy(&options, hls->format_options, 0))
+1000531,(ORDER,2),(LINE_NUMBER,601),(ARGUMENT_INDEX,2),(CODE,format_options),(COLUMN_NUMBER,36),(CANONICAL_NAME,format_options),(FIELD_IDENTIFIER,format_options,format_options)
+1000532,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,52),(TYPE_FULL_NAME,int),(LINE_NUMBER,601),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,av_dict_copy(&options, hls->format_options, 0))
+1000533,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,av_dict_set(&options, "fflags", "-autobsf", 0)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_dict_set),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,602),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_set),(av_dict_set,av_dict_set(&options, \"fflags\", \"-autobsf\", 0))
+1000534,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&options),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,602),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&options)
+1000535,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,602),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,av_dict_set(&options, \"fflags\", \"-autobsf\", 0))
+1000536,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,"fflags"),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,char *),(LINE_NUMBER,602),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"fflags\",av_dict_set(&options, \"fflags\", \"-autobsf\", 0))
+1000537,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"-autobsf"),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,char *),(LINE_NUMBER,602),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"-autobsf\",av_dict_set(&options, \"fflags\", \"-autobsf\", 0))
+1000538,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,0),(COLUMN_NUMBER,52),(TYPE_FULL_NAME,int),(LINE_NUMBER,602),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,av_dict_set(&options, \"fflags\", \"-autobsf\", 0))
+1000539,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,av_dict_set(&options, "movflags", "frag_custom+dash+delay_moov", 0)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_dict_set),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,603),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_set),(av_dict_set,av_dict_set(&options, \"movflags\", \"frag_custom+dash+delay_moov\", 0))
+1000540,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&options),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,603),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&options)
+1000541,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,603),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,av_dict_set(&options, \"movflags\", \"frag_custom+dash+delay_moov\", 0))
+1000542,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,"movflags"),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,char *),(LINE_NUMBER,603),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"movflags\",av_dict_set(&options, \"movflags\", \"frag_custom+dash+delay_moov\", 0))
+1000543,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"frag_custom+dash+delay_moov"),(COLUMN_NUMBER,42),(TYPE_FULL_NAME,char *),(LINE_NUMBER,603),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"frag_custom+dash+delay_moov\",av_dict_set(&options, \"movflags\", \"frag_custom+dash+delay_moov\", 0))
+1000544,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,0),(COLUMN_NUMBER,73),(TYPE_FULL_NAME,int),(LINE_NUMBER,603),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,av_dict_set(&options, \"movflags\", \"frag_custom+dash+delay_moov\", 0))
+1000545,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,ret = avformat_init_output(oc, &options)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,604),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,ret = avformat_init_output(oc, &options))
+1000546,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ret),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,int),(LINE_NUMBER,604),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ret),(IDENTIFIER,ret,ret = avformat_init_output(oc, &options))
+1000547,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,avformat_init_output(oc, &options)),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,avformat_init_output),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,604),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,avformat_init_output),(avformat_init_output,avformat_init_output(oc, &options))
+1000548,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,oc),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,604),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,oc),(IDENTIFIER,oc,avformat_init_output(oc, &options))
+1000549,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,&options),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,604),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&options)
+1000550,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,604),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,avformat_init_output(oc, &options))
+1000551,(PARSER_TYPE_NAME,IfStatement),(ORDER,8),(LINE_NUMBER,605),(ARGUMENT_INDEX,8),(CODE,if (av_dict_count(options))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (av_dict_count(options)),if (av_dict_count(options)))
+1000552,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,av_dict_count(options)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,av_dict_count),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,605),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_count),(av_dict_count,av_dict_count(options))
+1000553,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,605),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,av_dict_count(options))
+1000554,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,void),(LINE_NUMBER,605),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000555,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,av_log(s, AV_LOG_ERROR, "Some of the provided format options in '%s' are not recognized\n", hls->format_options_str)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,av_log),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,606),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_log),(av_log,av_log(s, AV_LOG_ERROR, \"Some of the provided format options in '%s' are not recognized\n\", hls->format_options_str))
+1000556,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,s),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,AVFormatContext *),(LINE_NUMBER,606),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,s),(IDENTIFIER,s,av_log(s, AV_LOG_ERROR, \"Some of the provided format options in '%s' are not recognized\n\", hls->format_options_str))
+1000557,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,AV_LOG_ERROR),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,606),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AV_LOG_ERROR),(IDENTIFIER,AV_LOG_ERROR,av_log(s, AV_LOG_ERROR, \"Some of the provided format options in '%s' are not recognized\n\", hls->format_options_str))
+1000558,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,"Some of the provided format options in '%s' are not recognized\n"),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,char *),(LINE_NUMBER,606),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"Some of the provided format options in '%s' are not recognized\n\",av_log(s, AV_LOG_ERROR, \"Some of the provided format options in '%s' are not recognized\n\", hls->format_options_str))
+1000559,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,hls->format_options_str),(COLUMN_NUMBER,104),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,606),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,hls->format_options_str)
+1000560,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,hls),(COLUMN_NUMBER,104),(TYPE_FULL_NAME,HLSContext *),(LINE_NUMBER,606),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,hls),(IDENTIFIER,hls,av_log(s, AV_LOG_ERROR, \"Some of the provided format options in '%s' are not recognized\n\", hls->format_options_str))
+1000561,(ORDER,2),(LINE_NUMBER,606),(ARGUMENT_INDEX,2),(CODE,format_options_str),(COLUMN_NUMBER,109),(CANONICAL_NAME,format_options_str),(FIELD_IDENTIFIER,format_options_str,format_options_str)
+1000562,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,av_dict_free(&options)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,av_dict_free),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,607),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_free),(av_dict_free,av_dict_free(&options))
+1000563,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&options),(COLUMN_NUMBER,25),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,607),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&options)
+1000564,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,607),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,av_dict_free(&options))
+1000565,(ORDER,3),(LINE_NUMBER,608),(ARGUMENT_INDEX,3),(CODE,return AVERROR(EINVAL);),(COLUMN_NUMBER,12),(RETURN,return AVERROR(EINVAL);,return AVERROR(EINVAL);)
+1000566,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,AVERROR(EINVAL)),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,AVERROR),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,608),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,AVERROR),(AVERROR,AVERROR(EINVAL))
+1000567,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,EINVAL),(COLUMN_NUMBER,27),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,608),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,EINVAL),(IDENTIFIER,EINVAL,AVERROR(EINVAL))
+1000568,(ORDER,9),(ARGUMENT_INDEX,9),(CODE,av_dict_free(&options)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,av_dict_free),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,610),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,av_dict_free),(av_dict_free,av_dict_free(&options))
+1000569,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&options),(COLUMN_NUMBER,21),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,610),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&options)
+1000570,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,options),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,AVDictionary *),(LINE_NUMBER,610),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,options),(IDENTIFIER,options,av_dict_free(&options))
+1000571,(ORDER,27),(LINE_NUMBER,612),(ARGUMENT_INDEX,27),(CODE,return 0;),(COLUMN_NUMBER,4),(RETURN,return 0;,return 0;)
+1000572,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,0),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,int),(LINE_NUMBER,612),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,return 0;)
+1000573,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,527),(TYPE_FULL_NAME,static int),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static int)
+--------
+1000207,1000208,AST
+1000207,1000209,AST
+1000207,1000573,AST
+1000209,1000210,AST
+1000209,1000211,AST
+1000209,1000214,AST
+1000209,1000215,AST
+1000209,1000220,AST
+1000209,1000221,AST
+1000209,1000222,AST
+1000209,1000225,AST
+1000209,1000226,AST
+1000209,1000227,AST
+1000209,1000239,AST
+1000209,1000245,AST
+1000209,1000250,AST
+1000209,1000257,AST
+1000209,1000264,AST
+1000209,1000271,AST
+1000209,1000278,AST
+1000209,1000285,AST
+1000209,1000292,AST
+1000209,1000299,AST
+1000209,1000308,AST
+1000209,1000352,AST
+1000209,1000441,AST
+1000209,1000446,AST
+1000209,1000451,AST
+1000209,1000456,AST
+1000209,1000571,AST
+1000211,1000212,AST
+1000211,1000213,AST
+1000215,1000216,AST
+1000215,1000217,AST
+1000217,1000218,AST
+1000217,1000219,AST
+1000222,1000223,AST
+1000222,1000224,AST
+1000227,1000228,AST
+1000227,1000229,AST
+1000229,1000230,AST
+1000229,1000234,AST
+1000229,1000237,AST
+1000229,1000238,AST
+1000230,1000231,AST
+1000231,1000232,AST
+1000231,1000233,AST
+1000234,1000235,AST
+1000234,1000236,AST
+1000239,1000240,AST
+1000239,1000243,AST
+1000240,1000241,AST
+1000240,1000242,AST
+1000243,1000244,AST
+1000245,1000246,AST
+1000245,1000247,AST
+1000247,1000248,AST
+1000247,1000249,AST
+1000250,1000251,AST
+1000250,1000256,AST
+1000251,1000252,AST
+1000251,1000255,AST
+1000252,1000253,AST
+1000252,1000254,AST
+1000257,1000258,AST
+1000257,1000261,AST
+1000258,1000259,AST
+1000258,1000260,AST
+1000261,1000262,AST
+1000261,1000263,AST
+1000264,1000265,AST
+1000264,1000268,AST
+1000265,1000266,AST
+1000265,1000267,AST
+1000268,1000269,AST
+1000268,1000270,AST
+1000271,1000272,AST
+1000271,1000275,AST
+1000272,1000273,AST
+1000272,1000274,AST
+1000275,1000276,AST
+1000275,1000277,AST
+1000278,1000279,AST
+1000278,1000282,AST
+1000279,1000280,AST
+1000279,1000281,AST
+1000282,1000283,AST
+1000282,1000284,AST
+1000285,1000286,AST
+1000285,1000289,AST
+1000286,1000287,AST
+1000286,1000288,AST
+1000289,1000290,AST
+1000289,1000291,AST
+1000292,1000293,AST
+1000292,1000296,AST
+1000293,1000294,AST
+1000293,1000295,AST
+1000296,1000297,AST
+1000296,1000298,AST
+1000299,1000300,AST
+1000299,1000304,AST
+1000299,1000307,AST
+1000300,1000301,AST
+1000301,1000302,AST
+1000301,1000303,AST
+1000304,1000305,AST
+1000304,1000306,AST
+1000308,1000309,AST
+1000308,1000312,AST
+1000309,1000310,AST
+1000309,1000311,AST
+1000312,1000313,AST
+1000312,1000325,AST
+1000312,1000331,AST
+1000312,1000336,AST
+1000312,1000343,AST
+1000313,1000314,AST
+1000313,1000315,AST
+1000315,1000316,AST
+1000315,1000320,AST
+1000315,1000323,AST
+1000315,1000324,AST
+1000316,1000317,AST
+1000317,1000318,AST
+1000317,1000319,AST
+1000320,1000321,AST
+1000320,1000322,AST
+1000325,1000326,AST
+1000325,1000329,AST
+1000326,1000327,AST
+1000326,1000328,AST
+1000329,1000330,AST
+1000331,1000332,AST
+1000331,1000333,AST
+1000333,1000334,AST
+1000333,1000335,AST
+1000336,1000337,AST
+1000336,1000340,AST
+1000337,1000338,AST
+1000337,1000339,AST
+1000340,1000341,AST
+1000340,1000342,AST
+1000343,1000344,AST
+1000343,1000348,AST
+1000343,1000351,AST
+1000344,1000345,AST
+1000345,1000346,AST
+1000345,1000347,AST
+1000348,1000349,AST
+1000348,1000350,AST
+1000352,1000353,AST
+1000352,1000356,AST
+1000352,1000361,AST
+1000352,1000363,AST
+1000353,1000354,AST
+1000353,1000355,AST
+1000356,1000357,AST
+1000356,1000358,AST
+1000358,1000359,AST
+1000358,1000360,AST
+1000361,1000362,AST
+1000363,1000364,AST
+1000363,1000365,AST
+1000363,1000366,AST
+1000363,1000385,AST
+1000363,1000395,AST
+1000363,1000406,AST
+1000363,1000417,AST
+1000363,1000428,AST
+1000366,1000367,AST
+1000366,1000378,AST
+1000366,1000381,AST
+1000367,1000368,AST
+1000367,1000377,AST
+1000368,1000369,AST
+1000368,1000376,AST
+1000369,1000370,AST
+1000369,1000375,AST
+1000370,1000371,AST
+1000370,1000374,AST
+1000371,1000372,AST
+1000371,1000373,AST
+1000378,1000379,AST
+1000378,1000380,AST
+1000381,1000382,AST
+1000382,1000383,AST
+1000382,1000384,AST
+1000385,1000386,AST
+1000385,1000392,AST
+1000386,1000387,AST
+1000387,1000388,AST
+1000387,1000389,AST
+1000389,1000390,AST
+1000389,1000391,AST
+1000392,1000393,AST
+1000393,1000394,AST
+1000395,1000396,AST
+1000395,1000399,AST
+1000396,1000397,AST
+1000396,1000398,AST
+1000399,1000400,AST
+1000399,1000405,AST
+1000400,1000401,AST
+1000400,1000404,AST
+1000401,1000402,AST
+1000401,1000403,AST
+1000406,1000407,AST
+1000406,1000410,AST
+1000407,1000408,AST
+1000407,1000409,AST
+1000410,1000411,AST
+1000410,1000416,AST
+1000411,1000412,AST
+1000411,1000415,AST
+1000412,1000413,AST
+1000412,1000414,AST
+1000417,1000418,AST
+1000417,1000421,AST
+1000418,1000419,AST
+1000418,1000420,AST
+1000421,1000422,AST
+1000421,1000427,AST
+1000422,1000423,AST
+1000422,1000426,AST
+1000423,1000424,AST
+1000423,1000425,AST
+1000428,1000429,AST
+1000428,1000433,AST
+1000428,1000440,AST
+1000429,1000430,AST
+1000430,1000431,AST
+1000430,1000432,AST
+1000433,1000434,AST
+1000433,1000439,AST
+1000434,1000435,AST
+1000434,1000438,AST
+1000435,1000436,AST
+1000435,1000437,AST
+1000441,1000442,AST
+1000441,1000445,AST
+1000442,1000443,AST
+1000442,1000444,AST
+1000446,1000447,AST
+1000446,1000450,AST
+1000447,1000448,AST
+1000447,1000449,AST
+1000451,1000452,AST
+1000451,1000455,AST
+1000452,1000453,AST
+1000452,1000454,AST
+1000456,1000457,AST
+1000456,1000462,AST
+1000457,1000458,AST
+1000457,1000461,AST
+1000458,1000459,AST
+1000458,1000460,AST
+1000462,1000463,AST
+1000462,1000468,AST
+1000462,1000494,AST
+1000462,1000526,AST
+1000462,1000533,AST
+1000462,1000539,AST
+1000462,1000545,AST
+1000462,1000551,AST
+1000462,1000568,AST
+1000463,1000464,AST
+1000463,1000467,AST
+1000464,1000465,AST
+1000464,1000466,AST
+1000468,1000469,AST
+1000468,1000484,AST
+1000469,1000470,AST
+1000469,1000483,AST
+1000470,1000471,AST
+1000470,1000472,AST
+1000472,1000473,AST
+1000472,1000474,AST
+1000472,1000478,AST
+1000472,1000481,AST
+1000472,1000482,AST
+1000474,1000475,AST
+1000475,1000476,AST
+1000475,1000477,AST
+1000478,1000479,AST
+1000478,1000480,AST
+1000484,1000485,AST
+1000484,1000492,AST
+1000485,1000486,AST
+1000485,1000487,AST
+1000485,1000488,AST
+1000485,1000489,AST
+1000489,1000490,AST
+1000489,1000491,AST
+1000492,1000493,AST
+1000494,1000495,AST
+1000494,1000498,AST
+1000495,1000496,AST
+1000495,1000497,AST
+1000498,1000499,AST
+1000498,1000512,AST
+1000499,1000500,AST
+1000499,1000501,AST
+1000501,1000502,AST
+1000501,1000506,AST
+1000501,1000509,AST
+1000501,1000510,AST
+1000501,1000511,AST
+1000502,1000503,AST
+1000503,1000504,AST
+1000503,1000505,AST
+1000506,1000507,AST
+1000506,1000508,AST
+1000512,1000513,AST
+1000512,1000516,AST
+1000513,1000514,AST
+1000513,1000515,AST
+1000516,1000517,AST
+1000516,1000524,AST
+1000517,1000518,AST
+1000517,1000519,AST
+1000517,1000520,AST
+1000517,1000521,AST
+1000521,1000522,AST
+1000521,1000523,AST
+1000524,1000525,AST
+1000526,1000527,AST
+1000526,1000529,AST
+1000526,1000532,AST
+1000527,1000528,AST
+1000529,1000530,AST
+1000529,1000531,AST
+1000533,1000534,AST
+1000533,1000536,AST
+1000533,1000537,AST
+1000533,1000538,AST
+1000534,1000535,AST
+1000539,1000540,AST
+1000539,1000542,AST
+1000539,1000543,AST
+1000539,1000544,AST
+1000540,1000541,AST
+1000545,1000546,AST
+1000545,1000547,AST
+1000547,1000548,AST
+1000547,1000549,AST
+1000549,1000550,AST
+1000551,1000552,AST
+1000551,1000554,AST
+1000552,1000553,AST
+1000554,1000555,AST
+1000554,1000562,AST
+1000554,1000565,AST
+1000555,1000556,AST
+1000555,1000557,AST
+1000555,1000558,AST
+1000555,1000559,AST
+1000559,1000560,AST
+1000559,1000561,AST
+1000562,1000563,AST
+1000563,1000564,AST
+1000565,1000566,AST
+1000566,1000567,AST
+1000568,1000569,AST
+1000569,1000570,AST
+1000571,1000572,AST
+1000211,1000219,CFG
+1000215,1000222,CFG
+1000217,1000215,CFG
+1000219,1000217,CFG
+1000222,1000233,CFG
+1000227,1000240,CFG
+1000229,1000227,CFG
+1000230,1000236,CFG
+1000231,1000230,CFG
+1000233,1000231,CFG
+1000234,1000229,CFG
+1000236,1000234,CFG
+1000240,1000243,CFG
+1000240,1000249,CFG
+1000243,1000573,CFG
+1000245,1000254,CFG
+1000247,1000245,CFG
+1000249,1000247,CFG
+1000250,1000260,CFG
+1000251,1000250,CFG
+1000252,1000251,CFG
+1000254,1000252,CFG
+1000257,1000267,CFG
+1000258,1000263,CFG
+1000260,1000258,CFG
+1000261,1000257,CFG
+1000263,1000261,CFG
+1000264,1000274,CFG
+1000265,1000270,CFG
+1000267,1000265,CFG
+1000268,1000264,CFG
+1000270,1000268,CFG
+1000271,1000281,CFG
+1000272,1000277,CFG
+1000274,1000272,CFG
+1000275,1000271,CFG
+1000277,1000275,CFG
+1000278,1000288,CFG
+1000279,1000284,CFG
+1000281,1000279,CFG
+1000282,1000278,CFG
+1000284,1000282,CFG
+1000285,1000295,CFG
+1000286,1000291,CFG
+1000288,1000286,CFG
+1000289,1000285,CFG
+1000291,1000289,CFG
+1000292,1000303,CFG
+1000293,1000298,CFG
+1000295,1000293,CFG
+1000296,1000292,CFG
+1000298,1000296,CFG
+1000299,1000311,CFG
+1000300,1000306,CFG
+1000301,1000300,CFG
+1000303,1000301,CFG
+1000304,1000299,CFG
+1000306,1000304,CFG
+1000309,1000319,CFG
+1000309,1000353,CFG
+1000311,1000309,CFG
+1000313,1000326,CFG
+1000315,1000313,CFG
+1000316,1000322,CFG
+1000317,1000316,CFG
+1000319,1000317,CFG
+1000320,1000315,CFG
+1000322,1000320,CFG
+1000326,1000329,CFG
+1000326,1000335,CFG
+1000329,1000573,CFG
+1000331,1000339,CFG
+1000333,1000331,CFG
+1000335,1000333,CFG
+1000336,1000347,CFG
+1000337,1000342,CFG
+1000339,1000337,CFG
+1000340,1000336,CFG
+1000342,1000340,CFG
+1000343,1000353,CFG
+1000344,1000350,CFG
+1000345,1000344,CFG
+1000347,1000345,CFG
+1000348,1000343,CFG
+1000350,1000348,CFG
+1000353,1000360,CFG
+1000356,1000373,CFG
+1000356,1000444,CFG
+1000358,1000356,CFG
+1000360,1000358,CFG
+1000361,1000360,CFG
+1000367,1000378,CFG
+1000367,1000382,CFG
+1000368,1000367,CFG
+1000369,1000376,CFG
+1000370,1000375,CFG
+1000371,1000370,CFG
+1000373,1000371,CFG
+1000375,1000369,CFG
+1000376,1000368,CFG
+1000378,1000389,CFG
+1000382,1000389,CFG
+1000386,1000393,CFG
+1000386,1000398,CFG
+1000387,1000386,CFG
+1000389,1000387,CFG
+1000392,1000573,CFG
+1000393,1000392,CFG
+1000395,1000409,CFG
+1000396,1000403,CFG
+1000398,1000396,CFG
+1000399,1000395,CFG
+1000400,1000405,CFG
+1000401,1000400,CFG
+1000403,1000401,CFG
+1000405,1000399,CFG
+1000406,1000420,CFG
+1000407,1000414,CFG
+1000409,1000407,CFG
+1000410,1000406,CFG
+1000411,1000416,CFG
+1000412,1000411,CFG
+1000414,1000412,CFG
+1000416,1000410,CFG
+1000417,1000432,CFG
+1000418,1000425,CFG
+1000420,1000418,CFG
+1000421,1000417,CFG
+1000422,1000427,CFG
+1000423,1000422,CFG
+1000425,1000423,CFG
+1000427,1000421,CFG
+1000428,1000361,CFG
+1000429,1000437,CFG
+1000430,1000429,CFG
+1000432,1000430,CFG
+1000433,1000428,CFG
+1000434,1000439,CFG
+1000435,1000434,CFG
+1000437,1000435,CFG
+1000439,1000433,CFG
+1000441,1000449,CFG
+1000442,1000441,CFG
+1000444,1000442,CFG
+1000446,1000454,CFG
+1000447,1000446,CFG
+1000449,1000447,CFG
+1000451,1000460,CFG
+1000452,1000451,CFG
+1000454,1000452,CFG
+1000457,1000466,CFG
+1000457,1000571,CFG
+1000458,1000457,CFG
+1000460,1000458,CFG
+1000463,1000477,CFG
+1000464,1000463,CFG
+1000466,1000464,CFG
+1000469,1000491,CFG
+1000469,1000497,CFG
+1000470,1000469,CFG
+1000472,1000470,CFG
+1000474,1000480,CFG
+1000475,1000474,CFG
+1000477,1000475,CFG
+1000478,1000472,CFG
+1000480,1000478,CFG
+1000485,1000492,CFG
+1000489,1000485,CFG
+1000491,1000489,CFG
+1000492,1000573,CFG
+1000495,1000505,CFG
+1000495,1000527,CFG
+1000497,1000495,CFG
+1000499,1000513,CFG
+1000501,1000499,CFG
+1000502,1000508,CFG
+1000503,1000502,CFG
+1000505,1000503,CFG
+1000506,1000501,CFG
+1000508,1000506,CFG
+1000513,1000523,CFG
+1000513,1000527,CFG
+1000517,1000524,CFG
+1000521,1000517,CFG
+1000523,1000521,CFG
+1000524,1000573,CFG
+1000526,1000534,CFG
+1000527,1000531,CFG
+1000529,1000526,CFG
+1000531,1000529,CFG
+1000533,1000540,CFG
+1000534,1000533,CFG
+1000539,1000549,CFG
+1000540,1000539,CFG
+1000545,1000552,CFG
+1000547,1000545,CFG
+1000549,1000547,CFG
+1000552,1000561,CFG
+1000552,1000569,CFG
+1000555,1000563,CFG
+1000559,1000555,CFG
+1000561,1000559,CFG
+1000562,1000566,CFG
+1000563,1000562,CFG
+1000565,1000573,CFG
+1000566,1000565,CFG
+1000568,1000571,CFG
+1000569,1000568,CFG
+1000571,1000573,CFG
+1000207,1000211,CFG
+1000243,1000573,DDG<RET>
+1000329,1000573,DDG<RET>
+1000392,1000573,DDG<RET>
+1000492,1000573,DDG<RET>
+1000524,1000573,DDG<RET>
+1000565,1000573,DDG<RET>
+1000571,1000573,DDG<RET>
+1000207,1000573,DDG
+1000207,1000208,DDG
+1000207,1000211,DDG
+1000208,1000215,DDGs
+1000207,1000215,DDG
+1000208,1000217,DDGs
+1000207,1000217,DDG
+1000207,1000222,DDG
+1000229,1000227,DDG&hls->avf
+1000229,1000227,DDGhls->oformat
+1000229,1000227,DDGNULL
+1000207,1000227,DDG
+1000215,1000229,DDGhls
+1000207,1000229,DDG
+1000215,1000230,DDGhls
+1000207,1000230,DDG
+1000215,1000231,DDGhls
+1000207,1000231,DDG
+1000207,1000234,DDG
+1000215,1000234,DDGhls
+1000227,1000240,DDGret
+1000207,1000240,DDG
+1000244,1000243,DDGret
+1000240,1000243,DDGret
+1000207,1000244,DDG
+1000229,1000245,DDG&hls->avf
+1000207,1000245,DDG
+1000215,1000245,DDGhls
+1000207,1000247,DDG
+1000215,1000247,DDGhls
+1000207,1000250,DDG
+1000245,1000251,DDGoc
+1000207,1000251,DDG
+1000245,1000252,DDGoc
+1000207,1000252,DDG
+1000207,1000257,DDG
+1000215,1000257,DDGhls
+1000207,1000258,DDG
+1000245,1000258,DDGoc
+1000207,1000261,DDG
+1000215,1000261,DDGhls
+1000207,1000264,DDG
+1000208,1000264,DDGs
+1000207,1000265,DDG
+1000245,1000265,DDGoc
+1000207,1000268,DDG
+1000208,1000268,DDGs
+1000207,1000271,DDG
+1000208,1000271,DDGs
+1000207,1000272,DDG
+1000245,1000272,DDGoc
+1000207,1000275,DDG
+1000208,1000275,DDGs
+1000207,1000278,DDG
+1000208,1000278,DDGs
+1000207,1000279,DDG
+1000245,1000279,DDGoc
+1000207,1000282,DDG
+1000208,1000282,DDGs
+1000207,1000285,DDG
+1000208,1000285,DDGs
+1000207,1000286,DDG
+1000245,1000286,DDGoc
+1000207,1000289,DDG
+1000208,1000289,DDGs
+1000207,1000292,DDG
+1000208,1000292,DDGs
+1000207,1000293,DDG
+1000245,1000293,DDGoc
+1000207,1000296,DDG
+1000208,1000296,DDGs
+1000207,1000299,DDG
+1000245,1000299,DDGoc
+1000207,1000300,DDG
+1000245,1000300,DDGoc
+1000207,1000301,DDG
+1000245,1000301,DDGoc
+1000208,1000299,DDGs
+1000207,1000304,DDG
+1000208,1000304,DDGs
+1000207,1000309,DDG
+1000215,1000309,DDGhls
+1000315,1000313,DDG&hls->vtt_avf
+1000315,1000313,DDGhls->vtt_oformat
+1000315,1000313,DDGNULL
+1000207,1000313,DDG
+1000207,1000315,DDG
+1000215,1000315,DDGhls
+1000207,1000316,DDG
+1000215,1000316,DDGhls
+1000207,1000317,DDG
+1000215,1000317,DDGhls
+1000207,1000320,DDG
+1000215,1000320,DDGhls
+1000229,1000315,DDGNULL
+1000313,1000326,DDGret
+1000207,1000326,DDG
+1000330,1000329,DDGret
+1000326,1000329,DDGret
+1000207,1000330,DDG
+1000315,1000331,DDG&hls->vtt_avf
+1000207,1000331,DDG
+1000215,1000331,DDGhls
+1000207,1000333,DDG
+1000215,1000333,DDGhls
+1000207,1000336,DDG
+1000215,1000336,DDGhls
+1000331,1000337,DDGvtt_oc
+1000207,1000337,DDG
+1000207,1000340,DDG
+1000215,1000340,DDGhls
+1000207,1000343,DDG
+1000331,1000343,DDGvtt_oc
+1000207,1000344,DDG
+1000331,1000344,DDGvtt_oc
+1000207,1000345,DDG
+1000331,1000345,DDGvtt_oc
+1000208,1000343,DDGs
+1000207,1000348,DDG
+1000208,1000348,DDGs
+1000207,1000353,DDG
+1000361,1000356,DDGi
+1000353,1000356,DDGi
+1000207,1000356,DDG
+1000208,1000356,DDGs
+1000207,1000358,DDG
+1000208,1000358,DDGs
+1000207,1000361,DDG
+1000395,1000367,DDGs->streams[i]->codecpar
+1000428,1000367,DDGs->streams[i]->metadata
+1000207,1000367,DDG
+1000367,1000368,DDGs->streams[i]->codecpar->codec_type
+1000395,1000368,DDGs->streams[i]->codecpar
+1000428,1000368,DDGs->streams[i]->metadata
+1000207,1000368,DDG
+1000367,1000369,DDGs->streams[i]->codecpar->codec_type
+1000395,1000369,DDGs->streams[i]->codecpar
+1000428,1000369,DDGs->streams[i]->metadata
+1000207,1000369,DDG
+1000367,1000370,DDGs->streams[i]->codecpar->codec_type
+1000395,1000370,DDGs->streams[i]->codecpar
+1000428,1000370,DDGs->streams[i]->metadata
+1000207,1000370,DDG
+1000207,1000371,DDG
+1000222,1000378,DDGvtt_oc
+1000207,1000378,DDG
+1000331,1000378,DDGvtt_oc
+1000207,1000382,DDG
+1000245,1000382,DDGoc
+1000387,1000386,DDGst
+1000389,1000386,DDGloc
+1000389,1000386,DDGNULL
+1000207,1000387,DDG
+1000389,1000387,DDGloc
+1000389,1000387,DDGNULL
+1000382,1000389,DDGloc
+1000378,1000389,DDGloc
+1000207,1000389,DDG
+1000315,1000389,DDGNULL
+1000229,1000389,DDGNULL
+1000393,1000392,DDGAVERROR(ENOMEM)
+1000207,1000393,DDG
+1000387,1000395,DDGst
+1000207,1000395,DDG
+1000387,1000396,DDGst
+1000207,1000396,DDG
+1000367,1000395,DDGs->streams[i]->codecpar->codec_type
+1000428,1000395,DDGs->streams[i]->metadata
+1000367,1000399,DDGs->streams[i]->codecpar->codec_type
+1000395,1000399,DDGs->streams[i]->codecpar
+1000428,1000399,DDGs->streams[i]->metadata
+1000207,1000399,DDG
+1000367,1000400,DDGs->streams[i]->codecpar->codec_type
+1000395,1000400,DDGs->streams[i]->codecpar
+1000428,1000400,DDGs->streams[i]->metadata
+1000207,1000400,DDG
+1000207,1000401,DDG
+1000367,1000406,DDGs->streams[i]->codecpar->codec_type
+1000395,1000406,DDGs->streams[i]->codecpar
+1000428,1000406,DDGs->streams[i]->metadata
+1000207,1000406,DDG
+1000207,1000407,DDG
+1000387,1000407,DDGst
+1000367,1000410,DDGs->streams[i]->codecpar->codec_type
+1000395,1000410,DDGs->streams[i]->codecpar
+1000428,1000410,DDGs->streams[i]->metadata
+1000207,1000410,DDG
+1000367,1000411,DDGs->streams[i]->codecpar->codec_type
+1000395,1000411,DDGs->streams[i]->codecpar
+1000428,1000411,DDGs->streams[i]->metadata
+1000207,1000411,DDG
+1000207,1000412,DDG
+1000367,1000417,DDGs->streams[i]->codecpar->codec_type
+1000395,1000417,DDGs->streams[i]->codecpar
+1000428,1000417,DDGs->streams[i]->metadata
+1000207,1000417,DDG
+1000207,1000418,DDG
+1000387,1000418,DDGst
+1000367,1000421,DDGs->streams[i]->codecpar->codec_type
+1000395,1000421,DDGs->streams[i]->codecpar
+1000428,1000421,DDGs->streams[i]->metadata
+1000207,1000421,DDG
+1000367,1000422,DDGs->streams[i]->codecpar->codec_type
+1000395,1000422,DDGs->streams[i]->codecpar
+1000428,1000422,DDGs->streams[i]->metadata
+1000207,1000422,DDG
+1000207,1000423,DDG
+1000207,1000428,DDG
+1000387,1000428,DDGst
+1000428,1000429,DDG&st->metadata
+1000207,1000429,DDG
+1000387,1000429,DDGst
+1000207,1000430,DDG
+1000387,1000430,DDGst
+1000395,1000428,DDGs->streams[i]->codecpar
+1000367,1000428,DDGs->streams[i]->codecpar->codec_type
+1000395,1000433,DDGs->streams[i]->codecpar
+1000428,1000433,DDGs->streams[i]->metadata
+1000367,1000433,DDGs->streams[i]->codecpar->codec_type
+1000207,1000433,DDG
+1000395,1000434,DDGs->streams[i]->codecpar
+1000428,1000434,DDGs->streams[i]->metadata
+1000367,1000434,DDGs->streams[i]->codecpar->codec_type
+1000207,1000434,DDG
+1000207,1000435,DDG
+1000207,1000441,DDG
+1000207,1000442,DDG
+1000215,1000442,DDGhls
+1000207,1000446,DDG
+1000207,1000447,DDG
+1000215,1000447,DDGhls
+1000207,1000451,DDG
+1000207,1000452,DDG
+1000215,1000452,DDGhls
+1000207,1000457,DDG
+1000215,1000457,DDGhls
+1000207,1000458,DDG
+1000215,1000458,DDGhls
+1000207,1000463,DDG
+1000207,1000464,DDG
+1000215,1000464,DDGhls
+1000470,1000469,DDGret
+1000472,1000469,DDGNULL
+1000472,1000469,DDGs
+1000472,1000469,DDGhls->fmp4_init_filename
+1000472,1000469,DDG&oc->pb
+1000472,1000469,DDGAVIO_FLAG_WRITE
+1000207,1000470,DDG
+1000472,1000470,DDGNULL
+1000472,1000470,DDGs
+1000472,1000470,DDGhls->fmp4_init_filename
+1000472,1000470,DDG&oc->pb
+1000472,1000470,DDGAVIO_FLAG_WRITE
+1000207,1000472,DDG
+1000208,1000472,DDGs
+1000245,1000472,DDGoc
+1000207,1000474,DDG
+1000245,1000474,DDGoc
+1000207,1000475,DDG
+1000245,1000475,DDGoc
+1000215,1000472,DDGhls
+1000207,1000478,DDG
+1000215,1000478,DDGhls
+1000315,1000472,DDGNULL
+1000229,1000472,DDGNULL
+1000389,1000472,DDGNULL
+1000207,1000469,DDG
+1000472,1000485,DDGs
+1000207,1000485,DDG
+1000215,1000485,DDGhls
+1000207,1000489,DDG
+1000215,1000489,DDGhls
+1000493,1000492,DDGret
+1000470,1000492,DDGret
+1000207,1000493,DDG
+1000207,1000495,DDG
+1000215,1000495,DDGhls
+1000501,1000499,DDG0
+1000501,1000499,DDG\":\"
+1000501,1000499,DDGhls->format_options_str
+1000501,1000499,DDG&hls->format_options
+1000501,1000499,DDG\"=\"
+1000207,1000499,DDG
+1000207,1000501,DDG
+1000215,1000501,DDGhls
+1000207,1000502,DDG
+1000215,1000502,DDGhls
+1000207,1000503,DDG
+1000215,1000503,DDGhls
+1000207,1000506,DDG
+1000215,1000506,DDGhls
+1000499,1000513,DDGret
+1000207,1000513,DDG
+1000472,1000517,DDGs
+1000207,1000517,DDG
+1000215,1000517,DDGhls
+1000207,1000521,DDG
+1000215,1000521,DDGhls
+1000525,1000524,DDGret
+1000513,1000524,DDGret
+1000207,1000525,DDG
+1000211,1000526,DDGoptions
+1000207,1000526,DDG
+1000211,1000527,DDGoptions
+1000207,1000527,DDG
+1000501,1000526,DDG&hls->format_options
+1000215,1000526,DDGhls
+1000207,1000529,DDG
+1000215,1000529,DDGhls
+1000526,1000533,DDG&options
+1000207,1000533,DDG
+1000211,1000533,DDGoptions
+1000526,1000534,DDG&options
+1000207,1000534,DDG
+1000211,1000534,DDGoptions
+1000533,1000539,DDG&options
+1000207,1000539,DDG
+1000526,1000539,DDG&options
+1000211,1000539,DDGoptions
+1000533,1000540,DDG&options
+1000207,1000540,DDG
+1000526,1000540,DDG&options
+1000211,1000540,DDGoptions
+1000547,1000545,DDGoc
+1000547,1000545,DDG&options
+1000207,1000545,DDG
+1000207,1000547,DDG
+1000245,1000547,DDGoc
+1000539,1000547,DDG&options
+1000533,1000547,DDG&options
+1000526,1000547,DDG&options
+1000211,1000547,DDGoptions
+1000539,1000549,DDG&options
+1000207,1000549,DDG
+1000533,1000549,DDG&options
+1000526,1000549,DDG&options
+1000211,1000549,DDGoptions
+1000547,1000552,DDG&options
+1000207,1000552,DDG
+1000539,1000552,DDG&options
+1000533,1000552,DDG&options
+1000526,1000552,DDG&options
+1000211,1000552,DDGoptions
+1000472,1000555,DDGs
+1000207,1000555,DDG
+1000215,1000555,DDGhls
+1000207,1000559,DDG
+1000215,1000559,DDGhls
+1000547,1000562,DDG&options
+1000552,1000562,DDGoptions
+1000207,1000562,DDG
+1000547,1000563,DDG&options
+1000552,1000563,DDGoptions
+1000207,1000563,DDG
+1000566,1000565,DDGAVERROR(EINVAL)
+1000207,1000566,DDG
+1000547,1000568,DDG&options
+1000552,1000568,DDGoptions
+1000207,1000568,DDG
+1000547,1000569,DDG&options
+1000552,1000569,DDGoptions
+1000207,1000569,DDG
+1000572,1000571,DDG0
+1000207,1000571,DDG
+1000207,1000572,DDG
+1000240,1000254,CDG
+1000240,1000252,CDG
+1000240,1000251,CDG
+1000240,1000250,CDG
+1000240,1000249,CDG
+1000240,1000247,CDG
+1000240,1000245,CDG
+1000240,1000243,CDG
+1000240,1000272,CDG
+1000240,1000271,CDG
+1000240,1000270,CDG
+1000240,1000268,CDG
+1000240,1000267,CDG
+1000240,1000265,CDG
+1000240,1000264,CDG
+1000240,1000263,CDG
+1000240,1000261,CDG
+1000240,1000260,CDG
+1000240,1000258,CDG
+1000240,1000257,CDG
+1000240,1000288,CDG
+1000240,1000286,CDG
+1000240,1000285,CDG
+1000240,1000284,CDG
+1000240,1000282,CDG
+1000240,1000281,CDG
+1000240,1000279,CDG
+1000240,1000278,CDG
+1000240,1000277,CDG
+1000240,1000275,CDG
+1000240,1000274,CDG
+1000240,1000304,CDG
+1000240,1000303,CDG
+1000240,1000301,CDG
+1000240,1000300,CDG
+1000240,1000299,CDG
+1000240,1000298,CDG
+1000240,1000296,CDG
+1000240,1000295,CDG
+1000240,1000293,CDG
+1000240,1000292,CDG
+1000240,1000291,CDG
+1000240,1000289,CDG
+1000240,1000311,CDG
+1000240,1000309,CDG
+1000240,1000306,CDG
+1000309,1000320,CDG
+1000309,1000319,CDG
+1000309,1000317,CDG
+1000309,1000316,CDG
+1000309,1000315,CDG
+1000309,1000313,CDG
+1000309,1000326,CDG
+1000309,1000322,CDG
+1000309,1000360,CDG
+1000309,1000358,CDG
+1000309,1000356,CDG
+1000309,1000353,CDG
+1000326,1000336,CDG
+1000326,1000335,CDG
+1000326,1000333,CDG
+1000326,1000331,CDG
+1000326,1000329,CDG
+1000326,1000350,CDG
+1000326,1000348,CDG
+1000326,1000347,CDG
+1000326,1000345,CDG
+1000326,1000344,CDG
+1000326,1000343,CDG
+1000326,1000342,CDG
+1000326,1000340,CDG
+1000326,1000339,CDG
+1000326,1000337,CDG
+1000326,1000360,CDG
+1000326,1000358,CDG
+1000326,1000356,CDG
+1000326,1000353,CDG
+1000356,1000447,CDG
+1000356,1000446,CDG
+1000356,1000444,CDG
+1000356,1000442,CDG
+1000356,1000441,CDG
+1000356,1000460,CDG
+1000356,1000458,CDG
+1000356,1000457,CDG
+1000356,1000454,CDG
+1000356,1000452,CDG
+1000356,1000451,CDG
+1000356,1000449,CDG
+1000356,1000368,CDG
+1000356,1000367,CDG
+1000356,1000376,CDG
+1000356,1000375,CDG
+1000356,1000373,CDG
+1000356,1000371,CDG
+1000356,1000370,CDG
+1000356,1000369,CDG
+1000356,1000389,CDG
+1000356,1000387,CDG
+1000356,1000386,CDG
+1000367,1000382,CDG
+1000367,1000378,CDG
+1000386,1000432,CDG
+1000386,1000430,CDG
+1000386,1000429,CDG
+1000386,1000428,CDG
+1000386,1000427,CDG
+1000386,1000425,CDG
+1000386,1000423,CDG
+1000386,1000422,CDG
+1000386,1000421,CDG
+1000386,1000420,CDG
+1000386,1000418,CDG
+1000386,1000417,CDG
+1000386,1000439,CDG
+1000386,1000437,CDG
+1000386,1000435,CDG
+1000386,1000434,CDG
+1000386,1000433,CDG
+1000386,1000361,CDG
+1000386,1000360,CDG
+1000386,1000358,CDG
+1000386,1000356,CDG
+1000386,1000400,CDG
+1000386,1000399,CDG
+1000386,1000398,CDG
+1000386,1000396,CDG
+1000386,1000395,CDG
+1000386,1000393,CDG
+1000386,1000392,CDG
+1000386,1000416,CDG
+1000386,1000414,CDG
+1000386,1000412,CDG
+1000386,1000411,CDG
+1000386,1000410,CDG
+1000386,1000409,CDG
+1000386,1000407,CDG
+1000386,1000406,CDG
+1000386,1000405,CDG
+1000386,1000403,CDG
+1000386,1000401,CDG
+1000457,1000464,CDG
+1000457,1000463,CDG
+1000457,1000480,CDG
+1000457,1000478,CDG
+1000457,1000477,CDG
+1000457,1000475,CDG
+1000457,1000474,CDG
+1000457,1000472,CDG
+1000457,1000470,CDG
+1000457,1000469,CDG
+1000457,1000466,CDG
+1000457,1000571,CDG
+1000469,1000495,CDG
+1000469,1000492,CDG
+1000469,1000491,CDG
+1000469,1000489,CDG
+1000469,1000485,CDG
+1000469,1000497,CDG
+1000495,1000508,CDG
+1000495,1000506,CDG
+1000495,1000505,CDG
+1000495,1000503,CDG
+1000495,1000502,CDG
+1000495,1000501,CDG
+1000495,1000499,CDG
+1000495,1000527,CDG
+1000495,1000526,CDG
+1000495,1000513,CDG
+1000495,1000540,CDG
+1000495,1000539,CDG
+1000495,1000534,CDG
+1000495,1000533,CDG
+1000495,1000531,CDG
+1000495,1000529,CDG
+1000495,1000552,CDG
+1000495,1000549,CDG
+1000495,1000547,CDG
+1000495,1000545,CDG
+1000513,1000527,CDG
+1000513,1000526,CDG
+1000513,1000524,CDG
+1000513,1000523,CDG
+1000513,1000521,CDG
+1000513,1000517,CDG
+1000513,1000540,CDG
+1000513,1000539,CDG
+1000513,1000534,CDG
+1000513,1000533,CDG
+1000513,1000531,CDG
+1000513,1000529,CDG
+1000513,1000552,CDG
+1000513,1000549,CDG
+1000513,1000547,CDG
+1000513,1000545,CDG
+1000552,1000559,CDG
+1000552,1000555,CDG
+1000552,1000571,CDG
+1000552,1000569,CDG
+1000552,1000568,CDG
+1000552,1000566,CDG
+1000552,1000565,CDG
+1000552,1000563,CDG
+1000552,1000562,CDG
+1000552,1000561,CDG

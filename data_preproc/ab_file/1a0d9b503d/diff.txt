@@ -1,0 +1,27 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/1a0d9b503d/a/concatdec.c /app/RepoSPD/data_preproc/ab_file/1a0d9b503d/b/concatdec.c
+--- /app/RepoSPD/data_preproc/ab_file/1a0d9b503d/a/concatdec.c	2025-02-11 12:48:16.105027443 +0000
++++ /app/RepoSPD/data_preproc/ab_file/1a0d9b503d/b/concatdec.c	2025-02-11 12:48:16.062275782 +0000
+@@ -46,0 +47 @@ typedef struct {
++    int64_t next_dts;
+@@ -151,0 +153 @@ static int add_file(AVFormatContext *avf
++    file->next_dts   = AV_NOPTS_VALUE;
+@@ -512,2 +514,8 @@ static int open_next_file(AVFormatContex
+-    if (cat->cur_file->duration == AV_NOPTS_VALUE)
+-        cat->cur_file->duration = cat->avf->duration - (cat->cur_file->file_inpoint - cat->cur_file->file_start_time);
++    if (cat->cur_file->duration == AV_NOPTS_VALUE) {
++        if (cat->avf->duration > 0 || cat->cur_file->next_dts == AV_NOPTS_VALUE) {
++            cat->cur_file->duration = cat->avf->duration;
++        } else {
++            cat->cur_file->duration = cat->cur_file->next_dts;
++        }
++        cat->cur_file->duration -= (cat->cur_file->file_inpoint - cat->cur_file->file_start_time);
++    }
+@@ -629,0 +638,8 @@ static int concat_read_packet(AVFormatCo
++
++    if (cat->cur_file->duration == AV_NOPTS_VALUE && st->cur_dts != AV_NOPTS_VALUE) {
++        int64_t next_dts = av_rescale_q(st->cur_dts, st->time_base, AV_TIME_BASE_Q);
++        if (cat->cur_file->next_dts == AV_NOPTS_VALUE || next_dts > cat->cur_file->next_dts) {
++            cat->cur_file->next_dts = next_dts;
++        }
++    }
++

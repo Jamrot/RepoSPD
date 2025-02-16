@@ -1,0 +1,6 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/73789b85a7/a/dca_core.c /app/RepoSPD/data_preproc/ab_file/73789b85a7/b/dca_core.c
+--- /app/RepoSPD/data_preproc/ab_file/73789b85a7/a/dca_core.c	2025-02-11 12:48:14.993484214 +0000
++++ /app/RepoSPD/data_preproc/ab_file/73789b85a7/b/dca_core.c	2025-02-11 12:48:14.875917141 +0000
+@@ -1819 +1819 @@ int ff_dca_core_parse(DCACoreDecoder *s,
+-    if (s->frame_size > size && s->frame_size < size + 4)
++    if (s->frame_size > size)

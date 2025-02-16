@@ -1,0 +1,8 @@
++-ff_dca_core_parse() <int ff_dca_core_parse (DCACoreDecoder *s, uint8_t *data, int size) at /app/RepoSPD/data_preproc/ab_file/73789b85a7/a/dca_core.c:1798>
+  +-init_get_bits8()
+  +-parse_frame_header()
+  +-alloc_sample_buffer()
+  +-parse_frame_data()
+  +-parse_optional_info()
+  +-ff_dca_seek_bits()
+  \-av_log()

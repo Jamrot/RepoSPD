@@ -1,0 +1,23 @@
++-d3d11va_device_create() <int d3d11va_device_create (AVHWDeviceContext *ctx, const char *device, AVDictionary *opts, int flags) at /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c:476>
+  +-av_dict_get()
+  +-LoadLibrary()
+  +-ff_thread_once()
+  +-load_functions() <av_cold void load_functions (void) at /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c:57>
+  | +-LoadLibrary()
+  | +-mD3D11CreateDevice() <PFN_D3D11_CREATE_DEVICE mD3D11CreateDevice at /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c:55>
+  | +-GetProcAddress()
+  | \-mCreateDXGIFactory() <PFN_CREATE_DXGI_FACTORY mCreateDXGIFactory at /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c:54>
+  +-mD3D11CreateDevice() <PFN_D3D11_CREATE_DEVICE mD3D11CreateDevice at /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c:55>
+  +-mCreateDXGIFactory() <PFN_CREATE_DXGI_FACTORY mCreateDXGIFactory at /app/RepoSPD/data_preproc/ab_file/9042402ec7/a/hwcontext_d3d11va.c:54>
+  +-av_log()
+  +-SUCCEEDED()
+  +-atoi()
+  +-FAILED()
+  +-IDXGIFactory2_EnumAdapters()
+  +-IDXGIFactory2_Release()
+  +-IDXGIAdapter_Release()
+  +-ID3D11Device_QueryInterface()
+  +-ID3D10Multithread_SetMultithreadProtected()
+  +-ID3D10Multithread_Release()
+  +-GetProcAddress()
+  \-IDXGIDebug_ReportLiveObjects()

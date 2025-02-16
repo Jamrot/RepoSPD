@@ -73,6 +73,7 @@ f.close()
 
 #print(hunkInfo)
 
+# 对于所有在diff模块的函数，`locate_flag` 和 `align_flag` 设为1
 locate_flag = [0 for i in range(len(funcInfo))]
 align_flag = [0 for i in range(len(hunkInfo))]
 for i in range(len(funcInfo)):
@@ -86,6 +87,7 @@ for i in range(len(funcInfo)):
 filename = []
 fileContent = []
 
+# 遍历所有文件，将不在diff模块的函数代码行置为空行
 files = os.listdir(path+'a/')
 for file in files:
 	if file in ['.DS_store', '.DS_Store']:	continue
@@ -123,6 +125,7 @@ for i in range(len(locate_flag)):
 		for j in range(funcInfo[i][1], funcInfo[i][2]+1):
 			fileContent[idx][j] = '\n'
 
+# 根据 hunkInfo 中记录的差异块信息，调整文件内容，以确保两个文件在diff块部分能够对齐
 for i in range(0, len(hunkInfo), 2):
 #	if align_flag[i] == 1 or align_flag[i+1] == 1:
 #		print(hunkInfo[i], hunkInfo[i+1])

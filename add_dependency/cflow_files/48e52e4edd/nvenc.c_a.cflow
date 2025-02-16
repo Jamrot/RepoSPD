@@ -1,0 +1,16 @@
++-nvenc_find_free_reg_resource() <int nvenc_find_free_reg_resource (AVCodecContext *avctx) at /app/RepoSPD/data_preproc/ab_file/48e52e4edd/a/nvenc.c:1527>
+  +-FF_ARRAY_ELEMS()
+  +-av_log()
+  \-AVERROR()
++-process_output_surface() <int process_output_surface (AVCodecContext *avctx, AVPacket *pkt, NvencSurface *tmpoutsurf) at /app/RepoSPD/data_preproc/ab_file/48e52e4edd/a/nvenc.c:1741>
+  +-av_log()
+  +-AVERROR()
+  +-av_mallocz()
+  +-nvenc_print_error()
+  +-ff_alloc_packet2()
+  +-memcpy()
+  +-av_frame_unref()
+  +-ff_side_data_set_encoder_stats()
+  +-nvenc_set_timestamp()
+  +-av_free()
+  \-timestamp_queue_dequeue()

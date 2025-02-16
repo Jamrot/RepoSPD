@@ -1,0 +1,10 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/a579dbb4f7/a/float_dsp.c /app/RepoSPD/data_preproc/ab_file/a579dbb4f7/b/float_dsp.c
+--- /app/RepoSPD/data_preproc/ab_file/a579dbb4f7/a/float_dsp.c	2025-02-11 12:48:17.805147832 +0000
++++ /app/RepoSPD/data_preproc/ab_file/a579dbb4f7/b/float_dsp.c	2025-02-11 12:48:17.676809192 +0000
+@@ -222 +222,2 @@ static void test_butterflies_float(const
+-        if (!float_near_abs_eps(cdst[i], odst[i], FLT_EPSILON)) {
++        if (!float_near_abs_eps(cdst[i],  odst[i],  FLT_EPSILON) ||
++            !float_near_abs_eps(cdst1[i], odst1[i], FLT_EPSILON)) {
+@@ -224,0 +226,2 @@ static void test_butterflies_float(const
++            fprintf(stderr, "%d: %- .12f - %- .12f = % .12g\n",
++                    i, cdst1[i], odst1[i], cdst1[i] - odst1[i]);

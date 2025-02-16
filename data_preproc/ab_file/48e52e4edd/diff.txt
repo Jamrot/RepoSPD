@@ -1,0 +1,31 @@
+diff -brN -U 0 -p /app/RepoSPD/data_preproc/ab_file/48e52e4edd/a/nvenc.c /app/RepoSPD/data_preproc/ab_file/48e52e4edd/b/nvenc.c
+--- /app/RepoSPD/data_preproc/ab_file/48e52e4edd/a/nvenc.c	2025-02-11 12:48:14.170514703 +0000
++++ /app/RepoSPD/data_preproc/ab_file/48e52e4edd/b/nvenc.c	2025-02-11 12:48:14.138450959 +0000
+@@ -1531,0 +1532 @@ static int nvenc_find_free_reg_resource(
++    NVENCSTATUS nv_status;
+@@ -1539,2 +1540,3 @@ static int nvenc_find_free_reg_resource(
+-                    p_nvenc->nvEncUnregisterResource(ctx->nvencoder,
+-                                                ctx->registered_frames[i].regptr);
++                    nv_status = p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[i].regptr);
++                    if (nv_status != NV_ENC_SUCCESS)
++                        return nvenc_print_error(avctx, nv_status, "Failed unregistering unused input resource");
+@@ -1792,2 +1794,4 @@ static int process_output_surface(AVCode
+-    if (nv_status != NV_ENC_SUCCESS)
+-        nvenc_print_error(avctx, nv_status, "Failed unlocking bitstream buffer, expect the gates of mordor to open");
++    if (nv_status != NV_ENC_SUCCESS) {
++        res = nvenc_print_error(avctx, nv_status, "Failed unlocking bitstream buffer, expect the gates of mordor to open");
++        goto error;
++    }
+@@ -1799,2 +1803,10 @@ static int process_output_surface(AVCode
+-            p_nvenc->nvEncUnmapInputResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource);
+-            p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].regptr);
++            nv_status = p_nvenc->nvEncUnmapInputResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].in_map.mappedResource);
++            if (nv_status != NV_ENC_SUCCESS) {
++                res = nvenc_print_error(avctx, nv_status, "Failed unmapping input resource");
++                goto error;
++            }
++            nv_status = p_nvenc->nvEncUnregisterResource(ctx->nvencoder, ctx->registered_frames[tmpoutsurf->reg_idx].regptr);
++            if (nv_status != NV_ENC_SUCCESS) {
++                res = nvenc_print_error(avctx, nv_status, "Failed unregistering input resource");
++                goto error;
++            }
